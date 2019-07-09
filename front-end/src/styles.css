@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+  height: 100%;
+  width: 100%;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #F39300;
+  border-color: #f38706;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #f3a800;
+  border-color: #f39b05
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff;
+  background-color: #f39f04;
+  border-color: #f38706
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: #ffffff;
+  background-color: #f39f04;
+  border-color: #f38706
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
+}
+
+.btn-outline-primary {
+  color: #f39f04;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f38706
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: #f39f04;
+  border-color: #f38706
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #f39f04;
+  background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color: #ffffff;
+  background-color: #f39f04;
+  border-color: #f38706
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
+}
