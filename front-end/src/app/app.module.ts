@@ -7,6 +7,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   {
     path: '',
@@ -17,7 +18,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
