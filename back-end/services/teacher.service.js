@@ -1,9 +1,11 @@
 const TeacherModel = require('../model/teacher.model');
+const DataSource = require('../services/data-source.service');
 
 class TeacherService {
-    constructor(teachersSource) {
-        this.teachersSource = teachersSource;
+    constructor() {
+        this.teachersSource = DataSource.getTeachersSource();
     }
+
 
     getSimpleTeacherById(id) {
         return new TeacherModel(id, null, null, null);
@@ -15,6 +17,20 @@ class TeacherService {
             teacherArray.push(this.getSimpleTeacherById(id));
         });
         return teacherArray;
+    }
+
+    getTeacherById(id) {
+        const teacherFromXML = this.teachersSource.find((teacher) => {
+            return teacher['_attributes']['id'] === id;
+        });
+        return new TeacherModel(
+            teacherFromXML['_attributes']['id'],
+            teacherFromXML['_attributes']['gender'],
+            teacherFromXML['_attributes']['firstname'],
+            teacherFromXML['_attributes']['lastname'],
+            teacherFromXML['_attributes']['name'],
+            teacherFromXML['_attributes']['short'],
+        );
     }
 }
 

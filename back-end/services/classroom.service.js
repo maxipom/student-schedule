@@ -1,20 +1,33 @@
 const ClassroomModel = require('../model/classroom.model');
+const DataSource = require('../services/data-source.service');
 
 class ClassroomService {
-    constructor(classroomsSource) {
-        this.classroomsSource = classroomsSource;
+    constructor() {
+        this.classroomsSource = DataSource.getClassroomsSource();
     }
 
-    getSimpleClassroomById(id) {
-        return new ClassroomModel(id, null, null, null);
-    }
-
-    getSimpleClassroomsByIds(classroomsIds) {
+    getClassroomsByIds(classroomsIds) {
         let classroomsArray = [];
         classroomsIds.forEach((id) => {
-            classroomsArray.push(this.getSimpleClassroomById(id));
+            classroomsArray.push(this.getClassroomById(id));
         });
         return classroomsArray;
+    }
+
+    getClassroomById(id) {
+        const xmlClassroom = this.classroomsSource.find((classroom) => {
+            return classroom['_attributes']['id'] === id;
+        });
+        return this._getClassroomFromXML(xmlClassroom);
+    }
+
+    _getClassroomFromXML(classroom) {
+        return new ClassroomModel(
+            classroom['_attributes']['id'],
+            classroom['_attributes']['name'],
+            classroom['_attributes']['short'],
+            classroom['_attributes']['capacity'],
+        );
     }
 }
 

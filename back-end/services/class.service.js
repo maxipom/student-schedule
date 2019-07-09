@@ -1,18 +1,26 @@
 const ClassModel = require('../model/class.model');
+const DataSource = require('../services/data-source.service');
 
 class ClassService {
-    constructor(classSource) {
-        this.classSource = classSource;
+    constructor() {
+        this.classSource = DataSource.getClassesSource();
     }
 
     getSimpleClassById(id) {
-        return new ClassModel(id, null, null);
+        const xmlClass = this.classSource.find((xmlClass) => {
+            return xmlClass['_attributes']['id'] === id;
+        });
+        return new ClassModel(
+            xmlClass['_attributes']['id'],
+            xmlClass['_attributes']['name'],
+            xmlClass['_attributes']['short']);
     }
 
-    getSimpleClassesByIds(classesIds) {
+    getClassesByIds(classesIds) {
         let classesArray = [];
         classesIds.forEach((id) => {
-            classesArray.push(this.getSimpleClassById(id));
+            const newClass = this.getSimpleClassById(id);
+            classesArray.push(newClass);
         });
         return classesArray;
     }
