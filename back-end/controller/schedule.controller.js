@@ -9,12 +9,11 @@ class ScheduleController {
         this.cardService = new CardService();
     }
 
-    showTeacherCardsById(teacherId) {
+    getTeacherCardsById(teacherId) {
         const teacher = this.teacherService.getTeacherById(teacherId);
         const lessons = this.lessonService.getLessonsByTeacher(teacher);
         const cards = this.cardService.getCardsByLessonsId(lessons);
-
-        cards.forEach(
+/*        cards.forEach(
             (card) => {
                 console.log('--------------------------------');
                 console.log('PROFESOR: ' + card.lesson.teachers.map(element => element.short).join(' / '));
@@ -24,9 +23,12 @@ class ScheduleController {
                 console.log('DAY: ' + card.day);
                 console.log('--------------------------------');
             }
-        ); // TODO: This is gonna change once the front-end is implemented
+        ); // TODO: This is gonna change once the front-end is implemented*/
+        return cards;
 
-
+    }
+    getTeachers(){
+        return this.teacherService.getAllTeachers();
     }
 }
 

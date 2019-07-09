@@ -10,22 +10,8 @@ export class TeacherService {
   constructor(private http: HttpClient) {
   }
 
-  getTeachers(): TeacherModel[] {
-    let teachers = [];
-    this.http.get('/api/schedule/getTeachers').subscribe((data: TeacherModel[]) => {
-      teachers = data;
-    }, error => {
-      console.warn('There was an error trying to get the teachers', error);
-    });
-    return teachers;
-    // return this._getMockedTeaccher();
+  getTeachers() {
+    return this.http.get('/api/teachers');
   }
 
-  private _getMockedTeaccher() {
-    const mockedTeachersArray = [];
-    mockedTeachersArray.push(
-      new TeacherModel('B073AFFC1EF01233', 'Aleksandar Kojovi�')
-    );
-    return mockedTeachersArray;
-  }
 }

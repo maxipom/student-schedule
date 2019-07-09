@@ -20,7 +20,17 @@ export class SearchBarComponent implements OnInit {
     this.searchForm = this.formBuilder.group({
       professor_name: ['', Validators.maxLength(25)],
     });
-    this.teachers = this.teacherService.getTeachers();
+
+    this.fillTeachersCombo();
+  }
+
+  private fillTeachersCombo() {
+    this.teacherService.getTeachers().subscribe((data: any) => {
+      console.log(data);
+      this.teachers = data.teachers;
+    }, error => {
+      console.warn('There was an error trying to get the teachers', error);
+    });
   }
 
   get professor_name() {

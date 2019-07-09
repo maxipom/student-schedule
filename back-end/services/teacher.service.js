@@ -32,6 +32,14 @@ class TeacherService {
             teacherFromXML['_attributes']['short'],
         );
     }
+
+    getAllTeachers() {
+        const teachers = [];
+        this.teachersSource.forEach((xmlTeacher) => {
+            teachers.push(this.getTeacherById(xmlTeacher['_attributes']['id']))
+        });
+        return teachers;
+    }
 }
 
 module.exports = TeacherService;
