@@ -1,7 +1,9 @@
 <div class="row">
   <div class="col-md-3 search-menu">
-    <app-search-bar></app-search-bar>
+    <app-search-bar (buttonTeacherSearch)="getCardsByTeacherId($event)"></app-search-bar>
   </div>
   <div class="col-md-9 schedule">
+    <h2 class="text-center">{{scheduleTitle}}</h2>
+    <app-schedule [cards]="cards" [cardsType]="cardsType"></app-schedule>
   </div>
 </div>

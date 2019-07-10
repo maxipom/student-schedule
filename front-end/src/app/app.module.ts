@@ -8,6 +8,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { CardComponent } from './card/card.component';
+import { TeacherContentCardComponent } from './card/content-cards/teacher-content-card/teacher-content-card.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +22,10 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     SearchBarComponent,
-    NavbarComponent
+    NavbarComponent,
+    ScheduleComponent,
+    CardComponent,
+    TeacherContentCardComponent
   ],
   imports: [
     BrowserModule,

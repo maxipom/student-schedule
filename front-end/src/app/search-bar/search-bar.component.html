@@ -2,16 +2,16 @@
   <div class="margin-around">
     <div class="row">
       <div class="col-xs-12">
-        <h1>
+        <h2>
           <i class="material-icons school-icon">school</i>
-          Učionice</h1>
+          Predavači</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
         <div class="form-group"> <!-- Proffessor Name -->
-          <label for="professor_name">Ime</label>
-          <select formControlName="professor_name" id="professor_name" class="form-control">
+          <label for="teacher_id">Ime</label>
+          <select formControlName="teacher_id" id="teacher_id" class="form-control">
             <option *ngFor="let teacher of teachers" [value]="teacher.id">
               {{teacher.name}}
             </option>
@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-xs-12 ">
         <button type="submit" class="btn btn-primary pull-right"
-                [disabled]="!professor_name">viev schedule
+                [disabled]="!teacher_id">viev schedule
           <i class="material-icons last-page-icon">last_page</i></button>
       </div>
     </div>

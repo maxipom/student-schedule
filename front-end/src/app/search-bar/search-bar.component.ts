@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {TeacherService} from '../services/teacher.service';
 import {TeacherModel} from '../models/teacher.model';
@@ -12,13 +12,16 @@ export class SearchBarComponent implements OnInit {
   searchForm: FormGroup;
   teachers: TeacherModel[] = [];
 
+  @Output()
+  buttonTeacherSearch = new EventEmitter();
+
   constructor(private formBuilder: FormBuilder,
               private teacherService: TeacherService) {
   }
 
   ngOnInit() {
     this.searchForm = this.formBuilder.group({
-      professor_name: ['', Validators.maxLength(25)],
+      teacher_id: ['', Validators.maxLength(25)],
     });
 
     this.fillTeachersCombo();
@@ -33,11 +36,14 @@ export class SearchBarComponent implements OnInit {
     });
   }
 
-  get professor_name() {
-    return this.searchForm.get('professor_name').value;
+  get teacher_id() {
+    return this.searchForm.get('teacher_id').value;
   }
 
   onSubmit() {
-    alert(this.professor_name);
+    const selectedTeacher = this.teachers.find((teacher) => {
+      return teacher.id === this.teacher_id;
+    });
+    this.buttonTeacherSearch.emit(selectedTeacher);
   }
 }

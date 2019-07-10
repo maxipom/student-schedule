@@ -1,0 +1,7 @@
+<div [ngSwitch]="cardsType">
+  <div class="row">
+    <div *ngSwitchCase="cardsType === cardsTypes.TEACHER_CARD" class="schedule-card">
+      <app-teacher-content-card [card]="card"></app-teacher-content-card>
+    </div>
+  </div>
+</div>

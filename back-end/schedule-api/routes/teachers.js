@@ -9,13 +9,18 @@ router.get('/', function (req, res, next) {
         res.json({teachers: scheduleController.getTeachers()});
 
     } catch (err) {
-        if (err.name === 'GetError') {
-            return res.status(400).json({error: err.message});
-        }
-        // unexpected error
         return next(err);
     }
+});
+router.get('/cards', function (req, res, next) {
+    try {
+        const teacherId = req.query.id;
+        const scheduleController = new ScheduleController();
+        res.json({cards: scheduleController.getCardsByTeacherId(teacherId)});
 
+    } catch (err) {
+        return next(err);
+    }
 });
 
 module.exports = router;

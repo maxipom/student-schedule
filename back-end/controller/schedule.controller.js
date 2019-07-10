@@ -9,8 +9,8 @@ class ScheduleController {
         this.cardService = new CardService();
     }
 
-    getTeacherCardsById(teacherId) {
-        const teacher = this.teacherService.getTeacherById(teacherId);
+    getCardsByTeacherId(id) {
+        const teacher = this.teacherService.getTeacherById(id);
         const lessons = this.lessonService.getLessonsByTeacher(teacher);
         const cards = this.cardService.getCardsByLessonsId(lessons);
 /*        cards.forEach(
