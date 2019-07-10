@@ -1,9 +1,21 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {PeriodModel} from '../models/period.model';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ScheduleService {
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+  }
+
+  getPeriods(): Observable<PeriodModel[]> {
+    return this.http.get<PeriodModel>('/api/schedule/periods')
+      .pipe(
+        map((x: any) => x.periods)
+      );
+  }
 }

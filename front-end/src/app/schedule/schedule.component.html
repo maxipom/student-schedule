@@ -1,7 +1,10 @@
-<div class="row align-content-center">
-  <div class="col-12">
+<div class="row align-content-center" *ngFor="let period of periods">
+  <div class="col-1 period">
+  {{period.period}}
+  </div>
+  <div class="col-11">
     <div *ngFor="let card of cards">
-      <app-card [card]="card" [cardsType]="cardsType"></app-card>
+      <app-card *ngIf="card.period === period.period" [card]="card" [cardsType]="cardsType"></app-card>
     </div>
   </div>
 </div>

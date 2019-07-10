@@ -1,12 +1,12 @@
 let mainSource;
 
+const MAIN_TABLE_NAME = 'timetable';
 
 function _getMainSource() {
     const convert = require('xml-js');
     const xmlFile = require('fs').readFileSync('./base.xml', 'utf8');
     return convert.xml2js(xmlFile, {compact: true, spaces: 3});
 }
-
 module.exports = {
 
     getMainSource: function getMainSource() {
@@ -17,25 +17,28 @@ module.exports = {
     },
 
     getStudentSource: function getStudentSource() {
-        return this.getMainSource()['timetable']['students']['student'];
+        return this.getMainSource()[MAIN_TABLE_NAME]['students']['student'];
     },
     getTeachersSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['teachers']['teacher'];
+        return this.getMainSource()[MAIN_TABLE_NAME]['teachers']['teacher'];
     },
-    getLessonsSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['lessons']['lesson'];
+    getLessonsSource: function getLessonsSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['lessons']['lesson'];
     },
-    getCardsSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['cards']['card'];
+    getCardsSource: function getCardsSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['cards']['card'];
     },
-    getClassesSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['classes']['class'];
+    getClassesSource: function getClassesSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['classes']['class'];
     },
-    getClassroomsSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['classrooms']['classroom'];
+    getClassroomsSource: function getClassroomsSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['classrooms']['classroom'];
     },
-    getSubjecsSource: function getTeachersSource() {
-        return this.getMainSource()['timetable']['subjects']['subject'];
+    getSubjectsSource: function getSubjectsSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['subjects']['subject'];
+    },
+    getPeriodSource: function getPeriodSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['periods']['period'];
     },
 
 

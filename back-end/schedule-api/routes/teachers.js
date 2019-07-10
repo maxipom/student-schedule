@@ -2,7 +2,6 @@ const express = require('express');
 const ScheduleController = require('../../controller/schedule.controller');
 const router = express.Router();
 
-/* GET a guid. */
 router.get('/', function (req, res, next) {
     try {
         const scheduleController = new ScheduleController();

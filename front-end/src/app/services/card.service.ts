@@ -16,7 +16,7 @@ export class CardService {
     let params = new HttpParams();
     params = params.append('id', id);
     return this.http.get<CardModel[]>('/api/teachers/cards', {params}).pipe(
-      map(x => x.cards)
+      map((x: any) => x.cards)
     );
 
   }

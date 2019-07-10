@@ -29,7 +29,6 @@ export class SearchBarComponent implements OnInit {
 
   private fillTeachersCombo() {
     this.teacherService.getTeachers().subscribe((data: any) => {
-      console.log(data);
       this.teachers = data.teachers;
     }, error => {
       console.warn('There was an error trying to get the teachers', error);

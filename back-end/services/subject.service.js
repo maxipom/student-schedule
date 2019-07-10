@@ -3,7 +3,7 @@ const DataSource = require('../services/data-source.service');
 
 class SubjectService {
     constructor() {
-        this.subjectsSource = DataSource.getSubjecsSource();
+        this.subjectsSource = DataSource.getSubjectsSource();
     }
 
     getSimpleSubjectById(id) {

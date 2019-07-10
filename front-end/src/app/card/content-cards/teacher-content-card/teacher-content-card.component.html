@@ -1,6 +1,10 @@
-<div class="row text-center">
-  <h5>{{card.lesson.subject.name}}</h5>
+<div class="row">
+  <h5 class="text-center">{{card.lesson.subject.short}}</h5>
 </div>
-<div class="row text-right">
-  <h6 class="float-right">{{getClassroomsNames()}}</h6>
+<div class="row">
+  <label class="text-right text-secondary">Period: {{card.period}} </label>
+  <label class="text-right text-secondary"> / Day: {{card.day}}</label>
+</div>
+<div class="row">
+  <h6 class="text-right">{{getClassroomsNames()}}</h6>
 </div>

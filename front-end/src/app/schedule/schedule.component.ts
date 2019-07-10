@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
+import {PeriodModel} from '../models/period.model';
+import {ScheduleService} from '../services/schedule.service';
 
 @Component({
   selector: 'app-schedule',
@@ -12,9 +14,20 @@ export class ScheduleComponent implements OnInit {
   cards: CardModel[];
   @Input()
   cardsType: CardsTypesEnum;
-  constructor() { }
+  periods: PeriodModel[];
+
+  constructor(private scheduleService: ScheduleService) {
+    this.getPeriods();
+  }
 
   ngOnInit() {
   }
 
+  getPeriods() {
+    this.scheduleService.getPeriods().subscribe(
+      (periods) => {
+        this.periods = periods;
+      }
+    );
+  }
 }
