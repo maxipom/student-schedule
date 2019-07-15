@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CardModel} from '../../../models/card.model';
-import {element} from 'protractor';
 
 @Component({
   selector: 'app-teacher-content-card',

@@ -4,3 +4,10 @@
 .schedule{
   background-color: #e3e3f2;
 }
+.schedule-title{
+  background-color: white;
+  font-size: xx-large;
+  color: #484848;
+  font-weight: 400;
+  margin-left: -1rem;
+}

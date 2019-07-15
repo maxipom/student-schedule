@@ -3,7 +3,7 @@
     <app-search-bar (buttonTeacherSearch)="getCardsByTeacherId($event)"></app-search-bar>
   </div>
   <div class="col-md-9 schedule">
-    <h2 class="text-center">{{scheduleTitle}}</h2>
-    <app-schedule [cards]="cards" [cardsType]="cardsType"></app-schedule>
+    <div *ngIf="scheduleTitle" class="text-center schedule-title">{{scheduleTitle}}</div>
+    <app-schedule [displayCards]="displayCards" [cardsType]="cardsType"></app-schedule>
   </div>
 </div>

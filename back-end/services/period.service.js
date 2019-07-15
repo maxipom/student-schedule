@@ -7,8 +7,8 @@ class PeriodService {
     }
 
     getPeriodById(periodId) {
-        const periodFromXml = this.periodsSource.find((teacher) => {
-            return teacher['_attributes']['period'] === periodId;
+        const periodFromXml = this.periodsSource.find((period) => {
+            return period['_attributes']['period'] === periodId;
         });
         return new PeriodModel(
             periodFromXml['_attributes']['period'],

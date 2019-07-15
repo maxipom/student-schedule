@@ -1,10 +1,19 @@
-<div class="row align-content-center" *ngFor="let period of periods">
-  <div class="col-1 period">
-  {{period.period}}
-  </div>
-  <div class="col-11">
-    <div *ngFor="let card of cards">
-      <app-card *ngIf="card.period === period.period" [card]="card" [cardsType]="cardsType"></app-card>
+<div class="row inner-shadow">
+  <div class="col" *ngFor="let dayDef of dayDefs ; let firstDay = first;">
+    <div class="row period-row" *ngFor="let period of periods; let firstPeriod = first;">
+      <div *ngIf="firstPeriod" class="days">
+        <h5 *ngIf="!firstDay" class="text-center">{{dayDef.name}}</h5>
+      </div>
+      <div *ngIf="firstDay" class="period">
+        {{period.short}}
+      </div>
+      <div *ngIf="!firstDay">
+        <div *ngFor="let displayCard of displayCards">
+          <app-card *ngIf="displayCard.startPeriod === period.period && displayCard.card.day === dayDef.day" [displayCard]="displayCard"
+                    [cardsType]="cardsType"></app-card>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

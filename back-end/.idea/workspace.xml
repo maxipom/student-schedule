@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a8045a5-11b6-4d7e-9f93-01ebe2439046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/period.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedule-api/routes/schedule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/period.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front-end/src/app/models/period.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/app/shared/display-card.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/schedule.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/schedule.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule-api/routes/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/routes/teachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedule-api/routes/schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/routes/schedule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/data-source.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/data-source.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/subject.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/subject.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/day-def.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/day-def.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/period.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/period.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/card.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home/home.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/services/card.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/services/schedule.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,40 +37,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/schedule.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/card.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/teacher.service.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/day-def.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/student.service.js">
+        <entry file="file://$PROJECT_DIR$/model/day-def.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/classroom.service.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/subject.service.js">
+        <entry file="file://$PROJECT_DIR$/services/data-source.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="765">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2584">
+              <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -75,24 +87,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/period.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/schedule-api/routes/teachers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="170">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/lesson.service.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/schedule-api/routes/teachers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -107,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedule-api/routes/schedule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="272">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -131,20 +138,21 @@
         <option value="$PROJECT_DIR$/model/student.model.js" />
         <option value="$PROJECT_DIR$/model/subject.model.js" />
         <option value="$PROJECT_DIR$/schedule-api/routes/teachers.js" />
-        <option value="$PROJECT_DIR$/schedule-api/routes/schedule.js" />
-        <option value="$PROJECT_DIR$/services/data-source.service.js" />
         <option value="$PROJECT_DIR$/schedule-api/app.js" />
         <option value="$PROJECT_DIR$/model/period.model.js" />
         <option value="$PROJECT_DIR$/services/period.service.js" />
         <option value="$PROJECT_DIR$/controller/schedule.controller.js" />
+        <option value="$PROJECT_DIR$/services/data-source.service.js" />
+        <option value="$PROJECT_DIR$/schedule-api/routes/schedule.js" />
+        <option value="$PROJECT_DIR$/services/day-def.service.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="675" />
-    <option name="y" value="-8" />
-    <option name="width" value="699" />
-    <option name="height" value="744" />
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -191,7 +199,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/schedule-api/bin/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -255,30 +263,32 @@
       <option name="presentableId" value="Default" />
       <updated>1562670029495</updated>
       <workItem from="1562670030782" duration="4505000" />
-      <workItem from="1562747197929" duration="8686000" />
+      <workItem from="1562747197929" duration="9073000" />
+      <workItem from="1562831691833" duration="2511000" />
+      <workItem from="1562914496022" duration="2480000" />
+      <workItem from="1563178467811" duration="601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13191000" />
+    <option name="totallyTimeSpent" value="19170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3207856" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22094926" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3207856" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22422259" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.05237316" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -295,8 +305,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test.js</url>
           <line>147</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/services/data-source.service.js</url>
+          <line>43</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -307,13 +321,6 @@
     <entry file="file://$PROJECT_DIR$/schedule-api/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/schedule-api/bin/www">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/day-def.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/teacher.model.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -350,24 +357,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/student.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/data-source.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -388,16 +381,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/lesson.service.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/student.service.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/services/card.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/teacher.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/student.service.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/subject.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/lesson.service.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/schedule.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/day-def.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/classroom.service.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/data-source.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/period.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedule-api/routes/teachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -408,45 +460,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/subject.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schedule-api/routes/schedule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="272">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/card.service.js">
+    <entry file="file://$PROJECT_DIR$/services/day-def.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/schedule.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/period.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schedule-api/routes/teachers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="343">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>

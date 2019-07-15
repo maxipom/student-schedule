@@ -40,6 +40,9 @@ module.exports = {
     getPeriodSource: function getPeriodSource() {
         return this.getMainSource()[MAIN_TABLE_NAME]['periods']['period'];
     },
+    getDayDefSource: function getDayDefSource() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['daysdefs']['daysdef'];
+    },
 
 
 };

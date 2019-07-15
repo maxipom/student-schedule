@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
+import {DisplayCard} from '../shared/display-card.model';
 
 @Component({
   selector: 'app-card',
@@ -9,14 +9,19 @@ import {CardsTypesEnum} from '../shared/cards-types.enum';
 })
 export class CardComponent implements OnInit {
   @Input()
-  public card: CardModel;
+  public displayCard: DisplayCard;
   @Input()
   cardsType: CardsTypesEnum;
   cardsTypes = CardsTypesEnum;
+
   constructor() {
   }
 
   ngOnInit() {
   }
 
+  getPeriodClass() {
+    const cardSize = +this.displayCard.endPeriod - +this.displayCard.startPeriod;
+    return 'period-' + cardSize;
+  }
 }

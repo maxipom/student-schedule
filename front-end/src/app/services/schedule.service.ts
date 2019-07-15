@@ -18,4 +18,10 @@ export class ScheduleService {
         map((x: any) => x.periods)
       );
   }
+  getDayDefs(): Observable<DayDefModel[]> {
+    return this.http.get<DayDefModel>('/api/schedule/daysDefs')
+      .pipe(
+        map((x: any) => x.dayDefs)
+      );
+  }
 }

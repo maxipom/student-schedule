@@ -1,10 +1,4 @@
-<div class="row">
-  <h5 class="text-center">{{card.lesson.subject.short}}</h5>
-</div>
-<div class="row">
-  <label class="text-right text-secondary">Period: {{card.period}} </label>
-  <label class="text-right text-secondary"> / Day: {{card.day}}</label>
-</div>
-<div class="row">
-  <h6 class="text-right">{{getClassroomsNames()}}</h6>
-</div>
+<h6 class="text-left" id="subject-name"  ngbTooltip="Tooltip on top">{{card.lesson.subject.short}}</h6>
+<h6 class="text-left" id="classroom-text">Classroom{{card.lesson.classrooms.length > 1 ? 's' : ''}}</h6>
+<span *ngFor="let classroom of card.lesson.classrooms; let firstClassroom = first" class="text-left text-secondary">
+  {{!firstClassroom? ' /':''}}{{classroom.name}}</span>
