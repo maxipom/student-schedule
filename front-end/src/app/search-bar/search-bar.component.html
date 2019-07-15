@@ -1,2 +1,6 @@
-<app-teacher-search (buttonTeacherSearch)="getCardsByTeacherId($event)"></app-teacher-search>
-<app-student-search (buttonStudentSearch)="getCardsByStudentId($event)"></app-student-search>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.TEACHER_SCHEDULE}" class="animated">
+  <app-teacher-search (buttonTeacherSearch)="getCardsByTeacherId($event)"></app-teacher-search>
+</div>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.STUDENT_SCHEDULE}" class="animated">
+  <app-student-search (buttonStudentSearch)="getCardsByStudentId($event)"></app-student-search>
+</div>

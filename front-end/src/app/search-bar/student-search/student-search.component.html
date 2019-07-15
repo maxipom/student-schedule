@@ -1,0 +1,27 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <div class="margin-around">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>
+          <i class="material-icons" id="person-icon">person</i>
+          Učenici</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="student-id">Učenik</label>
+          <input type="text" formControlName="studentId" class="form-control" id="student-id"
+                 placeholder="Enter student id">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
+        <button type="submit" class="btn btn-primary pull-right"
+                [disabled]="!studentId">viev schedule
+          <i class="material-icons last-page-icon">last_page</i></button>
+      </div>
+    </div>
+  </div>
+</form>

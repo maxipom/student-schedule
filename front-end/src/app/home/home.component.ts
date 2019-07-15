@@ -4,6 +4,7 @@ import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
 import {DisplayCard} from '../shared/display-card.model';
 import {LessonModel} from '../models/lesson.model';
+import {ScheduleTypeEnum} from '../shared/schedule-type.enum';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   scheduleTitle: string;
   cardsType: CardsTypesEnum;
   displayCards: DisplayCard[];
-
+  selectedScheduleType: ScheduleTypeEnum;
   constructor(private cardService: CardService) {
   }
 
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
           this.cards = cards;
           this.scheduleTitle = 'Predavač ' + teacher.name;
           this.cardsType = CardsTypesEnum.TEACHER_CARD;
+          this.selectedScheduleType = ScheduleTypeEnum.TEACHER_SCHEDULE;
           this.getDisplayCards();
         }
       }, error => {
@@ -43,6 +45,7 @@ export class HomeComponent implements OnInit {
           this.cards = cards;
           this.scheduleTitle = 'Učenik ' + studentId;
           this.cardsType = CardsTypesEnum.STUDENT_CARD;
+          this.selectedScheduleType = ScheduleTypeEnum.STUDENT_SCHEDULE;
           this.getDisplayCards();
         }
       }, error => {

@@ -1,0 +1,6 @@
+export enum ScheduleTypeEnum {
+  TEACHER_SCHEDULE = 1,
+  STUDENT_SCHEDULE = 2,
+  CLASSROOM_SCHEDULE = 3,
+  GROUP_SCHEDULE = 4,
+}

@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col">
+    <h6 class="text-left" id="subject-name">{{card.lesson.subject.short}}</h6>
+  </div>
+</div>
+<div class="row">
+  <div class="col text-left">
+<span *ngFor="let classroom of card.classrooms; let firstClassroom = first" class="text-secondary">
+  {{!firstClassroom ? ' /' : ''}}{{classroom.short}}</span>
+  </div>
+  <div class="col text-right">
+<span *ngFor="let teacher of card.lesson.teachers; let firstTeacher = first" class="text-secondary">
+  {{!firstTeacher ? ' /' : ''}}{{teacher.short}}</span>
+  </div>
+</div>

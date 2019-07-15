@@ -1,0 +1,6 @@
+.active{
+  background-color: #f5f5f5;
+}
+.animated{
+  transition: all linear 0.1s;
+}
