@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
 import {PeriodModel} from '../models/period.model';
 import {ScheduleService} from '../services/schedule.service';

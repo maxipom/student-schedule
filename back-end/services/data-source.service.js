@@ -43,6 +43,9 @@ module.exports = {
     getDayDefSource: function getDayDefSource() {
         return this.getMainSource()[MAIN_TABLE_NAME]['daysdefs']['daysdef'];
     },
+    getStudentSubject: function getStudentSubject() {
+        return this.getMainSource()[MAIN_TABLE_NAME]['studentsubjects']['studentsubject'];
+    },
 
 
 };

@@ -22,6 +22,17 @@ class LessonService {
         return lessons;
     }
 
+    getLessonByStudent(student) {
+        const lessons = [];
+        this.lessonsSource.forEach((xmlLesson) => {
+            if (this._isStudentIdInLesson(xmlLesson, student.id)) {
+                const lesson = this._getSimpleLessonFromXML(xmlLesson);
+                lessons.push(lesson);
+            }
+        });
+        return lessons;
+    }
+
     static getSimpleLessonById(id) {
         return new LessonModel(id, null, null, null);
     }
@@ -36,7 +47,7 @@ class LessonService {
             lesson['_attributes']['periodsperweek'],
             lesson['_attributes']['seminargroup'],
             this._getSimpleSubject(lesson['_attributes']['subjectid']),
-            teachers || this._getSimpleTeachers(lesson['_attributes']['teacherids']),
+            teachers || this._getTeachers(lesson['_attributes']['teacherids']),
             null,
         );
     }
@@ -45,6 +56,11 @@ class LessonService {
         const classesIds = classesIdString.split(',');
         const classService = new ClassService();
         return classService.getClassesByIds(classesIds);
+    }
+    _getTeachers(teachersIdString) {
+        const teachersIds = teachersIdString.split(',');
+        const teacherService = new TeacherService();
+        return teacherService.getTeachersByIds(teachersIds);
     }
 
     _getSimpleTeachers(teachersIdString) {
@@ -72,6 +88,17 @@ class LessonService {
     _isTeacherIdInLesson(lesson, teacherId) {
         const teachersId = lesson['_attributes']['teacherids'].split(',');
         return teachersId.indexOf(teacherId) >= 0;
+    }
+
+    _isStudentIdInLesson(xmlLesson, studentId) {
+        const lesson = DataSource.getStudentSubject().find(
+            (studentSubject) => {
+                return studentSubject['_attributes']['studentid'] === studentId &&
+                    studentSubject['_attributes']['subjectid'] === xmlLesson['_attributes']['subjectid'] &&
+                    studentSubject['_attributes']['seminargroup'] === xmlLesson['_attributes']['seminargroup'];
+            }
+        )
+        return lesson !== null && lesson !== undefined;
     }
 
 }

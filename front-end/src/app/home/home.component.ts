@@ -3,6 +3,7 @@ import {CardService} from '../services/card.service';
 import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
 import {DisplayCard} from '../shared/display-card.model';
+import {LessonModel} from '../models/lesson.model';
 
 @Component({
   selector: 'app-home',
@@ -35,22 +36,39 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  getCardsByStudentId(studentId) {
+    this.cardService.getCardsByStudentId(studentId).subscribe(
+      (cards: CardModel[]) => {
+        if (cards) {
+          this.cards = cards;
+          this.scheduleTitle = 'Učenik ' + studentId;
+          this.cardsType = CardsTypesEnum.STUDENT_CARD;
+          this.getDisplayCards();
+        }
+      }, error => {
+        console.warn('There was an error trying to get the cards of the student ' + studentId, error);
+      });
+  }
+
   getDisplayCards() {
     if (this.cards) {
       const newCards = [];
-      let lastLessonId = '';
+      let lastCard = CardService.getEmptyCard() ;
       let newCard: DisplayCard;
       this.cards.forEach(
         (card) => {
-          if (lastLessonId === card.lesson.id) {
-            newCard.endPeriod = card.period;
+          if (lastCard.lesson.id === card.lesson.id &&
+            lastCard.day === card.day) {
+            if (+newCard.endPeriod < +card.period) {
+              newCard.endPeriod = card.period;
+            }
           } else {
             if (newCard) {
               newCards.push(newCard);
             }
             newCard = new DisplayCard(card, card.period, card.period);
           }
-          lastLessonId = card.lesson.id;
+          lastCard = card;
         }
       );
       if (newCard) {

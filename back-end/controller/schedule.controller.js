@@ -3,6 +3,8 @@ const TeacherService = require('../services/teacher.service');
 const CardService = require('../services/card.service');
 const PeriodService = require('../services/period.service');
 const DayDefService = require('../services/day-def.service');
+const StudentService = require('../services/student.service');
+
 
 class ScheduleController {
     constructor() {
@@ -11,6 +13,7 @@ class ScheduleController {
         this.cardService = new CardService();
         this.periodService = new PeriodService();
         this.dayDefService = new DayDefService();
+        this.studentService = new StudentService();
     }
 
     getCardsByTeacherId(id) {
@@ -18,6 +21,7 @@ class ScheduleController {
         const lessons = this.lessonService.getLessonsByTeacher(teacher);
         return this.cardService.getCardsByLessonsId(lessons);
     }
+
 
     getTeachers() {
         return this.teacherService.getAllTeachers();
@@ -29,6 +33,11 @@ class ScheduleController {
 
     getDaysDefs() {
         return this.dayDefService.getAllDaysDefs();
+    }
+    getCardsByStudentId(id){
+        const student = this.studentService.getStudentByName(id);
+        const lessons = this.lessonService.getLessonByStudent(student);
+        return this.cardService.getCardsByLessonsId(lessons);
     }
 }
 

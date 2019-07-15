@@ -16,7 +16,4 @@ export class TeacherContentCardComponent implements OnInit {
   ngOnInit() {
   }
 
-  getClassroomsNames() {
-    return this.card.lesson.classrooms.map(x => x.short).join(' / ');
-  }
 }

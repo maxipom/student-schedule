@@ -2,7 +2,7 @@ import {ClassroomModel} from './classroom.model';
 import {LessonModel} from './lesson.model';
 
 export class CardModel {
-  public classrooms: ClassroomModel;
+  public classrooms: ClassroomModel[];
   public day: string;
   public lesson: LessonModel;
   public period: string;

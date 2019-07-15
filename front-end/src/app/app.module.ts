@@ -11,6 +11,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CardComponent } from './card/card.component';
 import { TeacherContentCardComponent } from './card/content-cards/teacher-content-card/teacher-content-card.component';
+import { TeacherSearchComponent } from './search-bar/teacher-search/teacher-search.component';
+import { StudentSearchComponent } from './search-bar/student-search/student-search.component';
+import { StudentContentCardComponent } from './card/content-cards/student-content-card/student-content-card.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,7 +28,10 @@ const routes: Routes = [
     NavbarComponent,
     ScheduleComponent,
     CardComponent,
-    TeacherContentCardComponent
+    TeacherContentCardComponent,
+    TeacherSearchComponent,
+    StudentSearchComponent,
+    StudentContentCardComponent
   ],
   imports: [
     BrowserModule,

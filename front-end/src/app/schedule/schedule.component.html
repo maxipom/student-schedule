@@ -7,8 +7,8 @@
       <div *ngIf="firstDay" class="period">
         {{period.short}}
       </div>
-      <div *ngIf="!firstDay">
-        <div *ngFor="let displayCard of displayCards">
+      <div *ngIf="!firstDay" class="fix-width">
+        <div *ngFor="let displayCard of displayCards" >
           <app-card *ngIf="displayCard.startPeriod === period.period && displayCard.card.day === dayDef.day" [displayCard]="displayCard"
                     [cardsType]="cardsType"></app-card>
         </div>
