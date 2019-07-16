@@ -5,4 +5,7 @@
   <div *ngSwitchCase="cardsTypes.STUDENT_CARD" class="schedule-card {{getPeriodClass()}}">
     <app-student-content-card [card]="displayCard.card"></app-student-content-card>
   </div>
+  <div *ngSwitchCase="cardsTypes.CLASSROOM_CARD" class="schedule-card {{getPeriodClass()}}">
+    <app-classroom-content-card [card]="displayCard.card"></app-classroom-content-card>
+  </div>
 </div>

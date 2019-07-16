@@ -22,6 +22,13 @@ class LessonService {
         return lessons;
     }
 
+    getLessonById(id) {
+        const xmlLesson = this.lessonsSource.find((xmlLesson) => {
+            return (xmlLesson['_attributes']['id'] === id)
+        });
+        return this._getSimpleLessonFromXML(xmlLesson);
+    }
+
     getLessonByStudent(student) {
         const lessons = [];
         this.lessonsSource.forEach((xmlLesson) => {
@@ -57,6 +64,7 @@ class LessonService {
         const classService = new ClassService();
         return classService.getClassesByIds(classesIds);
     }
+
     _getTeachers(teachersIdString) {
         const teachersIds = teachersIdString.split(',');
         const teacherService = new TeacherService();

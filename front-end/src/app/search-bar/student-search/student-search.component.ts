@@ -4,7 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-student-search',
   templateUrl: './student-search.component.html',
-  styleUrls: ['./student-search.component.css']
+  styleUrls: ['./student-search.component.css', '../search-bar.component.css']
 })
 export class StudentSearchComponent implements OnInit {
   searchForm: FormGroup;

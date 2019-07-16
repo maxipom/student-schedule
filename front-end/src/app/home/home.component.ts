@@ -5,6 +5,7 @@ import {CardsTypesEnum} from '../shared/cards-types.enum';
 import {DisplayCard} from '../shared/display-card.model';
 import {LessonModel} from '../models/lesson.model';
 import {ScheduleTypeEnum} from '../shared/schedule-type.enum';
+import {ClassroomModel} from '../models/classroom.model';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
   cardsType: CardsTypesEnum;
   displayCards: DisplayCard[];
   selectedScheduleType: ScheduleTypeEnum;
+
   constructor(private cardService: CardService) {
   }
 
@@ -24,13 +26,13 @@ export class HomeComponent implements OnInit {
   }
 
   getCardsByTeacherId(teacher) {
+    this.selectedScheduleType = ScheduleTypeEnum.TEACHER_SCHEDULE;
     this.cardService.getCardsByTeacherId(teacher.id).subscribe(
       (cards: CardModel[]) => {
         if (cards) {
           this.cards = cards;
           this.scheduleTitle = 'Predavač ' + teacher.name;
           this.cardsType = CardsTypesEnum.TEACHER_CARD;
-          this.selectedScheduleType = ScheduleTypeEnum.TEACHER_SCHEDULE;
           this.getDisplayCards();
         }
       }, error => {
@@ -39,13 +41,13 @@ export class HomeComponent implements OnInit {
   }
 
   getCardsByStudentId(studentId) {
+    this.selectedScheduleType = ScheduleTypeEnum.STUDENT_SCHEDULE;
     this.cardService.getCardsByStudentId(studentId).subscribe(
       (cards: CardModel[]) => {
         if (cards) {
           this.cards = cards;
           this.scheduleTitle = 'Učenik ' + studentId;
           this.cardsType = CardsTypesEnum.STUDENT_CARD;
-          this.selectedScheduleType = ScheduleTypeEnum.STUDENT_SCHEDULE;
           this.getDisplayCards();
         }
       }, error => {
@@ -53,10 +55,25 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  getCardsByClassroomId(classroom: ClassroomModel) {
+    this.selectedScheduleType = ScheduleTypeEnum.CLASSROOM_SCHEDULE;
+    this.cardService.getCardsByClassroomId(classroom.id).subscribe(
+      (cards: CardModel[]) => {
+        if (cards) {
+          this.cards = cards;
+          this.scheduleTitle = 'Učeionica ' + classroom.short;
+          this.cardsType = CardsTypesEnum.CLASSROOM_CARD;
+          this.getDisplayCards();
+        }
+      }, error => {
+        console.warn('There was an error trying to get the cards of the classroom ' + classroom.id, error);
+      });
+  }
+
   getDisplayCards() {
     if (this.cards) {
       const newCards = [];
-      let lastCard = CardService.getEmptyCard() ;
+      let lastCard = CardService.getEmptyCard();
       let newCard: DisplayCard;
       this.cards.forEach(
         (card) => {

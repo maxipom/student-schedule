@@ -6,6 +6,14 @@ class ClassroomService {
         this.classroomsSource = DataSource.getClassroomsSource();
     }
 
+    getAllClassrooms() {
+        const classroom = [];
+        this.classroomsSource.forEach((xmlClassroom) => {
+            classroom.push(this.getClassroomById(xmlClassroom['_attributes']['id']))
+        });
+        return classroom;
+    }
+
     getClassroomsByIds(classroomsIds) {
         let classroomsArray = [];
         classroomsIds.forEach((id) => {

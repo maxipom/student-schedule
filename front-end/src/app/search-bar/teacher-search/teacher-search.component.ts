@@ -6,7 +6,7 @@ import {TeacherService} from '../../services/teacher.service';
 @Component({
   selector: 'app-teacher-search',
   templateUrl: './teacher-search.component.html',
-  styleUrls: ['./teacher-search.component.css']
+  styleUrls: ['./teacher-search.component.css', '../search-bar.component.css']
 })
 export class TeacherSearchComponent implements OnInit {
   searchForm: FormGroup;
