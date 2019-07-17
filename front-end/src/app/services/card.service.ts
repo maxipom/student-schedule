@@ -23,7 +23,6 @@ export class CardService {
     return this.http.get<CardModel[]>('/api/teachers/cards', {params}).pipe(
       map((x: any) => x.cards)
     );
-
   }
 
   getCardsByClassroomId(id): Observable<CardModel[]> {
@@ -32,7 +31,6 @@ export class CardService {
     return this.http.get<CardModel[]>('/api/classrooms/cards', {params}).pipe(
       map((x: any) => x.cards)
     );
-
   }
 
   getCardsByStudentId(studentId): Observable<CardModel[]> {
@@ -41,6 +39,13 @@ export class CardService {
     return this.http.get<CardModel[]>('/api/students/cards', {params}).pipe(
       map((x: any) => x.cards)
     );
+  }
 
+  getCardsByClassId(classId): Observable<CardModel[]> {
+    let params = new HttpParams();
+    params = params.append('id', classId);
+    return this.http.get<CardModel[]>('/api/classes/cards', {params}).pipe(
+      map((x: any) => x.cards)
+    );
   }
 }

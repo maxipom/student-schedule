@@ -3,9 +3,9 @@ import {CardService} from '../services/card.service';
 import {CardModel} from '../models/card.model';
 import {CardsTypesEnum} from '../shared/cards-types.enum';
 import {DisplayCard} from '../shared/display-card.model';
-import {LessonModel} from '../models/lesson.model';
 import {ScheduleTypeEnum} from '../shared/schedule-type.enum';
 import {ClassroomModel} from '../models/classroom.model';
+import {ClassModel} from '../models/class.model';
 
 @Component({
   selector: 'app-home',
@@ -70,6 +70,21 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  getCardsByClassId(classModel: ClassModel) {
+    this.selectedScheduleType = ScheduleTypeEnum.GROUP_SCHEDULE;
+    this.cardService.getCardsByClassId(classModel.id).subscribe(
+      (cards: CardModel[]) => {
+        if (cards) {
+          this.cards = cards;
+          this.scheduleTitle = 'Odeljenja ' + classModel.short;
+          this.cardsType = CardsTypesEnum.STUDENT_CARD;
+          this.getDisplayCards();
+        }
+      }, error => {
+        console.warn('There was an error trying to get the cards of the classes ' + classModel.id, error);
+      });
+  }
+
   getDisplayCards() {
     if (this.cards) {
       const newCards = [];
@@ -95,7 +110,6 @@ export class HomeComponent implements OnInit {
         newCards.push(newCard);
       }
       this.displayCards = newCards;
-      console.log(this.displayCards);
     }
   }
 }

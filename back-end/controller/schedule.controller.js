@@ -23,7 +23,7 @@ class ScheduleController {
     getCardsByTeacherId(id) {
         const teacher = this.teacherService.getTeacherById(id);
         const lessons = this.lessonService.getLessonsByTeacher(teacher);
-        return this.cardService.getCardsByLessonsId(lessons);
+        return this.cardService.getCardsByLessons(lessons);
     }
 
 
@@ -33,7 +33,7 @@ class ScheduleController {
     getClassrooms() {
         return this.classroomService.getAllClassrooms();
     }
-    getGroups(){
+    getClasses(){
         return this.classService.getAllClasses();
     }
     getPeriods() {
@@ -46,10 +46,15 @@ class ScheduleController {
     getCardsByStudentId(id){
         const student = this.studentService.getStudentByName(id);
         const lessons = this.lessonService.getLessonByStudent(student);
-        return this.cardService.getCardsByLessonsId(lessons);
+        return this.cardService.getCardsByLessons(lessons);
     }
     getCardsByClassroomId(id){
         return this.cardService.getCardsByClassroomId(id);
+    }
+    getCardsByClassId(classId){
+        const classModel = this.classService.getClassById(classId);
+        const lessons = this.lessonService.getLessonByClass(classModel);
+        return this.cardService.getCardsByLessons(lessons);
     }
 }
 

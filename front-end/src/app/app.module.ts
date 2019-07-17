@@ -16,7 +16,7 @@ import { StudentSearchComponent } from './search-bar/student-search/student-sear
 import { StudentContentCardComponent } from './card/content-cards/student-content-card/student-content-card.component';
 import { ClassroomSearchComponent } from './search-bar/classroom-search/classroom-search.component';
 import { ClassroomContentCardComponent } from './card/content-cards/classroom-content-card/classroom-content-card.component';
-import { GroupSearchComponent } from './search-bar/group-search/group-search.component';
+import { ClassSearchComponent } from './search-bar/class-search/class-search.component';
 const routes: Routes = [
   {
     path: '',
@@ -37,7 +37,7 @@ const routes: Routes = [
     StudentContentCardComponent,
     ClassroomSearchComponent,
     ClassroomContentCardComponent,
-    GroupSearchComponent
+    ClassSearchComponent
   ],
   imports: [
     BrowserModule,

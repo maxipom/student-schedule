@@ -18,6 +18,8 @@ export class SearchBarComponent implements OnInit {
   buttonStudentSearch = new EventEmitter();
   @Output()
   buttonClassroomSearch = new EventEmitter();
+  @Output()
+  buttonClassSearch = new EventEmitter();
 
   constructor() {
   }
@@ -30,14 +32,22 @@ export class SearchBarComponent implements OnInit {
       this.buttonTeacherSearch.emit(selectedTeacher);
     }
   }
+
   getCardsByStudentId(studentId) {
     if (studentId) {
       this.buttonStudentSearch.emit(studentId);
     }
   }
+
   getCardsByClassroomId(classroomId) {
     if (classroomId) {
       this.buttonClassroomSearch.emit(classroomId);
+    }
+  }
+
+  getCardsByClassId(classId) {
+    if (classId) {
+      this.buttonClassSearch.emit(classId);
     }
   }
 }

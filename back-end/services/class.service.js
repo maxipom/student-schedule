@@ -1,12 +1,14 @@
 const ClassModel = require('../model/class.model');
 const DataSource = require('../services/data-source.service');
 
+const GENERIC_CLASS_NAME = 'I';
+
 class ClassService {
     constructor() {
         this.classSource = DataSource.getClassesSource();
     }
 
-    getSimpleClassById(id) {
+    getClassModelById(id) {
         const xmlClass = this.classSource.find((xmlClass) => {
             return xmlClass['_attributes']['id'] === id;
         });
@@ -21,18 +23,22 @@ class ClassService {
     }
 
     getClassesByIds(classesIds) {
-        let classesArray = [];
-        classesIds.forEach((id) => {
-            const newClass = this.getSimpleClassById(id);
-            classesArray.push(newClass);
+        return classesIds.map((id) => {
+            return this.getClassModelById(id);
         });
-        return classesArray;
+    }
+
+    getClassById(classId) {
+        return this.getClassModelById(classId);
     }
 
     getAllClasses() {
-       return this.classSource.map((xmlClass) => {
-            return ClassService.getClassModelFormXml(xmlClass);
-        })
+        return this.classSource
+            .map((xmlClass) => {
+                return ClassService.getClassModelFormXml(xmlClass);
+            }).filter((classModel) => {
+                return classModel.short !== GENERIC_CLASS_NAME;
+            });
     }
 
 }

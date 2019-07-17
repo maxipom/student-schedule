@@ -38,6 +38,18 @@ class LessonService {
             });
     }
 
+    getLessonByClass(classModel) {
+        const classService = new ClassService();
+        const maxAmountOfClasses = classService.getAllClasses().length;
+        return this.lessonsSource
+            .filter((xmlLesson) => {
+                return LessonService.isClassIdInLesson(xmlLesson, classModel.id, maxAmountOfClasses);
+            })
+            .map((xmlLesson) => {
+                return LessonService.getSimpleLessonFromXML(xmlLesson);
+            });
+    }
+
     static getSimpleLessonById(id) {
         return new LessonModel(id, null, null, null);
     }
@@ -99,6 +111,11 @@ class LessonService {
             }
         );
         return lesson !== null && lesson !== undefined;
+    }
+
+    static isClassIdInLesson(xmlLesson, classId, maxAmountOfClasses) {
+        const classIds = xmlLesson['_attributes']['classids'].split(',');
+        return classIds.indexOf(classId) >= 0 && classIds.length <= maxAmountOfClasses;
     }
 
 }

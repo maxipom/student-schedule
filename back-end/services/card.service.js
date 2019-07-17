@@ -8,7 +8,7 @@ class CardService {
         this.cardsSource = DataSource.getCardsSource();
     }
 
-    getCardsByLessonsId(lessons) {
+    getCardsByLessons(lessons) {
         const cardsArray = [];
         this.cardsSource.forEach(
             (card) => {
