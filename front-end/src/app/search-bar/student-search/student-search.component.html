@@ -8,18 +8,26 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-4">
         <div class="form-group">
-          <label for="student-id">Učenik</label>
+          <label for="student-id">id</label>
           <input type="text" formControlName="studentId" class="form-control" id="student-id"
-                 placeholder="Enter student id">
+                 placeholder="000">
+        </div>
+      </div>
+      <div class="col-1 align-self-center" ><strong>/</strong></div>
+      <div class="col-6">
+        <div class="form-group">
+          <label for="student-year">Godina ulaska</label>
+          <input type="text" formControlName="studentYear" class="form-control" id="student-year"
+                 placeholder="0000">
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 ">
         <button type="submit" class="btn btn-primary pull-right"
-                [disabled]="!studentId">viev schedule
+                [disabled]="!studentId && !studentYear">viev schedule
           <i class="material-icons last-page-icon">last_page</i></button>
       </div>
     </div>

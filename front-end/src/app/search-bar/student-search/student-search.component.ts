@@ -1,6 +1,8 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
+const MAXIMUM_ID_LENGHT = 4;
+
 @Component({
   selector: 'app-student-search',
   templateUrl: './student-search.component.html',
@@ -17,18 +19,36 @@ export class StudentSearchComponent implements OnInit {
 
   ngOnInit() {
     this.searchForm = this.formBuilder.group({
-      studentId: ['', Validators.maxLength(25)],
+      studentId: ['', Validators.compose([Validators.maxLength(MAXIMUM_ID_LENGHT), Validators.minLength(1)])],
+      studentYear: ['', Validators.compose([Validators.maxLength(4), Validators.minLength(4)])]
     });
 
   }
 
 
-  get studentId() {
+  get studentId(): string {
     return this.searchForm.get('studentId').value;
   }
 
+  get studentYear(): string {
+    return this.searchForm.get('studentYear').value;
+  }
+
+  getFullStudentId() {
+    let studentId = this.studentId;
+    if (this.studentId.length < MAXIMUM_ID_LENGHT) {
+      const extraZeros = '0'.repeat(MAXIMUM_ID_LENGHT - this.studentId.length);
+      studentId = extraZeros + this.studentId;
+    }
+    return this.studentYear + studentId;
+  }
+
   onSubmit() {
-    this.buttonStudentSearch.emit(this.studentId);
+    if (this.searchForm.valid) {
+      this.buttonStudentSearch.emit(this.getFullStudentId());
+    } else {
+      alert('Proveriti podatke o učeniku');
+    }
   }
 
 }

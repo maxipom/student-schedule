@@ -13,7 +13,7 @@
           <label for="classroom-id">Ime</label>
           <select formControlName="classroomId" id="classroom-id" class="form-control">
             <option *ngFor="let classroom of classrooms" [value]="classroom.id">
-              {{classroom.name}} / {{classroom.short}}
+              {{classroom.name}}
             </option>
           </select>
         </div>

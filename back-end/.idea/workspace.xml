@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a8045a5-11b6-4d7e-9f93-01ebe2439046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/schedule.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/schedule.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule-api/routes/groups.js" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/routes/classes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/card.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/card.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/class.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/class.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/lesson.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/lesson.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/group-search/group-search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/group-search/group-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/group-search/group-search.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/services/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/classroom-content-card/classroom-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/classroom-content-card/classroom-content-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/student-content-card/student-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/student-content-card/student-content-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/classroom-search/classroom-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/classroom-search/classroom-search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,11 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/lesson.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+            <state relative-caret-position="-391">
+              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/student.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -99,15 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/card.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -300,7 +291,7 @@
       <workItem from="1563178467811" duration="11007000" />
       <workItem from="1563209335757" duration="599000" />
       <workItem from="1563264007984" duration="12805000" />
-      <workItem from="1563349456410" duration="9695000" />
+      <workItem from="1563349456410" duration="12029000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1563354761806</created>
@@ -313,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52675000" />
+    <option name="totallyTimeSpent" value="55009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
@@ -326,14 +317,14 @@
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27332243" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38492596" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992948" visible="true" weight="0.2732167" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992948" weight="0.27590847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.48608837" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50070524" side_tool="true" visible="true" weight="0.2732167" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,7 +375,7 @@
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
-        <breakpoint enabled="true" type="javascript-exception">
+        <breakpoint type="dart-exception">
           <properties />
         </breakpoint>
       </default-breakpoints>
@@ -478,13 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/student.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -664,8 +648,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/lesson.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        <state relative-caret-position="-391">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/student.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
