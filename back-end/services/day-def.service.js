@@ -6,28 +6,23 @@ class DayDefService {
         this.daysDefsSource = DataSource.getDayDefSource(); //TODO: Change this to DataSource
     }
 
-    getSimpleDayDefById(id){
-        return new DayDefModel(id,null,null,null);
+    static getSimpleDayDefById(id) {
+        return new DayDefModel(id, null, null, null);
     }
 
-    getDayDefById(periodId) {
-        const dayDefFromXml = this.daysDefsSource.find((dayDef) => {
-            return dayDef['_attributes']['id'] === periodId;
-        });
+    static getDayDefModelFromXMl(xmlDayDef) {
         return new DayDefModel(
-            dayDefFromXml['_attributes']['id'],
-            dayDefFromXml['_attributes']['name'],
-            dayDefFromXml['_attributes']['short'],
-            dayDefFromXml['_attributes']['days'],
+            xmlDayDef['_attributes']['id'],
+            xmlDayDef['_attributes']['name'],
+            xmlDayDef['_attributes']['short'],
+            xmlDayDef['_attributes']['days'],
         );
     }
 
     getAllDaysDefs() {
-        const daysDefs = [];
-        this.daysDefsSource.forEach((xmlDayDef) => {
-            daysDefs.push(this.getDayDefById(xmlDayDef['_attributes']['id']))
+        return this.daysDefsSource.map((xmlDayDef) => {
+            return DayDefService.getDayDefModelFromXMl(xmlDayDef);
         });
-        return daysDefs;
     }
 }
 

@@ -7,3 +7,7 @@
 <div [ngClass]="{'active':scheduleType == scheduleTypes.CLASSROOM_SCHEDULE}" class="animated">
   <app-classroom-search (buttonClassroomSearch)="getCardsByClassroomId($event)"></app-classroom-search>
 </div>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.GROUP_SCHEDULE}" class="animated">
+  <app-group-search (buttonClassroomSearch)="getCardsByClassroomId($event)"></app-group-search>
+</div>
+

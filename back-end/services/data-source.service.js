@@ -4,7 +4,7 @@ const MAIN_TABLE_NAME = 'timetable';
 
 function _getMainSource() {
     const convert = require('xml-js');
-    const xmlFile = require('fs').readFileSync('./base.xml', 'utf8');
+    const xmlFile = require('fs').readFileSync('./base.xml', 'utf-8');
     return convert.xml2js(xmlFile, {compact: true, spaces: 3});
 }
 module.exports = {

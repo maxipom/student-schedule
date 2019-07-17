@@ -10,6 +10,10 @@ class ClassService {
         const xmlClass = this.classSource.find((xmlClass) => {
             return xmlClass['_attributes']['id'] === id;
         });
+        return ClassService.getClassModelFormXml(xmlClass);
+    }
+
+    static getClassModelFormXml(xmlClass) {
         return new ClassModel(
             xmlClass['_attributes']['id'],
             xmlClass['_attributes']['name'],
@@ -23,6 +27,12 @@ class ClassService {
             classesArray.push(newClass);
         });
         return classesArray;
+    }
+
+    getAllClasses() {
+       return this.classSource.map((xmlClass) => {
+            return ClassService.getClassModelFormXml(xmlClass);
+        })
     }
 
 }

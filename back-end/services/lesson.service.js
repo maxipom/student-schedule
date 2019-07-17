@@ -12,88 +12,80 @@ class LessonService {
     }
 
     getLessonsByTeacher(teacher) {
-        const lessons = [];
-        this.lessonsSource.forEach((xmlLesson) => {
-            if (this._isTeacherIdInLesson(xmlLesson, teacher.id)) {
-                const lesson = this._getSimpleLessonFromXML(xmlLesson, [teacher]);
-                lessons.push(lesson);
-            }
-        });
-        return lessons;
+        return this.lessonsSource
+            .filter((xmlLesson) => {
+                return LessonService.isTeacherIdInLesson(xmlLesson, teacher.id)
+            })
+            .map((xmlLesson) => {
+                return LessonService.getSimpleLessonFromXML(xmlLesson, [teacher])
+            });
     }
 
     getLessonById(id) {
         const xmlLesson = this.lessonsSource.find((xmlLesson) => {
             return (xmlLesson['_attributes']['id'] === id)
         });
-        return this._getSimpleLessonFromXML(xmlLesson);
+        return LessonService.getSimpleLessonFromXML(xmlLesson);
     }
 
     getLessonByStudent(student) {
-        const lessons = [];
-        this.lessonsSource.forEach((xmlLesson) => {
-            if (this._isStudentIdInLesson(xmlLesson, student.id)) {
-                const lesson = this._getSimpleLessonFromXML(xmlLesson);
-                lessons.push(lesson);
-            }
-        });
-        return lessons;
+        return this.lessonsSource
+            .filter((xmlLesson) => {
+                return this._isStudentIdInLesson(xmlLesson, student.id)
+            })
+            .map((xmlLesson) => {
+                return LessonService.getSimpleLessonFromXML(xmlLesson);
+            });
     }
 
     static getSimpleLessonById(id) {
         return new LessonModel(id, null, null, null);
     }
 
-    _getSimpleLessonFromXML(lesson, teachers) {
+    static getSimpleLessonFromXML(lesson, teachers) {
         return new LessonModel(
             lesson['_attributes']['id'],
-            this._getClasses(lesson['_attributes']['classids']),
-            this._getSimpleDayDef(lesson['_attributes']['daydef']),
-            this._getSimpleClassrooms(lesson['_attributes']['classroomids']),
+            LessonService.getClasses(lesson['_attributes']['classids']),
+            LessonService.getSimpleDayDef(lesson['_attributes']['daydef']),
+            LessonService.getSimpleClassrooms(lesson['_attributes']['classroomids']),
             lesson['_attributes']['periodspercard'],
             lesson['_attributes']['periodsperweek'],
             lesson['_attributes']['seminargroup'],
-            this._getSimpleSubject(lesson['_attributes']['subjectid']),
-            teachers || this._getTeachers(lesson['_attributes']['teacherids']),
+            LessonService.getSimpleSubject(lesson['_attributes']['subjectid']),
+            teachers || LessonService.getTeachers(lesson['_attributes']['teacherids']),
             null,
         );
     }
 
-    _getClasses(classesIdString) {
+    static getClasses(classesIdString) {
         const classesIds = classesIdString.split(',');
         const classService = new ClassService();
         return classService.getClassesByIds(classesIds);
     }
 
-    _getTeachers(teachersIdString) {
+    static getTeachers(teachersIdString) {
         const teachersIds = teachersIdString.split(',');
         const teacherService = new TeacherService();
         return teacherService.getTeachersByIds(teachersIds);
     }
 
-    _getSimpleTeachers(teachersIdString) {
-        const teachersId = teachersIdString.split(',');
-        const teacherService = new TeacherService(null);
-        return teacherService.getSimpleTeachersByIds(teachersId);
-    }
 
-    _getSimpleClassrooms(classroomsIdString) {
+    static getSimpleClassrooms(classroomsIdString) {
         const classroomsIds = classroomsIdString.split(',');
         const classroomServices = new ClassroomService(null);
         return classroomServices.getClassroomsByIds(classroomsIds);
     }
 
-    _getSimpleDayDef(deyDefId) {
-        const dayDefService = new DayDefService(null);
-        return dayDefService.getSimpleDayDefById(deyDefId);
+    static getSimpleDayDef(deyDefId) {
+        return DayDefService.getSimpleDayDefById(deyDefId);
     }
 
-    _getSimpleSubject(subjectId) {
+    static getSimpleSubject(subjectId) {
         const subjectService = new SubjectService(null);
         return subjectService.getSimpleSubjectById(subjectId);
     }
 
-    _isTeacherIdInLesson(lesson, teacherId) {
+    static isTeacherIdInLesson(lesson, teacherId) {
         const teachersId = lesson['_attributes']['teacherids'].split(',');
         return teachersId.indexOf(teacherId) >= 0;
     }
@@ -105,7 +97,7 @@ class LessonService {
                     studentSubject['_attributes']['subjectid'] === xmlLesson['_attributes']['subjectid'] &&
                     studentSubject['_attributes']['seminargroup'] === xmlLesson['_attributes']['seminargroup'];
             }
-        )
+        );
         return lesson !== null && lesson !== undefined;
     }
 

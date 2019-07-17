@@ -1,12 +1,13 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-var teachers = require('./routes/teachers');
-var schedule = require('./routes/schedule');
-var students = require('./routes/students');
-var classrooms = require('./routes/classrooms');
+const teachers = require('./routes/teachers');
+const schedule = require('./routes/schedule');
+const students = require('./routes/students');
+const classrooms = require('./routes/classrooms');
+const groups = require('./routes/groups');
 
-var app = express();
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -16,5 +17,6 @@ app.use('/api/teachers', teachers);
 app.use('/api/schedule', schedule);
 app.use('/api/students', students);
 app.use('/api/classrooms', classrooms);
+app.use('/api/groups', groups);
 
 module.exports = app;

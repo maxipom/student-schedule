@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="utf-8"?>
 <timetable ascttversion="2015.17.2" importtype="database" options="export:idprefix:%CHRID,import:idprefix:%TEMPID,groupstype1,decimalseparatordot,lessonsincludeclasseswithoutstudents,handlestudentsafterlessons" defaultexport="1" displayname="aSc Timetables 2012 XML" displaycountries="">
    <periods options="canadd,export:silent" columns="period,name,short,starttime,endtime">
       <period name="8 h" short="8 h" period="1" starttime="8:00" endtime="8:45"/>
@@ -20,7 +20,7 @@
       <daysdef id="FAD26E5AB85F4A22" name="Ponedeljak" short="Po" days="10000"/>
       <daysdef id="FEC48F72F8D4BAFD" name="Utorak" short="Ut" days="01000"/>
       <daysdef id="8B75B665AD8EE656" name="Sreda" short="Sr" days="00100"/>
-      <daysdef id="E48F7BB9791F176C" name="Četvrtak" short="Če" days="00010"/>
+      <daysdef id="E48F7BB9791F176C" name="ÄŚetvrtak" short="ÄŚe" days="00010"/>
       <daysdef id="8106957C2EE92328" name="Petak" short="Pe" days="00001"/>
    </daysdefs>
    <weeksdefs options="canadd,export:silent" columns="id,weeks,name,short">
@@ -32,72 +32,72 @@
    <subjects options="canadd,export:silent" columns="id,name,short,partner_id">
       <subject id="B8267A89DE4B1217" name="14BBI216-P" short="Hemija heterociklicnih jedinjenja" partner_id=""/>
       <subject id="73D598BE9155D30E" name="14BBI217-P" short="Praktikum iz hemije prirodnih organskih jedinjenja" partner_id=""/>
-      <subject id="407D9EAF9E8D5EC6" name="14BBI317-P" short="Ambalažni materijali-P" partner_id=""/>
-      <subject id="BBA1F05FD66ACEC8" name="14BBI486-P" short="Biotehnologija u zaštiti životne sredine" partner_id=""/>
+      <subject id="407D9EAF9E8D5EC6" name="14BBI317-P" short="AmbalaĹľni materijali-P" partner_id=""/>
+      <subject id="BBA1F05FD66ACEC8" name="14BBI486-P" short="Biotehnologija u zaĹˇtiti Ĺľivotne sredine" partner_id=""/>
       <subject id="F038FCFC40DF30CE" name="14HEI412-P" short="Elektrohemijske tehnologije-P" partner_id=""/>
       <subject id="27D03485542AE248" name="14HEI412-V" short="Elektrohemijske tehnologije-V" partner_id=""/>
-      <subject id="8F34AAEE25C41886" name="14HEI413-P" short="Projektovanje sistema zaštite od korozije" partner_id=""/>
+      <subject id="8F34AAEE25C41886" name="14HEI413-P" short="Projektovanje sistema zaĹˇtite od korozije" partner_id=""/>
       <subject id="B5A68ACBA83D9335" name="14HEI414-P" short="Metalne prevlake-P" partner_id=""/>
       <subject id="EB6DEF44F0AE750D" name="14HEI414-V" short="Metalne prevlake-V" partner_id=""/>
       <subject id="8BB472B42D75B50B" name="14HFI39-P" short="Proracun i izbor bioreaktorskog sistema" partner_id=""/>
       <subject id="53564D58776E5E21" name="14HFI39-V" short="Proracun i izbor bioreaktorskog sistema-V" partner_id=""/>
-      <subject id="9236F5F7D5C0CB5A" name="14HFI310-P" short="Termodinamika fazne ravnoteže" partner_id=""/>
-      <subject id="9B810879C8FCC0B4" name="14HFI414-P" short="Projektovanje procesa u biohemijskom i farmaceutskom inženjerstvu" partner_id=""/>
-      <subject id="7B2239532B953377" name="14HFI414-V" short="Projektovanje procesa u biohemijskom i farmaceutskom inženjerstvu-V" partner_id=""/>
+      <subject id="9236F5F7D5C0CB5A" name="14HFI310-P" short="Termodinamika fazne ravnoteĹľe" partner_id=""/>
+      <subject id="9B810879C8FCC0B4" name="14HFI414-P" short="Projektovanje procesa u biohemijskom i farmaceutskom inĹľenjerstvu" partner_id=""/>
+      <subject id="7B2239532B953377" name="14HFI414-V" short="Projektovanje procesa u biohemijskom i farmaceutskom inĹľenjerstvu-V" partner_id=""/>
       <subject id="EC1C2E79049342FE" name="14HFI415-P" short="Principi sinteze lekova u farmaceutskom inz. - P" partner_id=""/>
       <subject id="B49EEFD6F0C3B354" name="14HFI415-V" short="Principi sinteze lekova u farmaceutskom inz- V" partner_id=""/>
-      <subject id="CD356E029491F631" name="14HHI211-P" short="Elementi verovatnoće i statistike" partner_id=""/>
-      <subject id="E06BD0D8A94D857C" name="14HHI211-V" short="Elementi verovatnoće i statistike-V" partner_id=""/>
+      <subject id="CD356E029491F631" name="14HHI211-P" short="Elementi verovatnoÄ‡e i statistike" partner_id=""/>
+      <subject id="E06BD0D8A94D857C" name="14HHI211-V" short="Elementi verovatnoÄ‡e i statistike-V" partner_id=""/>
       <subject id="27B52551904A35B4" name="14HHI212-P" short="Mehanika fluida" partner_id=""/>
       <subject id="141F97FD7F3B91C9" name="14HHI212-V" short="Mehanika fluida-v" partner_id=""/>
-      <subject id="A17B8BFBE6DF0EA9" name="14HHP311-P" short="Osnove višefaznih sistema" partner_id=""/>
+      <subject id="A17B8BFBE6DF0EA9" name="14HHP311-P" short="Osnove viĹˇefaznih sistema" partner_id=""/>
       <subject id="5164A9C98373293D" name="14HKK44-P" short="Projektovanje i akreditacija laboratorija" partner_id=""/>
       <subject id="CDF89CFF7DB8085A" name="14HKK44-V" short="Projektovanje i akreditacija laboratorija-v" partner_id=""/>
       <subject id="A99CD7788630968C" name="14HKK311-P" short="Instrumentalne metode 2" partner_id=""/>
       <subject id="9C62FD36B2868972" name="14HKK311-V" short="Instrumentalne metode 2-V" partner_id=""/>
       <subject id="ABE85D19429152FD" name="14HKK413-P" short="Osnovi hemometrije" partner_id=""/>
       <subject id="B589433BD875343E" name="14HKK413-V" short="Osnovi hemometrije-V" partner_id=""/>
-      <subject id="2CBA9967B70E6C10" name="14HNH310-P" short="Heterogena ravnoteža" partner_id=""/>
-      <subject id="0BF796C8BD3DE8BB" name="14HNH311-P" short="Termodinamički osnovi neorganske hemijske tehnologije" partner_id=""/>
-      <subject id="23DF177835614787" name="14HNH311-V" short="Termodinamički osnovi neorganske hemijske tehnologije-V" partner_id=""/>
+      <subject id="2CBA9967B70E6C10" name="14HNH310-P" short="Heterogena ravnoteĹľa" partner_id=""/>
+      <subject id="0BF796C8BD3DE8BB" name="14HNH311-P" short="TermodinamiÄŤki osnovi neorganske hemijske tehnologije" partner_id=""/>
+      <subject id="23DF177835614787" name="14HNH311-V" short="TermodinamiÄŤki osnovi neorganske hemijske tehnologije-V" partner_id=""/>
       <subject id="A48161B085A111CC" name="14HNH411-P" short="Projektovanje procesa u NHT" partner_id=""/>
       <subject id="E1DFD75B32C9F7CA" name="14HNH413-P" short="Tehnologija gradevinskih materijala" partner_id=""/>
       <subject id="96C375B19CD8C186" name="14HNH413-V" short="Tehnologija gradevinskih materijala-V" partner_id=""/>
       <subject id="341745F8906826E3" name="14HNH414-P" short="Tehnologija kiselina, baza i mineralnih dubriva" partner_id=""/>
       <subject id="D4911B56AAA8FE7E" name="14HNH414-V" short="Tehnologija kiselina, baza i mineralnih dubriva-V" partner_id=""/>
       <subject id="BB32A1B3859E0ADC" name="14HNH415-P" short="Elektrohemijske tehnologije" partner_id=""/>
-      <subject id="63163C00FFDFF38B" name="14HOH413-P" short="Procena uticaja tehnoloških postrojenja na životnu sredinu" partner_id=""/>
+      <subject id="63163C00FFDFF38B" name="14HOH413-P" short="Procena uticaja tehnoloĹˇkih postrojenja na Ĺľivotnu sredinu" partner_id=""/>
       <subject id="132B4503E58C7FB1" name="14HOH414-P" short="Tehnologija prerade nafte i katalitickih procesa" partner_id=""/>
-      <subject id="A7D9124E3DAD50B7" name="14HPI418-P" short="Prerada i reciklaža polimera-P" partner_id=""/>
-      <subject id="5F46A36E70338C35" name="14HPI418-V" short="Prerada i reciklaža polimera-V" partner_id=""/>
+      <subject id="A7D9124E3DAD50B7" name="14HPI418-P" short="Prerada i reciklaĹľa polimera-P" partner_id=""/>
+      <subject id="5F46A36E70338C35" name="14HPI418-V" short="Prerada i reciklaĹľa polimera-V" partner_id=""/>
       <subject id="DAB2D50E8885C701" name="14HPI419-P" short="Prirodni polimerni materijali-P" partner_id=""/>
       <subject id="BF7AB7882D892BF9" name="14HPI419-V" short="Prirodni polimerni materijali-V" partner_id=""/>
       <subject id="64CF77339F1E4E71" name="14HPI420-P" short="Polimerni premazi" partner_id=""/>
       <subject id="BCE2E6D0DA6B88D7" name="14HPI420-V" short="Polimerni premazi-V" partner_id=""/>
-      <subject id="D7D07E5B0C61F964" name="14HPI421-P" short="Projektovanje procesa u polimernom inženjerstvu" partner_id=""/>
-      <subject id="BE3B11DD4251B3AF" name="14HPI421-V" short="Projektovanje procesa u polimernom inženjerstvu-V" partner_id=""/>
-      <subject id="8F464CF35063EF17" name="14IGI34-P" short="Štamparske forme" partner_id=""/>
-      <subject id="CFF075146CA604C0" name="14IGI35-P" short="Štamparske forme" partner_id=""/>
-      <subject id="D05A0BCDBBA02E71" name="14IGI36-P" short="Graficka dorada i ambalaža" partner_id=""/>
+      <subject id="D7D07E5B0C61F964" name="14HPI421-P" short="Projektovanje procesa u polimernom inĹľenjerstvu" partner_id=""/>
+      <subject id="BE3B11DD4251B3AF" name="14HPI421-V" short="Projektovanje procesa u polimernom inĹľenjerstvu-V" partner_id=""/>
+      <subject id="8F464CF35063EF17" name="14IGI34-P" short="Ĺ tamparske forme" partner_id=""/>
+      <subject id="CFF075146CA604C0" name="14IGI35-P" short="Ĺ tamparske forme" partner_id=""/>
+      <subject id="D05A0BCDBBA02E71" name="14IGI36-P" short="Graficka dorada i ambalaĹľa" partner_id=""/>
       <subject id="0199FD74EA52F433" name="14IGI37-P" short="Graficke boje i lepkovi" partner_id=""/>
       <subject id="84F84B187C34A395" name="14IIM21-P" short="Metalni materijali-P" partner_id=""/>
       <subject id="3E172E3ADB139448" name="14IIM21-V" short="Metalni materijali-V" partner_id=""/>
-      <subject id="3C00DB28119B89E7" name="14IIM22-P" short="Struktura i svojstva keramičkih materijala" partner_id=""/>
-      <subject id="1095B5F5E31630BA" name="14IIM22-V" short="Struktura i svojstva keramičkih materijala-V" partner_id=""/>
+      <subject id="3C00DB28119B89E7" name="14IIM22-P" short="Struktura i svojstva keramiÄŤkih materijala" partner_id=""/>
+      <subject id="1095B5F5E31630BA" name="14IIM22-V" short="Struktura i svojstva keramiÄŤkih materijala-V" partner_id=""/>
       <subject id="568CEC79C596C58B" name="14IIM23-P" short="Polimerni materijali" partner_id=""/>
       <subject id="9812422555F70CBB" name="14IIM23-V" short="Polimerni materijali - V" partner_id=""/>
       <subject id="99081FD6DD6B7F8D" name="14IIM34-P" short="Ispitivanje fizicko mehanickih svojstava-P" partner_id=""/>
       <subject id="0A785572ACE0DB41" name="14IIM34-V" short="Ispitivanje fizicko mehanickih svojstava-V" partner_id=""/>
-      <subject id="0B710C370D3D5363" name="14IIM35-P" short="Inženjerstvo površina materijala - P" partner_id=""/>
-      <subject id="D3C1FF4A9F87CE04" name="14IIM35-V" short="Inženjerstvo površina materijala - V" partner_id=""/>
+      <subject id="0B710C370D3D5363" name="14IIM35-P" short="InĹľenjerstvo povrĹˇina materijala - P" partner_id=""/>
+      <subject id="D3C1FF4A9F87CE04" name="14IIM35-V" short="InĹľenjerstvo povrĹˇina materijala - V" partner_id=""/>
       <subject id="F03451DA43F818AF" name="14IIM36-P" short="Graficki programski paketi" partner_id=""/>
       <subject id="01687B5685C935AF" name="14IIM37-P" short="Uvod u metodu konacnih elemenata-P" partner_id=""/>
       <subject id="3208FC4F9134F140" name="14IIM39-P" short="Osnovi hemije cvrstog stanja" partner_id=""/>
       <subject id="5DCD1357446B3DEF" name="14IIM44-P" short="Principi izbora materijala" partner_id=""/>
       <subject id="57A6D897BC8399CB" name="14IIM44-V" short="Principi izbora materijala-V" partner_id=""/>
-      <subject id="60DD58B084E351FC" name="14IIM45-P" short="Ambalažni materijali-P" partner_id=""/>
-      <subject id="3DDBD38774730954" name="14IIM46-P" short="Reciklaža materijala" partner_id=""/>
-      <subject id="78EBE030B3EC70F3" name="14IIM47-P" short="Obrada materijala štampanjem" partner_id=""/>
+      <subject id="60DD58B084E351FC" name="14IIM45-P" short="AmbalaĹľni materijali-P" partner_id=""/>
+      <subject id="3DDBD38774730954" name="14IIM46-P" short="ReciklaĹľa materijala" partner_id=""/>
+      <subject id="78EBE030B3EC70F3" name="14IIM47-P" short="Obrada materijala Ĺˇtampanjem" partner_id=""/>
       <subject id="28723D98BD4D5C77" name="14IIM48-P" short="Adhezivi" partner_id=""/>
       <subject id="B870E3EA00EBD690" name="14IIM48-V" short="Adhezivi-V" partner_id=""/>
       <subject id="8C482AC2D561274C" name="14IIM310-P" short="Nanomaterijali i nanotehnologije" partner_id=""/>
@@ -111,26 +111,26 @@
       <subject id="EAA7D019A97B0358" name="14IIM319-P" short="Gradevinski materijali-P" partner_id=""/>
       <subject id="252AA357AE1BFA7C" name="14IIM319-V" short="Gradevinski materijali-V" partner_id=""/>
       <subject id="B51987C0D881CC11" name="14IIM321-P" short="Procesiranje kompozitnih materijala sa polimernom matricom-P" partner_id=""/>
-      <subject id="82D2F5F4B0BAED41" name="14IŽS39-P" short="Upravljanje čvrstim otpadom" partner_id=""/>
-      <subject id="E71BBA1C602166F5" name="14IŽS39-V" short="Upravljanje čvrstim otpadom-V" partner_id=""/>
-      <subject id="EABC7F01E153EF41" name="14IŽS211-P" short="Životna sredina i zagađenje-P" partner_id=""/>
-      <subject id="0AAFE220BF72BFFC" name="14IŽS211-V" short="Životna sredina i zagađenje-V" partner_id=""/>
-      <subject id="55BC111A84BF82EA" name="14IŽS219-P" short="Zaštita životne sredine od zracenja i buke" partner_id=""/>
-      <subject id="B0C4DF4B39206980" name="14IŽS310-P" short="Osnovi tehnologije pripreme vode" partner_id=""/>
-      <subject id="33618D2E870E8F08" name="14IŽS422-P" short="Procena uticaja tehnoloških postrojenja na životnu sredinu" partner_id=""/>
-      <subject id="BF6CEA0DD559664C" name="14IŽS423-P" short="Zagadenje i remedijacija zemljišta" partner_id=""/>
-      <subject id="AEDD8C6D7D43828D" name="14IŽS423-V" short="Zagadenje i remedijacija zemljišta" partner_id=""/>
-      <subject id="393D3112C2FE040C" name="14IŽS428-P" short="Energetika i zaštita životne sredine" partner_id=""/>
-      <subject id="0B70E68F5AEC27BC" name="14IŽS431-P" short="Obnovljivi izvori energije-P" partner_id=""/>
-      <subject id="16358204F623BB48" name="14IŽS431-V" short="Obnovljivi izvori energije-V" partner_id=""/>
+      <subject id="82D2F5F4B0BAED41" name="14IĹ˝S39-P" short="Upravljanje ÄŤvrstim otpadom" partner_id=""/>
+      <subject id="E71BBA1C602166F5" name="14IĹ˝S39-V" short="Upravljanje ÄŤvrstim otpadom-V" partner_id=""/>
+      <subject id="EABC7F01E153EF41" name="14IĹ˝S211-P" short="Ĺ˝ivotna sredina i zagaÄ‘enje-P" partner_id=""/>
+      <subject id="0AAFE220BF72BFFC" name="14IĹ˝S211-V" short="Ĺ˝ivotna sredina i zagaÄ‘enje-V" partner_id=""/>
+      <subject id="55BC111A84BF82EA" name="14IĹ˝S219-P" short="ZaĹˇtita Ĺľivotne sredine od zracenja i buke" partner_id=""/>
+      <subject id="B0C4DF4B39206980" name="14IĹ˝S310-P" short="Osnovi tehnologije pripreme vode" partner_id=""/>
+      <subject id="33618D2E870E8F08" name="14IĹ˝S422-P" short="Procena uticaja tehnoloĹˇkih postrojenja na Ĺľivotnu sredinu" partner_id=""/>
+      <subject id="BF6CEA0DD559664C" name="14IĹ˝S423-P" short="Zagadenje i remedijacija zemljiĹˇta" partner_id=""/>
+      <subject id="AEDD8C6D7D43828D" name="14IĹ˝S423-V" short="Zagadenje i remedijacija zemljiĹˇta" partner_id=""/>
+      <subject id="393D3112C2FE040C" name="14IĹ˝S428-P" short="Energetika i zaĹˇtita Ĺľivotne sredine" partner_id=""/>
+      <subject id="0B70E68F5AEC27BC" name="14IĹ˝S431-P" short="Obnovljivi izvori energije-P" partner_id=""/>
+      <subject id="16358204F623BB48" name="14IĹ˝S431-V" short="Obnovljivi izvori energije-V" partner_id=""/>
       <subject id="928F5BA8F1070907" name="14MIN496-P" short="Specijalne tehnike livenja metala-P" partner_id=""/>
       <subject id="A77DADB73B4C29AE" name="14MIN496-V" short="Specijalne tehnike livenja metala-V" partner_id=""/>
       <subject id="32F7E1BC4AA18EC4" name="14MIN498-P" short="Energetska efikasnost u metalurgiji" partner_id=""/>
       <subject id="6132B1E4F1A413BA" name="14MIN499-P" short="Principi analize loma" partner_id=""/>
-      <subject id="A1286A6BAD72D97B" name="14TET38-P" short="Održavanje i nega odece" partner_id=""/>
+      <subject id="A1286A6BAD72D97B" name="14TET38-P" short="OdrĹľavanje i nega odece" partner_id=""/>
       <subject id="D5D0113B1C8692D6" name="14TET109-P" short="Tekstilni materijali" partner_id=""/>
       <subject id="55C693A0C430CEA7" name="14TET109-V" short="Tekstilni materijali-V" partner_id=""/>
-      <subject id="E3B9DFB7326E46D0" name="14TET317-P" short="Štampanje tekstilnog materijala" partner_id=""/>
+      <subject id="E3B9DFB7326E46D0" name="14TET317-P" short="Ĺ tampanje tekstilnog materijala" partner_id=""/>
       <subject id="3AAFEE42BEDC7FB1" name="14TET318-P" short="Specijalni postupci u oplemenjivanju tekstilnoih materijala" partner_id=""/>
       <subject id="B19D3C177010480A" name="14TET320-P" short="Oplemenjivanje odevnih predmeta" partner_id=""/>
       <subject id="90E0B82D3059BF27" name="14TET320-P" short="Oplemenjivanje odevnih predmeta" partner_id=""/>
@@ -146,22 +146,22 @@
       <subject id="ED64F031B244AFEB" name="14ZP24-V" short="Elektrotehnika sa elektronikom-V" partner_id=""/>
       <subject id="6A7C767CA275B17B" name="14ZP25-P" short="Programiranje" partner_id=""/>
       <subject id="05C9E8E6EA1CF655" name="14ZP25-V" short="Programiranje-V" partner_id=""/>
-      <subject id="A6486EB790AD4C45" name="14ZP29-P" short="Fizička hemija" partner_id=""/>
-      <subject id="DA806BABFE2F5BFA" name="14ZP29-V" short="Fizička hemija-V" partner_id=""/>
-      <subject id="342B65C10F9A6E86" name="14ZP31-P" short="Osnovi reaktorskog inženjerstva" partner_id=""/>
-      <subject id="F71C06631AB5162A" name="14ZP31-V" short="Osnovi reaktorskog inženjerstva-V" partner_id=""/>
+      <subject id="A6486EB790AD4C45" name="14ZP29-P" short="FiziÄŤka hemija" partner_id=""/>
+      <subject id="DA806BABFE2F5BFA" name="14ZP29-V" short="FiziÄŤka hemija-V" partner_id=""/>
+      <subject id="342B65C10F9A6E86" name="14ZP31-P" short="Osnovi reaktorskog inĹľenjerstva" partner_id=""/>
+      <subject id="F71C06631AB5162A" name="14ZP31-V" short="Osnovi reaktorskog inĹľenjerstva-V" partner_id=""/>
       <subject id="E71D46BC8E183D19" name="14ZP36-P" short="Operacije prenosa mase" partner_id=""/>
       <subject id="47C763613A28004A" name="14ZP39-P" short="Modelovanje procesa" partner_id=""/>
       <subject id="59E6CE071C059EA3" name="14ZP39-V" short="Modelovanje procesa-V" partner_id=""/>
-      <subject id="6F57277AC9C942D2" name="14ZP107-V" short="Osnovi primene računara-V" partner_id=""/>
+      <subject id="6F57277AC9C942D2" name="14ZP107-V" short="Osnovi primene raÄŤunara-V" partner_id=""/>
       <subject id="DAF94B0318AAA1CE" name="14ZP113-L" short="Tehnicka fizika 2 - L" partner_id=""/>
-      <subject id="3C3D7AA4DFAF08AC" name="14ZP113-P" short="Tehnička fizika 2" partner_id=""/>
-      <subject id="30C6CB160D0AAE16" name="14ZP113-V" short="Tehnička fizika 2-V" partner_id=""/>
+      <subject id="3C3D7AA4DFAF08AC" name="14ZP113-P" short="TehniÄŤka fizika 2" partner_id=""/>
+      <subject id="30C6CB160D0AAE16" name="14ZP113-V" short="TehniÄŤka fizika 2-V" partner_id=""/>
       <subject id="B2523F7BFF9E57DA" name="14ZP212-P" short="Mikrobiologija" partner_id=""/>
       <subject id="7E0B22EC913E691B" name="14ZP212-V" short="Mikrobiologija-V" partner_id=""/>
-      <subject id="EA89135F865B2208" name="14ZP291-P" short="Fizička hemija 1" partner_id=""/>
-      <subject id="34EF87EC35FE8156" name="14ZP291-V" short="Fizička hemija 1-V" partner_id=""/>
-      <subject id="33573350BCE1911F" name="14ZP311-P" short="Osnovi bioprocesnog inženjerstva" partner_id=""/>
+      <subject id="EA89135F865B2208" name="14ZP291-P" short="FiziÄŤka hemija 1" partner_id=""/>
+      <subject id="34EF87EC35FE8156" name="14ZP291-V" short="FiziÄŤka hemija 1-V" partner_id=""/>
+      <subject id="33573350BCE1911F" name="14ZP311-P" short="Osnovi bioprocesnog inĹľenjerstva" partner_id=""/>
       <subject id="52968A8252A04547" name="BBI38-P" short="Genetika" partner_id=""/>
       <subject id="70F07FF988F965FE" name="BBI212-P" short="Biofizika" partner_id=""/>
       <subject id="41C53117F3135F90" name="BBI213-P" short="Prirodni polimeri" partner_id=""/>
@@ -178,31 +178,31 @@
       <subject id="CD6CB478F546917C" name="EI301-P" short="Elektrohemija-P" partner_id=""/>
       <subject id="EF26471765952883" name="EI301-V" short="Elektrohemija-V" partner_id=""/>
       <subject id="EEEB52FD220D4092" name="FI311-P" short="Hemija prirodnih organskih jedinjenja" partner_id=""/>
-      <subject id="8A55060F373B05AC" name="FI312-P" short="Tehnološke operacije u farmaceutskom inženjerstvu" partner_id=""/>
-      <subject id="B7B12CC870DA5F1F" name="FI312-V" short="Tehnološke operacije u farmaceutskom inženjerstvu-V" partner_id=""/>
+      <subject id="8A55060F373B05AC" name="FI312-P" short="TehnoloĹˇke operacije u farmaceutskom inĹľenjerstvu" partner_id=""/>
+      <subject id="B7B12CC870DA5F1F" name="FI312-V" short="TehnoloĹˇke operacije u farmaceutskom inĹľenjerstvu-V" partner_id=""/>
       <subject id="D4C5C6769C8DFB3B" name="FI406-P" short="Instrumentalne metode" partner_id=""/>
       <subject id="16839F43417F8FE7" name="FI407-P" short="Polimerni biomaterijali" partner_id=""/>
       <subject id="2AB875EF1DF4BFAD" name="FI407-V" short="Polimerni biomaterijali-V" partner_id=""/>
-      <subject id="5634A56386BC8360" name="FI408-P" short="Projektovanje procesa i uređaja" partner_id=""/>
-      <subject id="32B510F09A6A8C4E" name="FI410-P" short="Osnovi farmaceutskog inženjerstva" partner_id=""/>
+      <subject id="5634A56386BC8360" name="FI408-P" short="Projektovanje procesa i ureÄ‘aja" partner_id=""/>
+      <subject id="32B510F09A6A8C4E" name="FI410-P" short="Osnovi farmaceutskog inĹľenjerstva" partner_id=""/>
       <subject id="1DE27B353E777A85" name="FI417-P" short="Biomaterijali" partner_id=""/>
-      <subject id="13200327E258EE5E" name="HEI310-P" short="Korozija i zaštita" partner_id=""/>
-      <subject id="BA3FD221166A3E6F" name="HEI310-V" short="Korozija i zaštita-V" partner_id=""/>
-      <subject id="6D2ED8E634A69D04" name="HFI310-V" short="Termodinamika fazne ravnoteže-V" partner_id=""/>
+      <subject id="13200327E258EE5E" name="HEI310-P" short="Korozija i zaĹˇtita" partner_id=""/>
+      <subject id="BA3FD221166A3E6F" name="HEI310-V" short="Korozija i zaĹˇtita-V" partner_id=""/>
+      <subject id="6D2ED8E634A69D04" name="HFI310-V" short="Termodinamika fazne ravnoteĹľe-V" partner_id=""/>
       <subject id="72583BB9A9762D6B" name="HFI413-V" short="Upravljanje procesima u farmaceutskoj industriji-V" partner_id=""/>
-      <subject id="B464F18E73FA7105" name="HHP39-P" short="Hemijsko inženjersko računanje" partner_id=""/>
-      <subject id="6276BA670F5BF953" name="HHP39-V" short="Hemijsko inženjersko računanje-V" partner_id=""/>
+      <subject id="B464F18E73FA7105" name="HHP39-P" short="Hemijsko inĹľenjersko raÄŤunanje" partner_id=""/>
+      <subject id="6276BA670F5BF953" name="HHP39-V" short="Hemijsko inĹľenjersko raÄŤunanje-V" partner_id=""/>
       <subject id="D5D7728D4C0C65CA" name="HHP310-P" short="Modelovanje i simulacija procesa" partner_id=""/>
       <subject id="CC60848A00CFE776" name="HHP310-V" short="Modelovanje i simulacija procesa-V" partner_id=""/>
-      <subject id="F06689EC61961DFE" name="HHP312-P" short="Proračun, izrada i eksploatacija opreme u procesnoj industriji" partner_id=""/>
-      <subject id="6F3DDDD3F0996893" name="HHP312-V" short="Proračun, izrada i eksploatacija opreme u procesnoj industriji-V" partner_id=""/>
+      <subject id="F06689EC61961DFE" name="HHP312-P" short="ProraÄŤun, izrada i eksploatacija opreme u procesnoj industriji" partner_id=""/>
+      <subject id="6F3DDDD3F0996893" name="HHP312-V" short="ProraÄŤun, izrada i eksploatacija opreme u procesnoj industriji-V" partner_id=""/>
       <subject id="7EBF29AFF986FF6F" name="HHP411-P" short="Automatsko upravljanje procesima" partner_id=""/>
       <subject id="CC20C9D781E1877A" name="HHP411-V" short="Automatsko upravljanje procesima-V" partner_id=""/>
       <subject id="F3C01E78545CB387" name="HHP412-P" short="Projektovanje procesa u HI" partner_id=""/>
       <subject id="C070103A1BC96A97" name="HHP412-V" short="Projektovanje procesa u HI-V" partner_id=""/>
       <subject id="5243AA78C9F443C4" name="HHP413-P" short="Energetika procesne industrije" partner_id=""/>
-      <subject id="F7A2D3E62205F00A" name="HI306-P" short="Hemijsko-inženjerska termodinamika" partner_id=""/>
-      <subject id="82E8C68EF557474A" name="HI306-V" short="Hemijsko-inženjerska termodinamika-V" partner_id=""/>
+      <subject id="F7A2D3E62205F00A" name="HI306-P" short="Hemijsko-inĹľenjerska termodinamika" partner_id=""/>
+      <subject id="82E8C68EF557474A" name="HI306-V" short="Hemijsko-inĹľenjerska termodinamika-V" partner_id=""/>
       <subject id="ABC23C5D27308DA1" name="HI425-V" short="HI425-V" partner_id=""/>
       <subject id="0CC82F61AB1E080D" name="HI426-P" short="Energetika u procesnoj industriji" partner_id=""/>
       <subject id="F6821D74527B836F" name="HKK39-P" short="Separacione tehnike" partner_id=""/>
@@ -211,8 +211,8 @@
       <subject id="286262986D9FF168" name="HKK410-V" short="Elektroanaliticke metode-V" partner_id=""/>
       <subject id="6C867EC05FB8F586" name="HKK412-V" short="HKK412-V" partner_id=""/>
       <subject id="A3593F1F2FCEFEB6" name="HNH39-P" short="Neorganska hemijska tehnologija" partner_id=""/>
-      <subject id="AD91E96B7D323FB1" name="14HOH39-P" short="Osnovi petrohemijskog inženjerstva" partner_id=""/>
-      <subject id="EF58C6A4207871A8" name="14HOH39-V" short="Osnovi petrohemijskog inženjerstva-V" partner_id=""/>
+      <subject id="AD91E96B7D323FB1" name="14HOH39-P" short="Osnovi petrohemijskog inĹľenjerstva" partner_id=""/>
+      <subject id="EF58C6A4207871A8" name="14HOH39-V" short="Osnovi petrohemijskog inĹľenjerstva-V" partner_id=""/>
       <subject id="1731FD39862288C9" name="HOH48-P" short="Organska hemijska tehnologija" partner_id=""/>
       <subject id="3A1283E843B6C280" name="HOH48-V" short="Organska hemijska tehnologija-V" partner_id=""/>
       <subject id="D31DF2538F2F1E71" name="HOH310-P" short="Hemija prirodnih organskih jedinjenja" partner_id=""/>
@@ -222,7 +222,7 @@
       <subject id="4D72616640F97923" name="HOH412-V" short="Projektovanje procesa-V" partner_id=""/>
       <subject id="075F3B0DE8B1DE84" name="HPI39-P" short="Hemija makromolekula" partner_id=""/>
       <subject id="BEABD2E9A330F3C3" name="HPI39-V" short="Hemija makromolekula-V" partner_id=""/>
-      <subject id="111B59769216EEFC" name="HPI49-P" short="Reciklaža polimera" partner_id=""/>
+      <subject id="111B59769216EEFC" name="HPI49-P" short="ReciklaĹľa polimera" partner_id=""/>
       <subject id="10B919704BA6894D" name="HPI311-P" short="Prirodni polimeri" partner_id=""/>
       <subject id="FFF992CE2B6A5419" name="HPI414-P" short="Tehnologija gume" partner_id=""/>
       <subject id="03047C8801C21BC6" name="HPI414-V" short="Tehnologija gume-V" partner_id=""/>
@@ -231,8 +231,8 @@
       <subject id="DA41FF161E0EDF3B" name="ICM411-P" short="Karakterizacija keramickih materijala" partner_id=""/>
       <subject id="663CBAFC831834A5" name="ICM411-V" short="Karakterizacija keramickih materijala-V" partner_id=""/>
       <subject id="8FD67C65F170CCCB" name="IIM36-P" short="Ispitivanje materijala" partner_id=""/>
-      <subject id="3BD5AF623B886F44" name="IIM38-P" short="Procesiranje i primena keramičkih materijala" partner_id=""/>
-      <subject id="B48F512DB81109AC" name="IIM38-V" short="Procesiranje i primena keramičkih materijala-V" partner_id=""/>
+      <subject id="3BD5AF623B886F44" name="IIM38-P" short="Procesiranje i primena keramiÄŤkih materijala" partner_id=""/>
+      <subject id="B48F512DB81109AC" name="IIM38-V" short="Procesiranje i primena keramiÄŤkih materijala-V" partner_id=""/>
       <subject id="102248F25918C056" name="IIM39-P" short="Prerada i primena polimernih materijala" partner_id=""/>
       <subject id="A555055CD5F4D1D5" name="IIM39-V" short="Prerada i primena polimernih materijala-V" partner_id=""/>
       <subject id="AAC7A3FD62805692" name="IIM213-P" short="Osnovi strukture i svojstava polimernih materijala" partner_id=""/>
@@ -250,37 +250,37 @@
       <subject id="F42669302741AFCB" name="IM4366-P" short="Kompozitni materijali" partner_id=""/>
       <subject id="5E1BBC2088C93FEA" name="IM4368-P" short="Funkcionalni kompozitni materijali" partner_id=""/>
       <subject id="0DE731142777CB50" name="IP4049-P" short="IP4049-P" partner_id=""/>
-      <subject id="F9D65790C724962C" name="IPM48-P" short="Degradacija i reciklaža polimernih materijala" partner_id=""/>
-      <subject id="2ED12C864E946959" name="IPM48-V" short="Degradacija i reciklaža polimernih materijala-V" partner_id=""/>
+      <subject id="F9D65790C724962C" name="IPM48-P" short="Degradacija i reciklaĹľa polimernih materijala" partner_id=""/>
+      <subject id="2ED12C864E946959" name="IPM48-V" short="Degradacija i reciklaĹľa polimernih materijala-V" partner_id=""/>
       <subject id="AF31B9E72F8B54C9" name="IPM413-P" short="IPM413-P" partner_id=""/>
       <subject id="5275CF33A4A7442C" name="IPM413-V" short="IPM413-V" partner_id=""/>
       <subject id="E82F16C4A7CCB637" name="IPZ3075-P" short="IPZ3075" partner_id=""/>
       <subject id="625DFF33D8E86349" name="IPZ3075-V" short="IPZ3075-V" partner_id=""/>
-      <subject id="1042EF067E3181A2" name="IZ310-P" short="Metode analize zagađujućih materija" partner_id=""/>
-      <subject id="2831C824A70EF1AC" name="IZ310-V" short="Metode analize zagađujućih materija-V" partner_id=""/>
-      <subject id="D92F8767A5A01809" name="IZ4261-P" short="Organske zagađujuće materije" partner_id=""/>
-      <subject id="7E7F135EEFF137B2" name="IZS212-P" short="Organske zagađujuće materije" partner_id=""/>
-      <subject id="FC685E42F8FF8D0A" name="IŽS37-V" short="Laboratorija inženjerstva zaštite životne sredine-V" partner_id=""/>
-      <subject id="A8C8B06D5C9027FA" name="IŽS49-P" short="Projektovanje opreme i procesa u IZŽS" partner_id=""/>
-      <subject id="2D980B4C5A7E4400" name="IŽS49-V" short="Projektovanje opreme i procesa u IZŽS-V" partner_id=""/>
-      <subject id="4C4A30DC941CBCB4" name="IŽS212-P" short="Organske zagadujuce materije" partner_id=""/>
-      <subject id="1FC0C91ABCB145EE" name="IŽS212-V" short="Organske zagadujuce materije-V" partner_id=""/>
-      <subject id="B02043A2F5986E53" name="IŽS216-P" short="Primenjena informatika u IZŽS" partner_id=""/>
-      <subject id="35F501762889CA8A" name="IŽS217-P" short="Koloidna hemija" partner_id=""/>
-      <subject id="06F53CE0F06FDEA5" name="IŽS217-V" short="Koloidna hemija-V" partner_id=""/>
-      <subject id="F28E02426F345AB0" name="IŽS421-P" short="Analiza tragova zagađujućih materijala-P" partner_id=""/>
+      <subject id="1042EF067E3181A2" name="IZ310-P" short="Metode analize zagaÄ‘ujuÄ‡ih materija" partner_id=""/>
+      <subject id="2831C824A70EF1AC" name="IZ310-V" short="Metode analize zagaÄ‘ujuÄ‡ih materija-V" partner_id=""/>
+      <subject id="D92F8767A5A01809" name="IZ4261-P" short="Organske zagaÄ‘ujuÄ‡e materije" partner_id=""/>
+      <subject id="7E7F135EEFF137B2" name="IZS212-P" short="Organske zagaÄ‘ujuÄ‡e materije" partner_id=""/>
+      <subject id="FC685E42F8FF8D0A" name="IĹ˝S37-V" short="Laboratorija inĹľenjerstva zaĹˇtite Ĺľivotne sredine-V" partner_id=""/>
+      <subject id="A8C8B06D5C9027FA" name="IĹ˝S49-P" short="Projektovanje opreme i procesa u IZĹ˝S" partner_id=""/>
+      <subject id="2D980B4C5A7E4400" name="IĹ˝S49-V" short="Projektovanje opreme i procesa u IZĹ˝S-V" partner_id=""/>
+      <subject id="4C4A30DC941CBCB4" name="IĹ˝S212-P" short="Organske zagadujuce materije" partner_id=""/>
+      <subject id="1FC0C91ABCB145EE" name="IĹ˝S212-V" short="Organske zagadujuce materije-V" partner_id=""/>
+      <subject id="B02043A2F5986E53" name="IĹ˝S216-P" short="Primenjena informatika u IZĹ˝S" partner_id=""/>
+      <subject id="35F501762889CA8A" name="IĹ˝S217-P" short="Koloidna hemija" partner_id=""/>
+      <subject id="06F53CE0F06FDEA5" name="IĹ˝S217-V" short="Koloidna hemija-V" partner_id=""/>
+      <subject id="F28E02426F345AB0" name="IĹ˝S421-P" short="Analiza tragova zagaÄ‘ujuÄ‡ih materijala-P" partner_id=""/>
       <subject id="44F3B475659FEA9C" name="MIN36-P" short="Metalurgija obojenih metala-P" partner_id=""/>
       <subject id="2354ABC7875ABA8D" name="MIN36-V" short="Metalurgija obojenih metala-V" partner_id=""/>
-      <subject id="1280B41C2ECA3B23" name="MIN37-P" short="Metalurgija gvožda i celika-P" partner_id=""/>
-      <subject id="BDE3D6A40B9A36B6" name="MIN37-V" short="Metalurgija gvožda i celika-V" partner_id=""/>
+      <subject id="1280B41C2ECA3B23" name="MIN37-P" short="Metalurgija gvoĹľda i celika-P" partner_id=""/>
+      <subject id="BDE3D6A40B9A36B6" name="MIN37-V" short="Metalurgija gvoĹľda i celika-V" partner_id=""/>
       <subject id="B1976799CEFC1BA2" name="MIN38-P" short="Deformaciono procesiranje metala-P" partner_id=""/>
       <subject id="59CE599A9B53183B" name="MIN38-V" short="Deformaciono procesiranje metala-V" partner_id=""/>
       <subject id="B09A8EA852A64426" name="MIN39-P" short="Termicka obrada metala i legura-P" partner_id=""/>
       <subject id="D54CF48EEECA0E97" name="MIN39-V" short="Termicka obrada metala i legura-V" partner_id=""/>
       <subject id="E59877D8676B7F4F" name="MIN212-P" short="Fizika cvrstoce i plasticnosti-P" partner_id=""/>
       <subject id="12E0B57BC1231950" name="MIN212-V" short="Fizika cvrstoce i plasticnosti-V" partner_id=""/>
-      <subject id="E57427D1E0AB54F8" name="MIN213-P" short="Ekonomika preduzeca i menadžment" partner_id=""/>
-      <subject id="FF30085AE42DFAA5" name="MIN214-P" short="Osnovi ocvršcavanja metala" partner_id=""/>
+      <subject id="E57427D1E0AB54F8" name="MIN213-P" short="Ekonomika preduzeca i menadĹľment" partner_id=""/>
+      <subject id="FF30085AE42DFAA5" name="MIN214-P" short="Osnovi ocvrĹˇcavanja metala" partner_id=""/>
       <subject id="0FCDDBE06BF99605" name="MIN310-P" short="Livenje metala i modelovanje alata-P" partner_id=""/>
       <subject id="FE3AE9049030567F" name="MIN310-V" short="Livenje metala i modelovanje alata-V" partner_id=""/>
       <subject id="035F575F0DE66427" name="MIN471-P" short="Merenje i upravljanje procesima u metalurgiji-P" partner_id=""/>
@@ -294,19 +294,19 @@
       <subject id="E761788DEF098BE6" name="MIN479-P" short="Vatrostalni materijali" partner_id=""/>
       <subject id="B1D073D3DDE529CF" name="MIN481-P" short="Materijali otporni na habanje-P" partner_id=""/>
       <subject id="63284D6C590C07FC" name="MIN481-V" short="Materijali otporni na habanje-V" partner_id=""/>
-      <subject id="F2BE98088920AED2" name="MIN482-P" short="Reciklaža metala-P" partner_id=""/>
-      <subject id="DD22E9FFEF174788" name="MIN482-V" short="Reciklaža metala-V" partner_id=""/>
+      <subject id="F2BE98088920AED2" name="MIN482-P" short="ReciklaĹľa metala-P" partner_id=""/>
+      <subject id="DD22E9FFEF174788" name="MIN482-V" short="ReciklaĹľa metala-V" partner_id=""/>
       <subject id="696757173607B0CF" name="MIN483-P" short="Izbor materijala i sigurnost konstrukcija-P" partner_id=""/>
       <subject id="488213979FD3E37E" name="MIN483-V" short="Izbor materijala i sigurnost konstrukcija-V" partner_id=""/>
       <subject id="AFFA6BA59759E851" name="MIN491-P" short="Osnovi elektrometalurgije" partner_id=""/>
       <subject id="2538D8272D0C6577" name="MIN494-P" short="Specijalni celici i legure" partner_id=""/>
-      <subject id="7C51283D2FCEF44B" name="NH304-P" short="Keramički procesi" partner_id=""/>
+      <subject id="7C51283D2FCEF44B" name="NH304-P" short="KeramiÄŤki procesi" partner_id=""/>
       <subject id="BF7251BEC2629B65" name="NH306-P" short="Neorganska hemijska tehnologija" partner_id=""/>
       <subject id="AECE51B3542B2151" name="NH306-V" short="Neorganska hemijska tehnologija-V" partner_id=""/>
       <subject id="BC6B5DB5230DCBED" name="NH2103-P" short="Neorganska hemija" partner_id=""/>
       <subject id="2757935B00FFC96E" name="NH2103-V" short="Neorganska hemija" partner_id=""/>
-      <subject id="4C4EB16D5A2124B5" name="NH4211-P" short="Tehnologija građevinskih materijala" partner_id=""/>
-      <subject id="F9358B44BDD65ED1" name="NH4211-V" short="Tehnologija građevinskih materijala-V" partner_id=""/>
+      <subject id="4C4EB16D5A2124B5" name="NH4211-P" short="Tehnologija graÄ‘evinskih materijala" partner_id=""/>
+      <subject id="F9358B44BDD65ED1" name="NH4211-V" short="Tehnologija graÄ‘evinskih materijala-V" partner_id=""/>
       <subject id="00093C73AF444A9C" name="NH4213-P" short="Tehnologija keramike" partner_id=""/>
       <subject id="E334C66CBFCAD94E" name="NH4213-V" short="Tehnologija keramike-V" partner_id=""/>
       <subject id="304ED777DD5FCAA9" name="NH4214-P" short="Tehnologija stakla" partner_id=""/>
@@ -317,7 +317,7 @@
       <subject id="FB70A4CD5770D60B" name="OH4115-P" short="Heterogena kataliza u petrohemiji" partner_id=""/>
       <subject id="FF2C768A8C2CA1E0" name="OH4116-P" short="Separacioni procesi u petrohemiji" partner_id=""/>
       <subject id="CA6A11C54A563CCF" name="OH4116-V" short="Separacioni procesi u petrohemiji-V" partner_id=""/>
-      <subject id="F101A2EB5E5670F7" name="OH4117-P" short="Sigurnost tehnoloških procesa" partner_id=""/>
+      <subject id="F101A2EB5E5670F7" name="OH4117-P" short="Sigurnost tehnoloĹˇkih procesa" partner_id=""/>
       <subject id="F0D293163150F951" name="OH4117-V" short="OH4117-V" partner_id=""/>
       <subject id="F7F0C5ECC81654B3" name="OH4118-P" short="OH4118" partner_id=""/>
       <subject id="44C28A92F8EA0A95" name="OH4118-V" short="OH4118-V" partner_id=""/>
@@ -327,34 +327,34 @@
       <subject id="D4F415F4D8EF484C" name="TET36-V" short="Dorada tekstilnog materijala-V" partner_id=""/>
       <subject id="83AE83AC1C26AE8C" name="TET107-P" short="Organska hemija" partner_id=""/>
       <subject id="0A1CA7146B8A0C24" name="TET107-V" short="Organska hemija-V" partner_id=""/>
-      <subject id="0E4C564D9119F5EC" name="TET112-P" short="Elementi više matematike 2" partner_id=""/>
-      <subject id="B137D8516AD17F39" name="TET112-V" short="Elementi više matematike 2-V" partner_id=""/>
+      <subject id="0E4C564D9119F5EC" name="TET112-P" short="Elementi viĹˇe matematike 2" partner_id=""/>
+      <subject id="B137D8516AD17F39" name="TET112-V" short="Elementi viĹˇe matematike 2-V" partner_id=""/>
       <subject id="45A96EC1210DF87D" name="TET211-P" short="TET211-P" partner_id=""/>
       <subject id="4645D14505F2D109" name="TET211-V" short="TET211-V" partner_id=""/>
       <subject id="93522283DFB6A14B" name="TET212-P" short="Tkanje i dizajn tkanina" partner_id=""/>
       <subject id="754309EE5CD2527D" name="TET212-V" short="Tkanje i dizajn tkanina-V" partner_id=""/>
       <subject id="9E0A8E60B1DE6A32" name="TET213-P" short="TET213-P" partner_id=""/>
-      <subject id="A1356527E2A70501" name="TET313-P" short="Mašine i uređaji u industriji odeće" partner_id=""/>
-      <subject id="25B250AFD0973AB5" name="TET315-P" short="Tehnički tekstilni materijali" partner_id=""/>
+      <subject id="A1356527E2A70501" name="TET313-P" short="MaĹˇine i ureÄ‘aji u industriji odeÄ‡e" partner_id=""/>
+      <subject id="25B250AFD0973AB5" name="TET315-P" short="TehniÄŤki tekstilni materijali" partner_id=""/>
       <subject id="3CC71D03FBF506F8" name="TET318-P" short="TET318" partner_id=""/>
       <subject id="1DBB13674EB20D58" name="TK404-P" short="Industrijska hemijska analiza" partner_id=""/>
       <subject id="1AA82FD9EAB44E51" name="TK404-V" short="Industrijska hemijska analiza-V" partner_id=""/>
-      <subject id="BB9DCCD4B4FA8E47" name="TK405-P" short="Zakonska regulativa u tehnološkoj kontroli" partner_id=""/>
+      <subject id="BB9DCCD4B4FA8E47" name="TK405-P" short="Zakonska regulativa u tehnoloĹˇkoj kontroli" partner_id=""/>
       <subject id="80B723CFF67C9E11" name="VIR02-V" short="Automatsko upravljanje procesima, Procesna kontrola" partner_id=""/>
       <subject id="6A6DF00CF566DAE7" name="VIRT01" short="Energetika" partner_id=""/>
       <subject id="77F36D68013498B9" name="ZP37-P" short="HI Laboratorija" partner_id=""/>
       <subject id="05A8980807B4CDD8" name="ZP37-V" short="HI laboratorija-V" partner_id=""/>
-      <subject id="3B46FEFBFADB504C" name="ZP41-P" short="Ekonomika preduzeća i menadžment" partner_id=""/>
-      <subject id="BC9F5CA437233C4A" name="ZP111-P" short="Opšta hemija 2" partner_id=""/>
-      <subject id="E385C99DF1F5B34A" name="ZP111-V" short="Opšta hemija 2-V" partner_id=""/>
+      <subject id="3B46FEFBFADB504C" name="ZP41-P" short="Ekonomika preduzeÄ‡a i menadĹľment" partner_id=""/>
+      <subject id="BC9F5CA437233C4A" name="ZP111-P" short="OpĹˇta hemija 2" partner_id=""/>
+      <subject id="E385C99DF1F5B34A" name="ZP111-V" short="OpĹˇta hemija 2-V" partner_id=""/>
       <subject id="C0210C69904D4A0A" name="ZP112-P" short="Matematika 2" partner_id=""/>
       <subject id="6A80D3F8FC945993" name="ZP112-V" short="Matematika 2-V" partner_id=""/>
       <subject id="492D4FA3CAF5AF91" name="ZP114-P" short="Elementi opreme u procesnoj industriji" partner_id=""/>
       <subject id="88D9D63B01B76718" name="ZP114-V" short="Elementi opreme u procesnoj industriji-V" partner_id=""/>
       <subject id="7574D062D3BBC095" name="ZP282-P" short="Organska hemija 2" partner_id=""/>
       <subject id="F4B16CF7A9F71F77" name="ZP282-V" short="Organska hemija 2-V" partner_id=""/>
-      <subject id="B1C4E6B42665FB1D" name="ZP305-P" short="Mehaničke i toplotne operacije" partner_id=""/>
-      <subject id="68C38EFB5F19CDA4" name="ZP305-V" short="Mehaničke i toplotne operacije-V" partner_id=""/>
+      <subject id="B1C4E6B42665FB1D" name="ZP305-P" short="MehaniÄŤke i toplotne operacije" partner_id=""/>
+      <subject id="68C38EFB5F19CDA4" name="ZP305-V" short="MehaniÄŤke i toplotne operacije-V" partner_id=""/>
       <subject id="AFC550BA81E9CEB4" name="ZP310-P" short="Elektrohemija" partner_id=""/>
       <subject id="F786C5C6962BE94D" name="ZP310-V" short="Elektrohemija-V" partner_id=""/>
       <subject id="5727982042A7058B" name="ZP313-P" short="Biohemija" partner_id=""/>
@@ -364,122 +364,122 @@
       <subject id="46CB45562BC11832" name="14IIM320-V" short="Nanokompozitni materijali-V" partner_id=""/>
    </subjects>
    <teachers options="canadd,export:silent" columns="id,name,short,gender,color,email,mobile,partner_id,firstname,lastname">
-      <teacher id="5573645628EA8054" firstname="Aco" lastname="Janićijević" name="Aco Janićijević" short="AcJa" gender="M" color="#00CC00" email="" mobile="" partner_id=""/>
-      <teacher id="B073AFFC1EF01233" firstname="Aleksandar" lastname="Kojović" name="Aleksandar Kojović" short="Koja" gender="M" color="#339933" email="" mobile="" partner_id=""/>
-      <teacher id="AAA44AEAFAD67444" firstname="Aleksandar" lastname="Marinković" name="Aleksandar Marinković" short="AlMi" gender="F" color="#669999" email="" mobile="" partner_id=""/>
-      <teacher id="4844938B8C1EBA7D" firstname="Aleksandar" lastname="Orlović" name="Aleksandar Orlović" short="AlOr" gender="F" color="#FF9966" email="" mobile="" partner_id=""/>
-      <teacher id="A681234DACBDA2AA" firstname="Aleksandra" lastname="Dapčević" name="Aleksandra Dapčević" short="AlDa" gender="F" color="#339966" email="" mobile="" partner_id=""/>
-      <teacher id="2F040318D463D2CD" firstname="Aleksandra" lastname="Perić Grujić" name="Aleksandra Perić Grujić" short="APG" gender="F" color="#CCFF66" email="" mobile="" partner_id=""/>
+      <teacher id="5573645628EA8054" firstname="Aco" lastname="JaniÄ‡ijeviÄ‡" name="Aco JaniÄ‡ijeviÄ‡" short="AcJa" gender="M" color="#00CC00" email="" mobile="" partner_id=""/>
+      <teacher id="B073AFFC1EF01233" firstname="Aleksandar" lastname="KojoviÄ‡" name="Aleksandar KojoviÄ‡" short="Koja" gender="M" color="#339933" email="" mobile="" partner_id=""/>
+      <teacher id="AAA44AEAFAD67444" firstname="Aleksandar" lastname="MarinkoviÄ‡" name="Aleksandar MarinkoviÄ‡" short="AlMi" gender="F" color="#669999" email="" mobile="" partner_id=""/>
+      <teacher id="4844938B8C1EBA7D" firstname="Aleksandar" lastname="OrloviÄ‡" name="Aleksandar OrloviÄ‡" short="AlOr" gender="F" color="#FF9966" email="" mobile="" partner_id=""/>
+      <teacher id="A681234DACBDA2AA" firstname="Aleksandra" lastname="DapÄŤeviÄ‡" name="Aleksandra DapÄŤeviÄ‡" short="AlDa" gender="F" color="#339966" email="" mobile="" partner_id=""/>
+      <teacher id="2F040318D463D2CD" firstname="Aleksandra" lastname="PeriÄ‡ GrujiÄ‡" name="Aleksandra PeriÄ‡ GrujiÄ‡" short="APG" gender="F" color="#CCFF66" email="" mobile="" partner_id=""/>
       <teacher id="FB22B8474A458941" firstname="Ana" lastname="Alil" name="Ana Alil" short="AAl" gender="F" color="#FFFFCC" email="" mobile="" partner_id=""/>
       <teacher id="86BB8C3C6C59BCF9" firstname="Ana" lastname="Zekic" name="Ana Zekic" short="AnZe" gender="F" color="#33CCFF" email="" mobile="" partner_id=""/>
       <teacher id="57FFFE9CE0B1D3AB" firstname="Antonije" lastname="Onjia" name="Antonije Onjia" short="AnOn" gender="M" color="#9900FF" email="" mobile="" partner_id=""/>
       <teacher id="9A166CB88DAEECA5" firstname="Asistent" lastname="AHKK" name="Asistent AHKK" short="AAHKK" gender="F" color="#66FF66" email="" mobile="" partner_id=""/>
       <teacher id="6F651501B6BEFCFF" firstname="Asistent" lastname="ONH" name="Asistent ONH" short="AONH" gender="M" color="#CCFFFF" email="" mobile="" partner_id=""/>
       <teacher id="F1DDE74DBA62DC0E" firstname="Asistent" lastname="TF2" name="Asistent TF2" short="ATF2" gender="M" color="#FF0000" email="" mobile="" partner_id=""/>
-      <teacher id="95E17225A8906976" firstname="Boban" lastname="Marinković" name="Boban Marinković" short="BoMa" gender="M" color="#009933" email="" mobile="" partner_id=""/>
+      <teacher id="95E17225A8906976" firstname="Boban" lastname="MarinkoviÄ‡" name="Boban MarinkoviÄ‡" short="BoMa" gender="M" color="#009933" email="" mobile="" partner_id=""/>
       <teacher id="0E27C6F9D90960A3" firstname="Bojan" lastname="Medjo" name="Bojan Medjo" short="BoMe" gender="M" color="#663300" email="" mobile="" partner_id=""/>
-      <teacher id="7BCA6822678F5742" firstname="Bojana" lastname="Obradović" name="Bojana Obradović" short="BoOb" gender="F" color="#14C000" email="" mobile="" partner_id=""/>
-      <teacher id="D89EEFE9AB0F79D3" firstname="Boris" lastname="Lončar" name="Boris Lončar" short="BoLo" gender="M" color="#808080" email="" mobile="" partner_id=""/>
+      <teacher id="7BCA6822678F5742" firstname="Bojana" lastname="ObradoviÄ‡" name="Bojana ObradoviÄ‡" short="BoOb" gender="F" color="#14C000" email="" mobile="" partner_id=""/>
+      <teacher id="D89EEFE9AB0F79D3" firstname="Boris" lastname="LonÄŤar" name="Boris LonÄŤar" short="BoLo" gender="M" color="#808080" email="" mobile="" partner_id=""/>
       <teacher id="4977E2924F05B689" firstname="Branimir" lastname="Grgur" name="Branimir Grgur" short="BrGr" gender="F" color="#993300" email="" mobile="" partner_id=""/>
       <teacher id="4D0E1057ED040B43" firstname="Branislav" lastname="Todic" name="Branislav Todic" short="BrTo" gender="M" color="#6600CC" email="" mobile="" partner_id=""/>
       <teacher id="465426CDBC001B72" firstname="Branko" lastname="Bugarski" name="Branko Bugarski" short="BrBu" gender="F" color="#FFC000" email="" mobile="" partner_id=""/>
-      <teacher id="12D7292254616EDF" firstname="Danica" lastname="Brzić" name="Danica Brzić" short="DaBr" gender="F" color="#FFC0C0" email="" mobile="" partner_id=""/>
-      <teacher id="4FC8AB5CA378DA2D" firstname="Darko" lastname="Radosavljević" name="Darko Radosavljević" short="DaRa" gender="M" color="#99FF66" email="" mobile="" partner_id=""/>
+      <teacher id="12D7292254616EDF" firstname="Danica" lastname="BrziÄ‡" name="Danica BrziÄ‡" short="DaBr" gender="F" color="#FFC0C0" email="" mobile="" partner_id=""/>
+      <teacher id="4FC8AB5CA378DA2D" firstname="Darko" lastname="RadosavljeviÄ‡" name="Darko RadosavljeviÄ‡" short="DaRa" gender="M" color="#99FF66" email="" mobile="" partner_id=""/>
       <teacher id="75FDB4FA6D09881F" firstname="Dejan" lastname="Bezbradica" name="Dejan Bezbradica" short="DeBe" gender="F" color="#333399" email="" mobile="" partner_id=""/>
-      <teacher id="0F1568AA4982B129" firstname="Dragan" lastname="Jocić" name="Dragan Jocić" short="DrJo" gender="M" color="#FF8080" email="" mobile="" partner_id=""/>
-      <teacher id="32EC6C4202234BD0" firstname="Dragan" lastname="Povrenović" name="Dragan Povrenović" short="DrPo" gender="F" color="#FF8000" email="" mobile="" partner_id=""/>
-      <teacher id="D46978638C16B923" firstname="Dragana" lastname="Živojinović" name="Dragana Živojinović" short="DrŽi" gender="F" color="#660066" email="" mobile="" partner_id=""/>
-      <teacher id="0C043E7629F8CC06" firstname="Dragomir" lastname="Glišić" name="Dragomir Glišić" short="DrGl" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
+      <teacher id="0F1568AA4982B129" firstname="Dragan" lastname="JociÄ‡" name="Dragan JociÄ‡" short="DrJo" gender="M" color="#FF8080" email="" mobile="" partner_id=""/>
+      <teacher id="32EC6C4202234BD0" firstname="Dragan" lastname="PovrenoviÄ‡" name="Dragan PovrenoviÄ‡" short="DrPo" gender="F" color="#FF8000" email="" mobile="" partner_id=""/>
+      <teacher id="D46978638C16B923" firstname="Dragana" lastname="Ĺ˝ivojinoviÄ‡" name="Dragana Ĺ˝ivojinoviÄ‡" short="DrĹ˝i" gender="F" color="#660066" email="" mobile="" partner_id=""/>
+      <teacher id="0C043E7629F8CC06" firstname="Dragomir" lastname="GliĹˇiÄ‡" name="Dragomir GliĹˇiÄ‡" short="DrGl" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
       <teacher id="31F2C1A6B9E3C92A" firstname="Dragutin" lastname="Jovkovic" name="Dragutin Jovkovic" short="DgJo" gender="M" color="#00C0FF" email="" mobile="" partner_id=""/>
-      <teacher id="1B48D2810955DDB3" firstname="Dušan" lastname="Mijin" name="Dušan Mijin" short="DuMi" gender="F" color="#FFFF99" email="" mobile="" partner_id=""/>
-      <teacher id="EF9717EF5E9304AF" firstname="Đorde" lastname="Veljovic" name="Đorde Veljovic" short="ĐoVe" gender="M" color="#808000" email="" mobile="" partner_id=""/>
-      <teacher id="9F5E0BE43A6CAF8A" firstname="Đorđe" lastname="Janaćković" name="Đorđe Janaćković" short="ĐoJa" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
-      <teacher id="E5A6ACD88DE8E689" firstname="Emila" lastname="Živković" name="Emila Živković" short="EmŽi" gender="F" color="#FFC030" email="" mobile="" partner_id=""/>
-      <teacher id="5AA4AE20B323B5A4" firstname="Enis" lastname="Džunuzović" name="Enis Džunuzović" short="EnDž" gender="F" color="#CC6600" email="" mobile="" partner_id=""/>
+      <teacher id="1B48D2810955DDB3" firstname="DuĹˇan" lastname="Mijin" name="DuĹˇan Mijin" short="DuMi" gender="F" color="#FFFF99" email="" mobile="" partner_id=""/>
+      <teacher id="EF9717EF5E9304AF" firstname="Äorde" lastname="Veljovic" name="Äorde Veljovic" short="ÄoVe" gender="M" color="#808000" email="" mobile="" partner_id=""/>
+      <teacher id="9F5E0BE43A6CAF8A" firstname="ÄorÄ‘e" lastname="JanaÄ‡koviÄ‡" name="ÄorÄ‘e JanaÄ‡koviÄ‡" short="ÄoJa" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
+      <teacher id="E5A6ACD88DE8E689" firstname="Emila" lastname="Ĺ˝ivkoviÄ‡" name="Emila Ĺ˝ivkoviÄ‡" short="EmĹ˝i" gender="F" color="#FFC030" email="" mobile="" partner_id=""/>
+      <teacher id="5AA4AE20B323B5A4" firstname="Enis" lastname="DĹľunuzoviÄ‡" name="Enis DĹľunuzoviÄ‡" short="EnDĹľ" gender="F" color="#CC6600" email="" mobile="" partner_id=""/>
       <teacher id="A4223860633E6074" firstname="Gordana" lastname="Kokeza" name="Gordana Kokeza" short="GKok" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
-      <teacher id="A4DC63BD48A19C11" firstname="Irena" lastname="Žižović" name="Irena Žižović" short="IrŽi" gender="F" color="#00FFFF" email="" mobile="" partner_id=""/>
-      <teacher id="729D8FCE4C4D1BFE" firstname="Ivanka" lastname="Popović" name="Ivanka Popović" short="IvPo" gender="F" color="#FFFF00" email="" mobile="" partner_id=""/>
-      <teacher id="34E8FFFF122A8252" firstname="Ivona" lastname="Radović" name="Ivona Radović" short="IvRa" gender="F" color="#C0FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="A4DC63BD48A19C11" firstname="Irena" lastname="Ĺ˝iĹľoviÄ‡" name="Irena Ĺ˝iĹľoviÄ‡" short="IrĹ˝i" gender="F" color="#00FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="729D8FCE4C4D1BFE" firstname="Ivanka" lastname="PopoviÄ‡" name="Ivanka PopoviÄ‡" short="IvPo" gender="F" color="#FFFF00" email="" mobile="" partner_id=""/>
+      <teacher id="34E8FFFF122A8252" firstname="Ivona" lastname="RadoviÄ‡" name="Ivona RadoviÄ‡" short="IvRa" gender="F" color="#C0FFFF" email="" mobile="" partner_id=""/>
       <teacher id="B19CA9C23A4E66A9" firstname="Jasmina" lastname="Fijuljanin" name="Jasmina Fijuljanin" short="JasF" gender="F" color="#FF00FF" email="" mobile="" partner_id=""/>
-      <teacher id="6E15DBFEC25AB423" firstname="Jasmina" lastname="Mišcevic" name="Jasmina Mišcevic" short="JasM" gender="F" color="#C014FF" email="" mobile="" partner_id=""/>
-      <teacher id="9023543A5955BDA2" firstname="Jasmina" lastname="Nikolić" name="Jasmina Nikolić" short="JaNi" gender="F" color="#9900FF" email="" mobile="" partner_id=""/>
-      <teacher id="65B471BB2F835DA7" firstname="Jelena" lastname=" Miladinović" name="Jelena  Miladinović" short="JeMi" gender="F" color="#CC9900" email="" mobile="" partner_id=""/>
+      <teacher id="6E15DBFEC25AB423" firstname="Jasmina" lastname="MiĹˇcevic" name="Jasmina MiĹˇcevic" short="JasM" gender="F" color="#C014FF" email="" mobile="" partner_id=""/>
+      <teacher id="9023543A5955BDA2" firstname="Jasmina" lastname="NikoliÄ‡" name="Jasmina NikoliÄ‡" short="JaNi" gender="F" color="#9900FF" email="" mobile="" partner_id=""/>
+      <teacher id="65B471BB2F835DA7" firstname="Jelena" lastname=" MiladinoviÄ‡" name="Jelena  MiladinoviÄ‡" short="JeMi" gender="F" color="#CC9900" email="" mobile="" partner_id=""/>
       <teacher id="4AFC2B1E1C26CD22" firstname="Jelena" lastname="Bajat" name="Jelena Bajat" short="JeBa" gender="F" color="#339933" email="" mobile="" partner_id=""/>
       <teacher id="031172D578350093" firstname="Jelena" lastname="Rogan" name="Jelena Rogan" short="JeRo" gender="F" color="#FFCCFF" email="" mobile="" partner_id=""/>
       <teacher id="93DC90071B971447" firstname="Jelena" lastname="Vicanovic" name="Jelena Vicanovic" short="JeVi" gender="F" color="#99FF99" email="" mobile="" partner_id=""/>
-      <teacher id="E64AAD7334BEF96F" firstname="Jovan" lastname="Jovanović" name="Jovan Jovanović" short="JoJo" gender="F" color="#80C0FF" email="" mobile="" partner_id=""/>
-      <teacher id="FF06E4EF9C940CE9" firstname="Karlo" lastname="Raić" name="Karlo Raić" short="KaRa" gender="F" color="#00FFCC" email="" mobile="" partner_id=""/>
-      <teacher id="FC2655E34C2805DE" firstname="Katarina" lastname="Karadžic" name="Katarina Karadžic" short="KatKa" gender="F" color="#669900" email="" mobile="" partner_id=""/>
+      <teacher id="E64AAD7334BEF96F" firstname="Jovan" lastname="JovanoviÄ‡" name="Jovan JovanoviÄ‡" short="JoJo" gender="F" color="#80C0FF" email="" mobile="" partner_id=""/>
+      <teacher id="FF06E4EF9C940CE9" firstname="Karlo" lastname="RaiÄ‡" name="Karlo RaiÄ‡" short="KaRa" gender="F" color="#00FFCC" email="" mobile="" partner_id=""/>
+      <teacher id="FC2655E34C2805DE" firstname="Katarina" lastname="KaradĹľic" name="Katarina KaradĹľic" short="KatKa" gender="F" color="#669900" email="" mobile="" partner_id=""/>
       <teacher id="AE43F68B6711D98F" firstname="Katarina" lastname="Trivunac" name="Katarina Trivunac" short="KaTr" gender="F" color="#990000" email="" mobile="" partner_id=""/>
       <teacher id="3B6149278300BCDA" firstname="Koviljka" lastname="Asanovic" name="Koviljka Asanovic" short="KoAs" gender="F" color="#336600" email="" mobile="" partner_id=""/>
-      <teacher id="0CE7589F53F16404" firstname="Ljiljana" lastname="Mojović" name="Ljiljana Mojović" short="LjMo" gender="F" color="#9966FF" email="" mobile="" partner_id=""/>
-      <teacher id="F55BC176596EC904" firstname="Ljubica" lastname="Milović" name="Ljubica Milović" short="LjMi" gender="M" color="#00CC00" email="" mobile="" partner_id=""/>
+      <teacher id="0CE7589F53F16404" firstname="Ljiljana" lastname="MojoviÄ‡" name="Ljiljana MojoviÄ‡" short="LjMo" gender="F" color="#9966FF" email="" mobile="" partner_id=""/>
+      <teacher id="F55BC176596EC904" firstname="Ljubica" lastname="MiloviÄ‡" name="Ljubica MiloviÄ‡" short="LjMi" gender="M" color="#00CC00" email="" mobile="" partner_id=""/>
       <teacher id="11C8140FE26687CD" firstname="Maja" lastname="Radetic" name="Maja Radetic" short="MaRa" gender="F" color="#3333CC" email="" mobile="" partner_id=""/>
-      <teacher id="B7B9D818B38D72AE" firstname="Maja" lastname="Vukašinović-Sekulić" name="Maja Vukašinović-Sekulić" short="MaVu" gender="F" color="#666666" email="" mobile="" partner_id=""/>
+      <teacher id="B7B9D818B38D72AE" firstname="Maja" lastname="VukaĹˇinoviÄ‡-SekuliÄ‡" name="Maja VukaĹˇinoviÄ‡-SekuliÄ‡" short="MaVu" gender="F" color="#666666" email="" mobile="" partner_id=""/>
       <teacher id="11747C6A1F466DF1" firstname="Marica" lastname="Rakin" name="Marica Rakin" short="MRak" gender="F" color="#FFFF99" email="" mobile="" partner_id=""/>
-      <teacher id="3014BAC7CD8569BD" firstname="Marija" lastname="Nikolić" name="Marija Nikolić" short="MaNi" gender="F" color="#FFFF66" email="" mobile="" partner_id=""/>
-      <teacher id="5BEB24C77F9329AE" firstname="Marija" lastname="Vukčević" name="Marija Vukčević" short="MarV" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
-      <teacher id="8B142B83FCB883D8" firstname="Marina" lastname="Dojčinović" name="Marina Dojčinović" short="MaDo" gender="M" color="#66FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="3014BAC7CD8569BD" firstname="Marija" lastname="NikoliÄ‡" name="Marija NikoliÄ‡" short="MaNi" gender="F" color="#FFFF66" email="" mobile="" partner_id=""/>
+      <teacher id="5BEB24C77F9329AE" firstname="Marija" lastname="VukÄŤeviÄ‡" name="Marija VukÄŤeviÄ‡" short="MarV" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
+      <teacher id="8B142B83FCB883D8" firstname="Marina" lastname="DojÄŤinoviÄ‡" name="Marina DojÄŤinoviÄ‡" short="MaDo" gender="M" color="#66FFFF" email="" mobile="" partner_id=""/>
       <teacher id="2223C8F646CAF5FC" firstname="Marko" lastname="Rakin" name="Marko Rakin" short="MRn" gender="M" color="#00FFCC" email="" mobile="" partner_id=""/>
       <teacher id="B1CAE36341EADEC7" firstname="Marko" lastname="Stamenic" name="Marko Stamenic" short="MaSt" gender="M" color="#DDFF97" email="" mobile="" partner_id=""/>
-      <teacher id="702A40D424F23C4E" firstname="Melina" lastname="Kalagasidis Krušić" name="Melina Kalagasidis Krušić" short="MeKr" gender="F" color="#008080" email="" mobile="" partner_id=""/>
+      <teacher id="702A40D424F23C4E" firstname="Melina" lastname="Kalagasidis KruĹˇiÄ‡" name="Melina Kalagasidis KruĹˇiÄ‡" short="MeKr" gender="F" color="#008080" email="" mobile="" partner_id=""/>
       <teacher id="14E0C48C2701D763" firstname="Menka" lastname="Petkovska" name="Menka Petkovska" short="MePe" gender="F" color="#00C0C8" email="" mobile="" partner_id=""/>
       <teacher id="A7A2108C8EB16B15" firstname="Mila" lastname="Krstajic Pajic" name="Mila Krstajic Pajic" short="MiKP" gender="F" color="#CC3399" email="" mobile="" partner_id=""/>
-      <teacher id="88CC070D94C4DD44" firstname="Milan" lastname="Milivojević" name="Milan Milivojević" short="MiMi" gender="F" color="#6060C0" email="" mobile="" partner_id=""/>
-      <teacher id="C1B48B60C6A065FF" firstname="Milica" lastname="Gvozdenović" name="Milica Gvozdenović" short="MiGv" gender="F" color="#990099" email="" mobile="" partner_id=""/>
-      <teacher id="6A61B0B651F965A4" firstname="Miloš" lastname="Petrovic" name="Miloš Petrovic" short="MiPe" gender="M" color="#CC6600" email="" mobile="" partner_id=""/>
-      <teacher id="3A2AF522D695B079" firstname="Miljana" lastname="Popović" name="Miljana Popović" short="MiPo" gender="F" color="#003300" email="" mobile="" partner_id=""/>
-      <teacher id="7A9C08D237385C48" firstname="Mirjana" lastname="Filipović" name="Mirjana Filipović" short="MiFi" gender="F" color="#336699" email="" mobile="" partner_id=""/>
-      <teacher id="A1C09B3FDD02B104" firstname="Mirjana" lastname="Kijevčanin" name="Mirjana Kijevčanin" short="MiKi" gender="F" color="#60FFC0" email="" mobile="" partner_id=""/>
+      <teacher id="88CC070D94C4DD44" firstname="Milan" lastname="MilivojeviÄ‡" name="Milan MilivojeviÄ‡" short="MiMi" gender="F" color="#6060C0" email="" mobile="" partner_id=""/>
+      <teacher id="C1B48B60C6A065FF" firstname="Milica" lastname="GvozdenoviÄ‡" name="Milica GvozdenoviÄ‡" short="MiGv" gender="F" color="#990099" email="" mobile="" partner_id=""/>
+      <teacher id="6A61B0B651F965A4" firstname="MiloĹˇ" lastname="Petrovic" name="MiloĹˇ Petrovic" short="MiPe" gender="M" color="#CC6600" email="" mobile="" partner_id=""/>
+      <teacher id="3A2AF522D695B079" firstname="Miljana" lastname="PopoviÄ‡" name="Miljana PopoviÄ‡" short="MiPo" gender="F" color="#003300" email="" mobile="" partner_id=""/>
+      <teacher id="7A9C08D237385C48" firstname="Mirjana" lastname="FilipoviÄ‡" name="Mirjana FilipoviÄ‡" short="MiFi" gender="F" color="#336699" email="" mobile="" partner_id=""/>
+      <teacher id="A1C09B3FDD02B104" firstname="Mirjana" lastname="KijevÄŤanin" name="Mirjana KijevÄŤanin" short="MiKi" gender="F" color="#60FFC0" email="" mobile="" partner_id=""/>
       <teacher id="AD36BD8832C8FF5E" firstname="Mirjana" lastname="Kostic" name="Mirjana Kostic" short="MiKo" gender="F" color="#990033" email="" mobile="" partner_id=""/>
       <teacher id="52FB5C2C5ADAB3D3" firstname="Mirjana" lastname="Rajiliic Stojanovic" name="Mirjana Rajiliic Stojanovic" short="MRSt" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
-      <teacher id="2305BBAFF7BE50CB" firstname="Mirjana" lastname="Ristić" name="Mirjana Ristić" short="MiRi" gender="F" color="#8000FF" email="" mobile="" partner_id=""/>
+      <teacher id="2305BBAFF7BE50CB" firstname="Mirjana" lastname="RistiÄ‡" name="Mirjana RistiÄ‡" short="MiRi" gender="F" color="#8000FF" email="" mobile="" partner_id=""/>
       <teacher id="FD9FF0E81A794115" firstname="Mirko" lastname="Stijepovic" name="Mirko Stijepovic" short="MiSt" gender="M" color="#990033" email="" mobile="" partner_id=""/>
-      <teacher id="02940646B886AAE7" firstname="Nataša" lastname="Valentić" name="Nataša Valentić" short="NaVa" gender="F" color="#66FF33" email="" mobile="" partner_id=""/>
-      <teacher id="8DF45E6EDBE2808F" firstname="Nemanja" lastname="Trišovic" name="Nemanja Trišovic" short="NeTr" gender="M" color="#C0C000" email="" mobile="" partner_id=""/>
+      <teacher id="02940646B886AAE7" firstname="NataĹˇa" lastname="ValentiÄ‡" name="NataĹˇa ValentiÄ‡" short="NaVa" gender="F" color="#66FF33" email="" mobile="" partner_id=""/>
+      <teacher id="8DF45E6EDBE2808F" firstname="Nemanja" lastname="TriĹˇovic" name="Nemanja TriĹˇovic" short="NeTr" gender="M" color="#C0C000" email="" mobile="" partner_id=""/>
       <teacher id="EA92A56D01C388E9" firstname="Nenad" lastname="Cakic" name="Nenad Cakic" short="NeCa" gender="M" color="#003399" email="" mobile="" partner_id=""/>
-      <teacher id="775775C7C51BA6B3" firstname="Nenad" lastname="Radović" name="Nenad Radović" short="NeRa" gender="F" color="#FF0066" email="" mobile="" partner_id=""/>
-      <teacher id="B38B61C9FD64AF07" firstname="Nevenka" lastname="Bošković-Vragolović" name="Nevenka Bošković-Vragolović" short="NeBo" gender="F" color="#00FF80" email="" mobile="" partner_id=""/>
+      <teacher id="775775C7C51BA6B3" firstname="Nenad" lastname="RadoviÄ‡" name="Nenad RadoviÄ‡" short="NeRa" gender="F" color="#FF0066" email="" mobile="" partner_id=""/>
+      <teacher id="B38B61C9FD64AF07" firstname="Nevenka" lastname="BoĹˇkoviÄ‡-VragoloviÄ‡" name="Nevenka BoĹˇkoviÄ‡-VragoloviÄ‡" short="NeBo" gender="F" color="#00FF80" email="" mobile="" partner_id=""/>
       <teacher id="ACED6543566F9B69" firstname="Nevenka" lastname="Rajic" name="Nevenka Rajic" short="NevR" gender="F" color="#00FF00" email="" mobile="" partner_id=""/>
-      <teacher id="A4FD7A2424E21D8F" firstname="Nikola" lastname="Nikačević" name="Nikola Nikačević" short="NiNi" gender="F" color="#14C0C0" email="" mobile="" partner_id=""/>
-      <teacher id="C04A19AB9CB1353A" firstname="Petar" lastname="Đukic" name="Petar Đukic" short="PeĐu" gender="M" color="#6699FF" email="" mobile="" partner_id=""/>
+      <teacher id="A4FD7A2424E21D8F" firstname="Nikola" lastname="NikaÄŤeviÄ‡" name="Nikola NikaÄŤeviÄ‡" short="NiNi" gender="F" color="#14C0C0" email="" mobile="" partner_id=""/>
+      <teacher id="C04A19AB9CB1353A" firstname="Petar" lastname="Äukic" name="Petar Äukic" short="PeÄu" gender="M" color="#6699FF" email="" mobile="" partner_id=""/>
       <teacher id="E66B5966D8BFA24D" firstname="Petar" lastname="Jovancic" name="Petar Jovancic" short="PeJo" gender="F" color="#CC9900" email="" mobile="" partner_id=""/>
-      <teacher id="A5A18F9658ACEB60" firstname="Petar" lastname="Uskoković" name="Petar Uskoković" short="PeUs" gender="M" color="#666666" email="" mobile="" partner_id=""/>
+      <teacher id="A5A18F9658ACEB60" firstname="Petar" lastname="UskokoviÄ‡" name="Petar UskokoviÄ‡" short="PeUs" gender="M" color="#666666" email="" mobile="" partner_id=""/>
       <teacher id="3BD2C85CD24B1C09" firstname="Predavac" lastname="Engleski" name="Predavac Engleski" short="PrEn" gender="F" color="#33CC33" email="" mobile="" partner_id=""/>
-      <teacher id="349892672F2CA996" firstname="Predrag" lastname="Živković" name="Predrag Živković" short="PrŽi" gender="M" color="#993333" email="" mobile="" partner_id=""/>
-      <teacher id="E12D705085AB62F9" firstname="Rada" lastname="Petrović" name="Rada Petrović" short="RaPe" gender="F" color="#1414C0" email="" mobile="" partner_id=""/>
-      <teacher id="7214376E360B6924" firstname="Rada" lastname="Pjanović" name="Rada Pjanović" short="RaPj" gender="F" color="#C014FF" email="" mobile="" partner_id=""/>
-      <teacher id="C5AA91A594C86FF5" firstname="Radmila" lastname="Jančić Heinemann" name="Radmila Jančić Heinemann" short="RaJaHe" gender="F" color="#996633" email="" mobile="" partner_id=""/>
-      <teacher id="0118E71FA2912462" firstname="Radojica" lastname="Pešic" name="Radojica Pešic" short="RadP" gender="M" color="#FFCCCC" email="" mobile="" partner_id=""/>
+      <teacher id="349892672F2CA996" firstname="Predrag" lastname="Ĺ˝ivkoviÄ‡" name="Predrag Ĺ˝ivkoviÄ‡" short="PrĹ˝i" gender="M" color="#993333" email="" mobile="" partner_id=""/>
+      <teacher id="E12D705085AB62F9" firstname="Rada" lastname="PetroviÄ‡" name="Rada PetroviÄ‡" short="RaPe" gender="F" color="#1414C0" email="" mobile="" partner_id=""/>
+      <teacher id="7214376E360B6924" firstname="Rada" lastname="PjanoviÄ‡" name="Rada PjanoviÄ‡" short="RaPj" gender="F" color="#C014FF" email="" mobile="" partner_id=""/>
+      <teacher id="C5AA91A594C86FF5" firstname="Radmila" lastname="JanÄŤiÄ‡ Heinemann" name="Radmila JanÄŤiÄ‡ Heinemann" short="RaJaHe" gender="F" color="#996633" email="" mobile="" partner_id=""/>
+      <teacher id="0118E71FA2912462" firstname="Radojica" lastname="PeĹˇic" name="Radojica PeĹˇic" short="RadP" gender="M" color="#FFCCCC" email="" mobile="" partner_id=""/>
       <teacher id="EE1ABA83BBB304F6" firstname="Radoslava" lastname="Pravilovic" name="Radoslava Pravilovic" short="RaPr" gender="F" color="#FFCC66" email="" mobile="" partner_id=""/>
-      <teacher id="191AABF94C0DD0E0" firstname="Rajko" lastname="Šašić" name="Rajko Šašić" short="RaŠa" gender="M" color="#3333FF" email="" mobile="" partner_id=""/>
-      <teacher id="E5BE8B6C6F63F476" firstname="Sandra" lastname="Glišic" name="Sandra Glišic" short="SaGl" gender="F" color="#008080" email="" mobile="" partner_id=""/>
-      <teacher id="C47640DCAF4A46E7" firstname="Sanja" lastname="Jevtić" name="Sanja Jevtić" short="SaJe" gender="F" color="#FF6666" email="" mobile="" partner_id=""/>
-      <teacher id="D7468DB854E2D002" firstname="Saša" lastname="Drmanić" name="Saša Drmanić" short="SaDr" gender="F" color="#CCCC00" email="" mobile="" partner_id=""/>
-      <teacher id="CE29B5CB581E2026" firstname="Saša" lastname="Kočinac" name="Saša Kočinac" short="SaKo" gender="M" color="#FFFFFF" email="" mobile="" partner_id=""/>
-      <teacher id="E9BA9464D2EA46F0" firstname="Simonida" lastname="Tomić" name="Simonida Tomić" short="SiTo" gender="F" color="#FF8080" email="" mobile="" partner_id=""/>
-      <teacher id="0B8D4D9FBF78247D" firstname="Slaviša" lastname="Putić" name="Slaviša Putić" short="SlPu" gender="M" color="#1414C0" email="" mobile="" partner_id=""/>
-      <teacher id="195AC5353C79DEB5" firstname="Slavka" lastname="Stanković" name="Slavka Stanković" short="SlSt" gender="F" color="#009999" email="" mobile="" partner_id=""/>
-      <teacher id="E179DA1997DC907D" firstname="Snežana" lastname="Gojković" name="Snežana Gojković" short="SnGo" gender="F" color="#006699" email="" mobile="" partner_id=""/>
-      <teacher id="614EE3866987C078" firstname="Snežana" lastname="Grujić" name="Snežana Grujić" short="SnGr" gender="F" color="#999999" email="" mobile="" partner_id=""/>
-      <teacher id="F41198784CFD7910" firstname="Snežana" lastname="Stankovic" name="Snežana Stankovic" short="SeSa" gender="F" color="#9900CC" email="" mobile="" partner_id=""/>
+      <teacher id="191AABF94C0DD0E0" firstname="Rajko" lastname="Ĺ aĹˇiÄ‡" name="Rajko Ĺ aĹˇiÄ‡" short="RaĹ a" gender="M" color="#3333FF" email="" mobile="" partner_id=""/>
+      <teacher id="E5BE8B6C6F63F476" firstname="Sandra" lastname="GliĹˇic" name="Sandra GliĹˇic" short="SaGl" gender="F" color="#008080" email="" mobile="" partner_id=""/>
+      <teacher id="C47640DCAF4A46E7" firstname="Sanja" lastname="JevtiÄ‡" name="Sanja JevtiÄ‡" short="SaJe" gender="F" color="#FF6666" email="" mobile="" partner_id=""/>
+      <teacher id="D7468DB854E2D002" firstname="SaĹˇa" lastname="DrmaniÄ‡" name="SaĹˇa DrmaniÄ‡" short="SaDr" gender="F" color="#CCCC00" email="" mobile="" partner_id=""/>
+      <teacher id="CE29B5CB581E2026" firstname="SaĹˇa" lastname="KoÄŤinac" name="SaĹˇa KoÄŤinac" short="SaKo" gender="M" color="#FFFFFF" email="" mobile="" partner_id=""/>
+      <teacher id="E9BA9464D2EA46F0" firstname="Simonida" lastname="TomiÄ‡" name="Simonida TomiÄ‡" short="SiTo" gender="F" color="#FF8080" email="" mobile="" partner_id=""/>
+      <teacher id="0B8D4D9FBF78247D" firstname="SlaviĹˇa" lastname="PutiÄ‡" name="SlaviĹˇa PutiÄ‡" short="SlPu" gender="M" color="#1414C0" email="" mobile="" partner_id=""/>
+      <teacher id="195AC5353C79DEB5" firstname="Slavka" lastname="StankoviÄ‡" name="Slavka StankoviÄ‡" short="SlSt" gender="F" color="#009999" email="" mobile="" partner_id=""/>
+      <teacher id="E179DA1997DC907D" firstname="SneĹľana" lastname="GojkoviÄ‡" name="SneĹľana GojkoviÄ‡" short="SnGo" gender="F" color="#006699" email="" mobile="" partner_id=""/>
+      <teacher id="614EE3866987C078" firstname="SneĹľana" lastname="GrujiÄ‡" name="SneĹľana GrujiÄ‡" short="SnGr" gender="F" color="#999999" email="" mobile="" partner_id=""/>
+      <teacher id="F41198784CFD7910" firstname="SneĹľana" lastname="Stankovic" name="SneĹľana Stankovic" short="SeSa" gender="F" color="#9900CC" email="" mobile="" partner_id=""/>
       <teacher id="2E7EC847CA4D8D69" firstname="Stefan" lastname="Dikic" name="Stefan Dikic" short="StDi" gender="M" color="#00CCFF" email="" mobile="" partner_id=""/>
-      <teacher id="C8106AD0AB6287CC" firstname="Suzana" lastname="Dimitrijević" name="Suzana Dimitrijević" short="SuDi" gender="F" color="#CCCCFF" email="" mobile="" partner_id=""/>
-      <teacher id="22663B7094EFC26F" firstname="Svetlana" lastname="Grujić" name="Svetlana Grujić" short="SvGr" gender="F" color="#FF66FF" email="" mobile="" partner_id=""/>
-      <teacher id="D1AC43A82D734022" firstname="Tatjana" lastname="Đakov" name="Tatjana Đakov" short="TaĐa" gender="F" color="#80FF80" email="" mobile="" partner_id=""/>
-      <teacher id="78A596AFD810CAFE" firstname="Tatjana" lastname="Đurkic" name="Tatjana Đurkic" short="TaĐu" gender="F" color="#0080FF" email="" mobile="" partner_id=""/>
-      <teacher id="39241EABBFD7B7D2" firstname="Tatjana" lastname="Kaluđerović" name="Tatjana Kaluđerović" short="TaKa" gender="F" color="#00FFC0" email="" mobile="" partner_id=""/>
+      <teacher id="C8106AD0AB6287CC" firstname="Suzana" lastname="DimitrijeviÄ‡" name="Suzana DimitrijeviÄ‡" short="SuDi" gender="F" color="#CCCCFF" email="" mobile="" partner_id=""/>
+      <teacher id="22663B7094EFC26F" firstname="Svetlana" lastname="GrujiÄ‡" name="Svetlana GrujiÄ‡" short="SvGr" gender="F" color="#FF66FF" email="" mobile="" partner_id=""/>
+      <teacher id="D1AC43A82D734022" firstname="Tatjana" lastname="Äakov" name="Tatjana Äakov" short="TaÄa" gender="F" color="#80FF80" email="" mobile="" partner_id=""/>
+      <teacher id="78A596AFD810CAFE" firstname="Tatjana" lastname="Äurkic" name="Tatjana Äurkic" short="TaÄu" gender="F" color="#0080FF" email="" mobile="" partner_id=""/>
+      <teacher id="39241EABBFD7B7D2" firstname="Tatjana" lastname="KaluÄ‘eroviÄ‡" name="Tatjana KaluÄ‘eroviÄ‡" short="TaKa" gender="F" color="#00FFC0" email="" mobile="" partner_id=""/>
       <teacher id="FE7225ADFAB7C0BD" firstname="Tatjana" lastname="Mihailovic" name="Tatjana Mihailovic" short="TaMi" gender="F" color="#CC66FF" email="" mobile="" partner_id=""/>
       <teacher id="5BD84D1859B61808" firstname="Tatjana" lastname="Petrovic" name="Tatjana Petrovic" short="TaPe" gender="F" color="#FF0000" email="" mobile="" partner_id=""/>
-      <teacher id="AB2C1960E6D2B41C" firstname="Tatjana" lastname="Volkov-Husović" name="Tatjana Volkov-Husović" short="TaVo" gender="F" color="#FF5050" email="" mobile="" partner_id=""/>
+      <teacher id="AB2C1960E6D2B41C" firstname="Tatjana" lastname="Volkov-HusoviÄ‡" name="Tatjana Volkov-HusoviÄ‡" short="TaVo" gender="F" color="#FF5050" email="" mobile="" partner_id=""/>
       <teacher id="D1B5113E2CE24071" firstname="Vaso" lastname="Manojlovic" name="Vaso Manojlovic" short="VaMa" gender="M" color="#00FFCC" email="" mobile="" partner_id=""/>
-      <teacher id="9745058A4C9E6CF0" firstname="Vesna" lastname="Mišković-Stanković" name="Vesna Mišković-Stanković" short="VeMS" gender="F" color="#3399FF" email="" mobile="" partner_id=""/>
-      <teacher id="081E51DAEA5E1766" firstname="Vesna" lastname="Radojević" name="Vesna Radojević" short="VeRa" gender="F" color="#0033CC" email="" mobile="" partner_id=""/>
+      <teacher id="9745058A4C9E6CF0" firstname="Vesna" lastname="MiĹˇkoviÄ‡-StankoviÄ‡" name="Vesna MiĹˇkoviÄ‡-StankoviÄ‡" short="VeMS" gender="F" color="#3399FF" email="" mobile="" partner_id=""/>
+      <teacher id="081E51DAEA5E1766" firstname="Vesna" lastname="RadojeviÄ‡" name="Vesna RadojeviÄ‡" short="VeRa" gender="F" color="#0033CC" email="" mobile="" partner_id=""/>
       <teacher id="0989C13E932F2B34" firstname="Viktor" lastname="Pocajt" name="Viktor Pocajt" short="ViPo" gender="F" color="#CC6600" email="" mobile="" partner_id=""/>
       <teacher id="13514572F2348C29" firstname="Vladimir" lastname="Pavicevic" name="Vladimir Pavicevic" short="VlPa" gender="F" color="#0000FF" email="" mobile="" partner_id=""/>
-      <teacher id="BCD3A6B122C4489B" firstname="Zorica" lastname="Knežević-Jugović" name="Zorica Knežević-Jugović" short="ZoKn" gender="F" color="#6600FF" email="" mobile="" partner_id=""/>
-      <teacher id="381FF29224BAEA00" firstname="Željko" lastname="Kamberović" name="Željko Kamberović" short="ŽeKa" gender="F" color="#FF9933" email="" mobile="" partner_id=""/>
-      <teacher id="01D3FF425B45783C" firstname="Katarina" lastname="Nešovic" name="Katarina Nešovic" short="KaNe" gender="F" color="#FF0000" email="" mobile="" partner_id=""/>
+      <teacher id="BCD3A6B122C4489B" firstname="Zorica" lastname="KneĹľeviÄ‡-JugoviÄ‡" name="Zorica KneĹľeviÄ‡-JugoviÄ‡" short="ZoKn" gender="F" color="#6600FF" email="" mobile="" partner_id=""/>
+      <teacher id="381FF29224BAEA00" firstname="Ĺ˝eljko" lastname="KamberoviÄ‡" name="Ĺ˝eljko KamberoviÄ‡" short="Ĺ˝eKa" gender="F" color="#FF9933" email="" mobile="" partner_id=""/>
+      <teacher id="01D3FF425B45783C" firstname="Katarina" lastname="NeĹˇovic" name="Katarina NeĹˇovic" short="KaNe" gender="F" color="#FF0000" email="" mobile="" partner_id=""/>
    </teachers>
    <classrooms options="canadd,export:silent" columns="id,name,short,capacity,partner_id">
       <classroom id="17945E7EE68161D4" name="Katedra za matematiku" short="KatMat" capacity="6" partner_id=""/>
@@ -499,7 +499,7 @@
       <classroom id="57E6568E61D0CC6A" name="Laboratorija EM" short="L_EM" capacity="19" partner_id=""/>
       <classroom id="97B71472D1DFCCB3" name="Laboratorija FEH 403a" short="L_403a" capacity="21" partner_id=""/>
       <classroom id="5D8DB900E9DC78AA" name="Laboratorija FEH 403b" short="L_403b" capacity="40" partner_id=""/>
-      <classroom id="F8F31161A99BAD14" name="Laboratorija na Katedri za biohemijsko inženjerstvo i biotehnologiju" short="L_BIB" capacity="21" partner_id=""/>
+      <classroom id="F8F31161A99BAD14" name="Laboratorija na Katedri za biohemijsko inĹľenjerstvo i biotehnologiju" short="L_BIB" capacity="21" partner_id=""/>
       <classroom id="1331FEA6B1705106" name="Laboratorija NHT 1" short="L_NHT1" capacity="15" partner_id=""/>
       <classroom id="7179F49A66B61D21" name="Laboratorija NHT 2" short="L_NHT2" capacity="15" partner_id=""/>
       <classroom id="360276E163C34906" name="Laboratorija OHT" short="L_OHT" capacity="15" partner_id=""/>
@@ -507,7 +507,7 @@
       <classroom id="82ECFF4F3E22F74D" name="Laboratorija za elektrotehniku" short="ELAB" capacity="24" partner_id=""/>
       <classroom id="4A01106B1585EC84" name="Laboratorija za hemiju makromolekula" short="L_HMM" capacity="25" partner_id=""/>
       <classroom id="E8E00615089EBBF5" name="Laboratorija za livarstvo" short="L_LIV" capacity="19" partner_id=""/>
-      <classroom id="DE7014BA862F483D" name="Laboratorija za metalurško inž." short="L_MI" capacity="19" partner_id=""/>
+      <classroom id="DE7014BA862F483D" name="Laboratorija za metalurĹˇko inĹľ." short="L_MI" capacity="19" partner_id=""/>
       <classroom id="439D58BB4A57FB08" name="Laboratorija za NH" short="L_NH" capacity="8" partner_id=""/>
       <classroom id="A54595313D3DE4AA" name="Laboratorija za OH" short="L_OH" capacity="60" partner_id=""/>
       <classroom id="AEB5DD53DE1E10A1" name="Laboratorija za ONH" short="Katedra za ONH" capacity="27" partner_id=""/>
@@ -521,21 +521,21 @@
       <classroom id="F5A5FD770963ABD4" name="RC_20" short="RC_20" capacity="23" partner_id=""/>
       <classroom id="35F1F8E1C55BBF38" name="RC_25" short="RC_25" capacity="25" partner_id=""/>
       <classroom id="916B6B5951521B21" name="Srednji amfiteatar" short="SA" capacity="190" partner_id=""/>
-      <classroom id="9B51B17CD111C103" name="Učionica 1" short="Sala 1" capacity="32" partner_id=""/>
-      <classroom id="4E2B0A0ACF12E4B2" name="Učionica 2" short="Sala 2" capacity="32" partner_id=""/>
-      <classroom id="C4C2F58E91EBF250" name="Učionica 3" short="Sala 3" capacity="32" partner_id=""/>
-      <classroom id="58C7A19488C02F71" name="Učionica 4" short="Sala 4" capacity="24" partner_id=""/>
-      <classroom id="674F51D06E9BA3FB" name="Učionica 5-6" short="Sala 5-6" capacity="90" partner_id=""/>
-      <classroom id="F05EB3D42CA03DFE" name="Učionica 7" short="Sala 7" capacity="54" partner_id=""/>
-      <classroom id="F7E230286F51BF3F" name="Učionica 8" short="Sala 8" capacity="68" partner_id=""/>
-      <classroom id="C5D077D95EB47866" name="Učionica 044" short="U_044" capacity="8" partner_id=""/>
-      <classroom id="616330678442AC30" name="Učionica 205" short="U_205" capacity="14" partner_id=""/>
-      <classroom id="53685C9786BB9577" name="Učionica 248" short="U_248" capacity="26" partner_id=""/>
-      <classroom id="EC8508ACF3554305" name="Učionica 511" short="U_511" capacity="15" partner_id=""/>
-      <classroom id="85A9226ED7501982" name="Učionica FEH" short="U_FEH" capacity="20" partner_id=""/>
-      <classroom id="A65A4C0EA6B905D1" name="Učionica KM" short="U_KM" capacity="20" partner_id=""/>
-      <classroom id="8E813D4AFD1F2F3A" name="Učionica na OH" short="U_OH" capacity="22" partner_id=""/>
-      <classroom id="02A8B1034FB87B1B" name="Učionica ONH" short="U_ONH" capacity="11" partner_id=""/>
+      <classroom id="9B51B17CD111C103" name="UÄŤionica 1" short="Sala 1" capacity="32" partner_id=""/>
+      <classroom id="4E2B0A0ACF12E4B2" name="UÄŤionica 2" short="Sala 2" capacity="32" partner_id=""/>
+      <classroom id="C4C2F58E91EBF250" name="UÄŤionica 3" short="Sala 3" capacity="32" partner_id=""/>
+      <classroom id="58C7A19488C02F71" name="UÄŤionica 4" short="Sala 4" capacity="24" partner_id=""/>
+      <classroom id="674F51D06E9BA3FB" name="UÄŤionica 5-6" short="Sala 5-6" capacity="90" partner_id=""/>
+      <classroom id="F05EB3D42CA03DFE" name="UÄŤionica 7" short="Sala 7" capacity="54" partner_id=""/>
+      <classroom id="F7E230286F51BF3F" name="UÄŤionica 8" short="Sala 8" capacity="68" partner_id=""/>
+      <classroom id="C5D077D95EB47866" name="UÄŤionica 044" short="U_044" capacity="8" partner_id=""/>
+      <classroom id="616330678442AC30" name="UÄŤionica 205" short="U_205" capacity="14" partner_id=""/>
+      <classroom id="53685C9786BB9577" name="UÄŤionica 248" short="U_248" capacity="26" partner_id=""/>
+      <classroom id="EC8508ACF3554305" name="UÄŤionica 511" short="U_511" capacity="15" partner_id=""/>
+      <classroom id="85A9226ED7501982" name="UÄŤionica FEH" short="U_FEH" capacity="20" partner_id=""/>
+      <classroom id="A65A4C0EA6B905D1" name="UÄŤionica KM" short="U_KM" capacity="20" partner_id=""/>
+      <classroom id="8E813D4AFD1F2F3A" name="UÄŤionica na OH" short="U_OH" capacity="22" partner_id=""/>
+      <classroom id="02A8B1034FB87B1B" name="UÄŤionica ONH" short="U_ONH" capacity="11" partner_id=""/>
       <classroom id="87D4D5A8D0758554" name="Veliki amfiteatar" short="VA" capacity="310" partner_id=""/>
    </classrooms>
    <grades options="canadd,export:silent" columns="grade,name,short">
@@ -579,68 +579,68 @@
       <group id="D0842C3698234CB7" name="Celo odeljenje" classid="ADE814829CDC9749" studentids="CED9BD1FD7CD53C3,1B22859B634CC694,FB7A3C227869E838,E0B2DD4F00A77016,C62522501E52DE16,2F91443D5DF7F52F,8D3038881C55D38F,B899FB0A8559B24F,B8565B42606A3E45,F41FEBC9DA9E6B13,457A37C1956E84A9,E3C413C75E998E56,7294D908F04103D8,7E4DF01980BC0A54,6D319B50993303A5,A1D6EF677E329A17,8F3922826F5C163E,B2BE21D06CB2A601,AA77DB28BA9CD7E2,A2B42CF0D8F49F23,C8179D53B43E63CB,A26DCDD45290E9B5,9D9CEDA2C2BCB8CD,AC4590EBEF10244D,85858A20DA9B8A64,834980359EC3966A,7E2D86AD4FA16346,9A596BFA0153C49F,E0BAC60F8D6715C8,740BD8CAF039E9E1,C6CEDCB079E885ED,68AD9C8D5DAF4DFC,6AE8CA5F3384B509,0EBD5322C128A79B,1EA8E105340350E4,713C333A10459C98,A8D2E554DA00F024,A7939870089AE6E4,3E6EA85365A3921E,8A33C7E875656382,B73B349E42810B6C,9299977C12DF3AF1,EEF6F6B93B16B78A,C2C1D6C72E709C22,F54EE3BD2CF717D1,2CE195D7F6926B5E,D9384D4172D5EBBA,88203209249FFC68,5F618CCDBF15514D,5C21D9C263F4E16C,BF5CA3C1E16B7DE9,4F5713C51657D1B7,B0283DFD6242D893,C0EB1B7169BA2ACB,D5A5F6EDB9B835A8,1485642AA07302B4,AB64578358DF2CD9,ADEBE9FB053D20BE,469ED79AABE19178,B4715F49673B19E6,0CF20363A4E5C681,E4576A5F1D9ADA0F,ED3E2FA144528B16,67664888EEAE618C,E84BC00F7EAD6E95,7F093E88114DA465,28C8FCB7DC5AA395,77C1FEF2175DF34A,84BEA23FF19E5278,E1E5BE02DF9FC286,7A2D37A05947899F,B3582F46F63F6172,3D127C8FD6041209,D5ACCAD847809B05,6BF981787BF5700B,21B6884E7D7B3389,A7E152DA00118E95,60CAE853B19463E1,4028CC7779B955AE,40D57AFB5367B2BA,56B5A6B653FF0B60,E5CBF1F8BB8D4269,333780827A3BC128,C93D8ADA574EE9E7,3C8D8DB324FC3D8C,C39026CA4D5EC8FA,0B0E2F4CA8B69101,18A418F67F48543F,FAD501897741EB47,5DCAA9C50173F76E,2A20ECDD02BF39E4,0A3385F128B80E2A,53BA1E90A48A6ECC,2D2024A921D0FFEE,23D68B17701FB90E,28B1D5AD84A65C84,FE7224E28C047C05,B74E28F8C7EE9F2E,093634203BA36A40,FEA0D43E8B176C29,4FE8FB6A4E6AA0E3,B145ED47C305F8C3,25EE00F7ED9AFB18,3075EDFCA4528456,C07A429087FB37B5,36D5B789F11A7FB9,6F8649FA38A96566,4640530D662DC3D1,559C2BBAE870CDC5,453B7FF18352930A,249DE7F46D5CFAD5,93FC0AD7F2E51AA8,4881DB20B1CD096C,B2E47F55CEAE8297,7E37BD6B9C8C09CE,0F0B29C71E93414E,60217B7044FFE68B,106F88CC86DEA479,1670C2E4B87B4724,E1F8F994DDA3EAB9,E161C558C0990CC6,64D08103AD660CB7,1E7101B385BB9E57,A0553E1076819448,1940D704AFAA7C63,3906B4351B1E8A56,5AEB40BED9BE2832,F1A4BF376C3E5E03,64BED7C2AFABCF0F,C7F52327DF7F4E0A,BFEB15D377735FDB,D629FA234A64F6A1,A6CDAA30C8A7F997,00DC90571C54243D,773889799A72E4F9,84C60D64F4BA563D,2A6E0A1A24F23444,31CE8C27FDAF78E3,AF1C863F2DF28D11,CF42BC6CC47D5AA1,DA06CBAA741C48DB,833A3AF81921338D,21C4974869F17205,E67504F79697D008,A3A44F7C4597EF3F,069044D0CB59C9D7,3C98FBC6ADED8C1C,F7781CBBE1FDAC31,AA143680304F1256,DD9C6B9DDCBAE141,D58DA811164328F8,B3E7495AF13D407B,5001861872C50E61,1377C306BCBF6415,8F4D944634073545,13564DE8C799E1A2,97BFF73450366A9B,550F865A6CBAC1DF,247914AA3FCD5005,83718E3DFCF1ABC4,A9585840A48D0A62,146F1FCAAC0F4928,D2F475D896A55521,F2CD453D9C28D962,CA6A644282634C10,08ADD3FA6C84DCCA,2EA4C3782386C072,09F86F630B439D72,813227F9F2DF51E6,6DEE55F1E7589490,B97188989629027D,502F071128C9384E,CC4FC42E72D43C74,54374DDBA76ECA68,625A52AF6506DDEC,325BEFA420A2CF56,BDBA153FCBEE64B6,085DFD83E9B21AFA,0B71BA27A9154E3D,D92867CFF7FA8DB0,3D4E13B5B03597CC,071DA84CEE4D204A,730771D786151F76,FAD107D3A2826710,6DC2AD4E96F42FC7,8ACB6DE9736B7F28,B1FBDDA4E330EEA6,93D96D63CE564B12,BAC92BDD0BDCC68F,38131FF4BAC8FC39,F08289FEE1BC4E38,698178003BD19835,E7A7909459BF6F17,1CAA566154B5CDA2,5F900676FCBBD837,4A8467B1EDB5F871,8D6217C7957C0306,E37913FC560B954F,7DB19AEC36F297D8,CFF0AE6B7E27A509,B73F6FE13446012F,32E4CC22A43C953E,FA5007A4B5CCEBDB,A2EE41B2E6E537A7,E7C1A0A38BD0F787,A598FFC014BF626A,BFBC43ACAE9EEDEA,33F7D3BE38798C34,93D9F86599CD9466,B3677D3721B19839,180FC933B2052664,B333E4F543411ED1,9B2E28E4829889BB,CAD5894CC5351DB9,A506BFE58E5F6B20,A5F8C18F6328AD94,596035C35CA83692,D5F8378D5ABB470E,FCE82772C1BD7F11,FD699F59CD9717FF,285D14DA92921CFC,9A7794161A8F0833,B6FC99017550B7E6,E21526C1D5319C47,09B91379CE0E1E52,192F113F08E9E057,465B09CBEFE0681B,1A25E9D9E33A4CB3,245105C58C8DC1E6,440D693ADD80B2F3,4553F0C152C838C2,691FE08D1C5A090F,BE81B78925AAD63C,03C2A0796F4A6271,E7841258D6ADAE20,A91A0F69DC7F221A,D81278731AFA2CDC,79FC2230708D9C6F,CC8F74654CCFE823,991B0E2AA6159BBD,B3199BF337A46877,85BF6505A1031502,D5DF6CE578098A84,AD7C8BEA5E43FD32,B54DAA5622536CCE,AA56774E30125370,F7A9AF4FB8870882,3477B128D0F7E6A9,F0B3D163BC05A49A,17E609A5E856F890,638794486B78405B,0BA41EA890983A50,286207B0D3BFBE05,AE9F03F565D7B5A9,725E92A7F23C1D61,E536749C4E8810CC,73CD545AEFF2E6A5,47901224B0680689,1542BFCCFF2D45FC,3216C1945A26DB6F,29D7D69E8670E788,227FD32AFB76C06A,C750015485E26E0F,AF9660B955279ABC,0FD7E9B7D8E063F3,C34E70E99D48501D,A4F3ABDAE091C04A,A73DC4FD193DDD6E,1D9939F6825D2572,F907CF0B7327D7C6,8F0DD963503B0086,57D44B30006A4841,96807DEA8798D705,268108FD5A2A9165,881433F1BC39ED49,61D0F234055247AE,1A47FF52A66C87F4,767F72CE4C666923,A1783616F50F9FF8,CF9120F66ACA1371,4FBDFDB833E33EFC,093779BE286FC415,0116564C30567F00,EB15097D13952081,3085121047EFDABA,214B283CC04ADB76,C23FED2ABFFE29F8,EB9716B9CF002F2F,7EB343D2171689C5,C7B8FD06577BAA31,BA3F505E13A0FF9A,D554BC10BD5C0FA7,0B0A9E5BA81B1008,D8C14C03F7004F7B,608AE200136D9715,676FD7115E18C9D5,FC40159CF2AC5561,9044DA14C7D0D287,6281BEFDD40325D8,9F7BE1E59FB0ABFF,8E4F3AA892955BE9,0C75533CB08332CB,4CBDF6C383026617,AD1AD32C734D9BCC,00A12766A37AB733,04C380B0D92A90DC,C79E38BDD1137BF6,FD581B08BBF27C58,3A2598B8BF63E1C7,81583CA230CAFA3F,7287DA225EB4B16A,0175C4EC0E15FC65,E35354AAF93B58D2,93A060067D9A9B36,A4F08654F85D490A,CE8D33DF8549053B,EC9DA82D0A621AE7,568B4396DFD7607A,C0BAD8BCE09148AA,ED49463887770F03,C5F8B84DE170D8C9,EDB41BDCE55557C6,763D1DFA90AF6A00,FCD73DEF529A375B,71642C3E38F2F347,081DAAB6CB732918,A2AD682650F3ECFE,B9DDE27BFCE5F01B,81078D9940ED7D38,4B9AAFB39233E301,800F7BFEF6751C61,527830C46E627917,9294241F344AD6FC,1F76E95E40617550,027F1C53C927C401,CEB08951A653C5AE,34D2C39C88F65161,BC2BE131687E0B14,87695BAA6CEEEFC6,75082CD1B3AA6295,7E582551DEE404F6,0EEB876BC57AD8E5,972ED55E57DD460D,75FF8995A2FA47A8,B5701E4277C06913,A78659DD4BF6DA98,46156A5565CBF9BE,903A3792483683A4,B2DE76435F4880AA,8A65E1D560A8216F,FA89FFD6AC7AEFA4,FA9DDA886DC09C39,36BE3FBADFE98AEB,F67776F971D33A69,CB1383767A22FD44,E3523529DE9DB795,D529101A29DC03E2,CC1F26D74409722C,A3F346AC8B2C6CC1,B901BE35E03F0177,372752A0E92D5FA1,889701A7B0414AB2,31EB535123CA622A,F00533973FDDD10F,A91900284C10410C,4DBE63D24E2148E3,14E12FBCB86FDD6D,E56A2F3371187256,1FEE5B9A341D6786,389C9D6586DF106C,15D88C80A7BFC281,89DAC904C02A3796,7EE8887D59F58E02,DCBA188CCCBD7560,A1E3E4C941B92DA5,5DF47DBDAB38DE11,A51CECA9CE5EC7AE,5827FD8930817B61,D053FA38B6508D3F,862B5767869A5BEB,2F22F5DA04B44B4E,ADA4412D9BB4026E,ABB6F7A402A75BCA,C353DE39A8B732CB,921A3A7A961A535B,14CFB004D1310642,A73D3B40F9E5BF5E,896E23D3F1DF5666,B51757709A61D8CD,6E08D4F37C718B1F,B52D41EA62BBF388,94B9D38D0D172D35,7BB0C9D2C6CE0103,D6B471D6CE22B656,3AFA2C0563F2C383,F67AD3304E963D01,6642D5A2FB83F8D3,3D3559D739C82A8E,237F6D63FD3FC8F0,CA720DA9328F44EC,C6585838AEA448CC,495E01232247F4C2,16063353F838A7F7,4BBB9175CDF82FA0,B2F5AC4695F04DA6,F92DC659744DB957,0146704CE082343F,9DFDF482FEB966FD,EE0FBBC7B268C7C8,9FB147E8CAD6B39E,E536AFE9F9EF10ED,D9F161747302C7DD,3ECD166AB58A6F68,82F37E755A36F2DF,65FC3593F7FCBA49,A1C9C61B7250E717,377512F72A904849,31AB8ED19BBD2B2B,A9F7EEC903C13561,DFAD4CEAD980BD0B,83FAAEAE6A4A7E1F,764154AD3F5928BB,677AE2E6F60E04A5,353214B859F2BCD0,E1271BD88C51E68E,A6018F40F4996437,DBB6ED62CA58EBE0,ECB7AF13B293665F,7C111F0471660BD0,EF2B378FB4D37CDC,562E3B778C275FD7,E524AA6A50C8238B,5404DBBF377B0CC1,E6769CBFFB59072E,B737467F7F2094D0,8F7DBDB5DFA4F89E,6295ADCC329148DE,984B0BEE0850D087,E0F0C79B7A6C3A5C,52854B6413AF6EF3,E237B5BF7B733E48,7ACE0407ECCFC745,D28833C810799901,B2D74438FF77EB6D,CB8E8E567C7885C3,085B87DD6AEA727A,5DC793B7EF5F517D,08190AD0A8D8CF7B,9A5052087E2BF16F,00D4D7CC714B8B79,BAEEAF7ADD60C18A,C59B7AC586262607,E2E341AB1B0246C2,41C5E2BEC9508AB2,5D30F556F787A548,DD1F82D8EB27E5EB,43E84CB30DDB7BBC,CC12524575BC702B,B9EFAD26F419E4DE,D61F93EAE32E9DAF,198116C3842E8F4E,FFE8599A17C186E0,A9C2C94FB9C15AFC,8ABE4703B211E6D8,B66F2884E72C68D4,32B7253AD7F92EB2,0DD3EE3FA260E7F4,CCBBFF261E7204FA,CC7C9F69D6293459,BE00A5AF2992BEC4,8BB753577877FE37,4EFFCB9AF977EA98,84B929BCCF577242,791AF54CB4B979E8,884EC9B037F60AA7,88104CA3760467A9,C4DD462A6476545F,4812FF79208E0AC3,929077FBC83B0C89,AF157CE722FCBC3C,F3998303BB344183,9159D89B27BFB49D,B4043F0DBBE7FFB5,2952E1259113C92C,CD7AC1F6AEE81C06,297BF34A943B281A,57523B03E70CA9B6,659CDCA61B638F85,549A79E3AC717087,A90F20117CAF881E,968A068D8C914987,4ABDBD864E683586,0535CA82CC9446D5,DEDC4BA117895CE2,E49E7D3695EDA458,A24E59FDECF56FAF,111E8D9CC373CE14,5C42ADAD7C2A25F2,14962DEC02685D43,4D3F76F84A9C357D,4E150474B248F988,C6693DC01D5ED2F7,4F019C03A6784434,548710B338B739D7,166CD785B8089AD1,11A8F10BAEA4EF17,B0BBFFA289C3FE1C,974F917F10A1EB3B,7C01363FE0753E59,35449B1E2EDBC34E,F1BB6D9C7114AA64,A6FD5EBCE5502863,88469DE3B5D40727,58D02183837C14C6,3609ED0DA81CA13E,74A9B6F56A7A8FF2,55AA0CE7554A6B06,2A2962DC5BE79F06,96FDC1D81608E451,4DE52C0140E67D51,2C2E669F8D02B2B1,486B6155BA45F74A,80DCAEAE8D892279,C76425CC6D49D398,C98516376086A2EB,DAB02C85AC6EF82F,8CBE33DEF93DD233,C814A8068296CDBB,9A558CEF8EE9210B,D4949E290D1643DA,61E3C4C162C23A5A,AA130D852B718B04,90612111EF092966,871C54B8D53491A5,E8E8DE50494290E9,88088555B31F6C17,09ED45DBB8E4DABF,E3394200C88A1A65,17F814581DD1331F,B01996A9D24BF280,C33D3E145C5CF910,3B77BC457D9787E1,F128D6A653497B79,B37161C14B2C2F3B,47C1D9900154BE42,692AC4A649B70C27,C54D6F17997BCADE,5DE7BD600AF853DA,59205B0F167420D7,D24E21D6E956BE50,F65711D6F33239CE,D31EB7FBE6E4C009,32B4219877196A7A,1917646F0A8C620B,9512054D9AF70EAB,9D8F9C4FEDE7A303,71A95108D8F6497E,190A474C0CAAD017,D129442516615079,B955EEB7D5FBA2A2,2DACD7BF2173105E,7EA97F9F13D1C439,9EDFF1CD65468FEC,906BD73DE9B333A1,821CF9C3DC91AF3D,63BAE95EE28D864E,06A6196896A8ED28,23F27040C6787F56,5C636A146C92D7E7,FC5516D284CD2894,E9B6FED72BE2A831,49E77E412D4221A3,C1FCF1E477679346,067D7C2A247E9145,6013E2AAE019EFBE,95CD40CCB5F97768,78679A97ABB60FA4,75378D14F8B82384,DA8AAC968CE8EAFD,64F2E68CD7C81D0D,3DF5E8F0FC92298E,412875C329B8E875,C82D2C63403F40D1,10448EE177C7EB5F,ADFC9D7CD481BB3F,264E05C666A4B6E5,80203A32C7854B7B,80BD38F4BFFC1CAD,51A01DDC49115D79,3D308F9C17147C7A,CC8A9B5ED5247DD5,6DC8B194169635F8,5C0363E83C643E8E,45C417D411FBD3F8,FFB1661312CCDE06,927685D36C5C3FDF,448040DAA299252E,0BA44C9B3F3EDD59,F64A5D544D83B469,B9EFEDD70D983248,C1885BF666F411D3,674D69D0CE88448D,20DDD750A4ABBC38,FDA4C128D8FD0085,8DBE49BBEC129E29,8887125F02C97E28,44B86015DDAB8876,6126FF008C2A683C,A7C638EF012091BD,2F8F4AC2088E609F,65492D0CF36D6100,D62EA2C8A0FF5A3E,0A5A05C58FB7509E,80D4C5484FB47729,5D16803DE874B70B,1762326A691C01CA,EBD6054C73A009BF,F473CDCA8903FA63,BFEFBA055EAEB03A,12452C61520E2396,5E6CE7690A6835CB,2D114B4D611FB96F,710BCF9487170ADE,3A6C7A3DACAB9C65,32B2B4216205937D,2B5AB0ADD70B6C5E,450E77E677DCB0C7,F52D04EBEA954EF6,7F3B55053C77E38E,C1AB2D3F72FF598F,12C5258EC6C1F039,3AD8F40745E1F709,9918E0E8A6239149,9F8668FE177258DF,C1668BCDADB2E939,EDDB2D0462243F77,6ADB21B3D94AA5DA,FA8E2B45D7ABA686,8641835F2AF9DF9B,0B87FABE46B0488D,8ABC8DA47A70A646,723172BFAE8739FF,FDD2A62FBDBE1752,CED47301C7D034EE,F1337C44F003F4E9,A6F786E64B53948C,031EB580B037CBFB,D56CC0E840FD4F32,5290F24B799EC580,6C6E7E2EE34A733B,0C97C78B7C797A1E,15C4E3992B0334BD,841FECDE5370EB5A,E484100DD4D3654B,0FAE28CAAE134152,D485205C2B3A37B4,823188C59C43A722,3A1EA82C360EF312,53E2C2430672D222,0281036474E9136D,893277D6DFE59CB3,A403ED740FA5E9D4,27E6D282513BF65B,3179DC1197279F55,8CBFF288BEE40D89,00DC348C05F29800,7E89FDE884D097DB,7A22A9CCC50D0268,92F58A8E330EF6CE,2D3B0B8C52AC1B55,239AD6A1211A8779,9F43F95D7D9B3CB5,64938A44BB515E4D,94B92A3A29BDB488,39E7AD42586023A0,327FD315D95B8BD0,2B2853CB6360DD6A,F39B946C68FE5E70,EAE106E0E04B142F,F1731C9BA413D3FE,F658242B7BBB3DC5,A0AE4A96351B4030,AC40AC1CCD563028,E00C0C36CCD605DA,D9A49B2C78F28520,82FB0096C0AB46A3,1B30073A0AE31E8B,994A491534E684BB,850975C8F08FA49C,E662EBCF7A0A7534,E27A3779CA33AB42,53B2FC0C19A5506A,62D4ADBF3A59DA24,5A312FC28F088867,C60F77BEB7D0769F,5EA5C607292CFF9C,87CE88501452D61A,6109FD5BEABEC379,E155FA36CBD4B53C,8CFCFA7F7C5A2838,A3A83553E4CF92D3,0A51B48137A18C59,E84BE867E51CF19A,471FB65A50126A80,2AEA70CB231E0381,45635468F1E6D5CE,1AE07BEB8F5FFCA4,18B1114F2B13BC9A,C7EBBB20A71BB013,1324DD7EC4D6470C,9BB71F57AF750D64,AF4EF0F53A6885A4,450D0098E22E562D,F976B5B380CDD5EC,BB1136ED9BBEC29E,9883103A78B89F36,87C3117A07C8D14A,91F22D65B13C467C,7BD11A3C28BC84A4,A7E716C8BB63EDD4,2597CCF102D629ED,725C6802E497564E,11CC5C1094FAE496,6E1C446412EAA7F8,61B6CAFDA7CBE850,DA08FFCF99252433,9BA7078C2E44493C,CB87B5637838F5A9,6E5D131E10094D44,4B8F21F08A22986E,F6835938AD0D5BEA,495B4607EED79229,0AEAE5DE5B2BBADD,3F1648DB49E3B13E,99FDAD3ECC351BAB,3F7022B42BBD4C66,AA75B28F1677C896,875252DB66B5475B,28EA1BA5171AE8A4,D64879CFC94601AA,2D4BB36B319B40B9,04E8D27017D5B366,CC20A979E18215CD,266B08446789FA0F,5DED5F7D281B6433,67E522A6A6A17768,06CBF7310545D364,DE26A66A67A9FC47,D61A12713E3E0A5E,302DC03D1F6E3ECB,4F62E6D3A23C28B7,F0DBD4AB7982733E,9C1EFFD1BAC833BE,B08425F4F54B2CD5,7F2732C7438E8270,0C566D1F127F2F68,4F42DA8E01735F86,D333F92B375CE246,A0144DD4411EBA63,A3FEDCEF555E671E,47FB90D0383709A0,A1578CEA42AEEF10,834E0037BB3F80EB,8D791C236492F61E,AAF75CDDB20354EA,64288CAAAA937244,B282A3388E974453,68BD6D0F50DBDBA9,A4D9D241C2E4CA5A,7CBD1D62F3C32831,FE9CD596CF69A56A,7A81821F951B021F,8AC4D070E3031C77,C7FCFC16DFFEBE38,51CD268DA422C250,4C5ECD81E8F49071,4796E707DF70E4B6,D3840741711DDA38,83B34C3A5179D368,860487ACBD028EB3,E87C9587CB1779E5,F03C8252A396BA68,BC95C617A126A7A8,DA1F6F291B36F88F,C06982B5DEAE96F1,E9F08BA17B168A2C,B52981F16A67F626,892C770E4F9D1B3E,BD57DA0B3E55119F,C730214BEFD3C4EE,52CC0E99F42DC2F0,AAFEDBBCC2FF5DF0,5AA8B8CF6B6FCDB0,8B5985E825ED67A5,AA0E3C29F538C482,530CDD53F14C683D,E780305975D2265C,44E43C6D518A2D42,55F3972DFAE99A25,ACD3C140B3A847F2,14D04A4BA86BE402,57C5D11A447C5F47,9E96C5780ABC238F,D4340E3979B50671,7A9F4B12239BEDAF,BBEE7BD9CF3AEE42,31E608EE720BE65E,865A2AF32D4A853D,7A7E24EAF634FBBC,561749703CDE8140,49A32D0F64C00C23,91DC42D91FBCC64D,FBD88E2C13604E01,72305B9C38DA0A2A,CE14EEEC0A93289A,B6ABDD8FBBD216B8,AB6984FF51581E3D,C329264A7B634BE0,5E52A1784005F447,FC0B8B40E722E787,FD50D35A9FF24FEF,6D444FD336948CB0,608F9D5A1D88EC6B,C98FC401917CB135,E036DDD530CBEA38,61289C1C15DFBD9D,52E2CC6351B67272,CC14932B24B90FEC,C0A3D7A5344FEED6,40A2C00930FA18E3,B1E008C4958B36C3,283B3D9C749DCEA3,2CF5406125DFC257,2D92C34C33560C42,06F9C7B7D3A8585B,AA742E9816669EF3,1BB06F0150F8CB64,3DF6F85A17242B79,01D5420C60B5792C,7C8C74067FCC367C,CB09036815F97F41,51523C631F37747E,6BA62C7231228685,8DE26CA41B30C17F,CA0355FFA25928E9,EE81A7D40A66259A,635D676EE94339E8,48CB82757B6E9125,2D3E1FFF1FCFC564,71E88A0ABFAAA316,D7C21B62CB6F6B9B,3E69364D6BB81AA7,B17B659BF116AF1F,B0FD906EA1DB58FA,97C57928B48E4D81,061423813749D42D,162A0B85C126FCDD,95C8AE0468703F59,91E07DD7CD98EE1F,53D06BDD1A377CD7,7BADFBB08C3C58B3,261150C62689D027,249F4FA1385901AF,C02E01CD2453DDF9,09AAB0C67048FF59,50565B5DDEF199AE,19E0CAB1CD609487,387AE5EDA15760E6,11BA5AF977E34E45,BA2CF646ABB0DFCA,EB7CDBAD5D36B48E,618D6860CA65EDAA,2CD40C750915B522,5CCA060FD601BAA8,B766DBD7BD3AA504,5E842908C5527CDB,AC09796573021C7B,5BB448FAB4EDB037,95DB7B6746C4FFC7,2F30597F82861B73,95F7DE5D483A4BBE,3EF67F87444DEF78,CF7C00EB4BD6EDFF,6C48C0E808FE5946,0EDA46B4F8912C60,CD722D8210805353,3EAAF2145FF1F87C,4886B52BFC913314,F376EC741F5BF691,6BC854BDB17EF236,B047D6B13496FEC4,CE849B6C3F5AA912,0AB79883F372D8A5,3C2C8815BD41962E,E2F0AC3B029880BC,42E94F602186DAC6,59045C8A3DE4BF3E,0635C7A3A2A6C726,3A0B6544F76F9772,9A4662D46BB5B4FD,5D92DB17ECD5A15E,EA576B3CB571971E,CB5EF82083FBE80B,438E19F9B8987DDD,DD56C24612AEAFB6,2161154A26621832,076A028EC1B27AE0,B4CCC2A72259E877,C37B9551226B5D7D,C21DDFDBD9239614,5BA0AAACB98EB3B9,8A84E7326586AECF,8A9E06AE3889F183,3B737676351860B0,8042513DC4E4A7D9,86B3D95336536F6F,75F7DA92C583A183,87D4FAC1EE7DBDD5,A8422EBDD3E0CB24,0C0ACB9006B54FD4,818227F2BF6C313B,E6C135489D4E28F1,1758D31787D069B7,5ABD9CFE95D81E9B,B60764C88FFDC2C4,979AB96D8844E4F6,75E1402189231444,E6323CB6DA947E82,B5C9BA2F08761120,FA4A4474B58D0F1F,C969EA345BEDEA8B,F3C563DED849A3AC,F14FEAFA3A416D4E,6E1176F01159C063,85E5C504C845C310,B6ADFCE64D3CEF73,AE8974B9DF29F5B0,6FE3B0DC5AEC8585,4EF3E0302817DCD0,C740C450A51B5FBD,EFE0A5818B08F643,FED7766B6ED6B34A,5E37AEC6B356ACE0,59007769CA0D8CDF,C21FEEAEEFD69FAA,A379CD2FE4CD0F1B,88B2A6101D1F90A7,8BD3430A8A6534B1,BCDE090D0BD78708,ABF7C178BD2DD711,99456D7A74FE00F2,E9FF6BB65D8480C3,552F698A9ADA4D80,E612B760AD8DB6D0,C2D8ED17FB35B5C5,2900C2585E5DAACD,F3663CD99386A297,0B6674C40956846D,4148E2E60E3064A7,CAC638B1DA7FA6DC,AB19CD4BDE9D7200,A099911264EFC592,22234C2624AE8114,012BFBF32DF492CB,A5D3E7A9FA7E595D,8BF8BAB50A3B0724,A0B312084539994B,D36C5CB325476D63,F5C920F1C5A89BC6,EC5A209990B2E032,CD7A9AD8B50CF7DD,D6410D7008731E5A,342C573FDC42F779,8910E6AF610C0D70,FE800F82B70BA1D2,C98DE68305162DEA,6B637D4A2F9A9903,7F0EE043FB846B10,FC0DDD78CD9913D9,DACF76EDEA6F4DB4,84E5FEF74FFF32E8,DAE8A04A0764DBC7,6EE0121EB37E3B8B,7EDFDE54E89C8BFB,5F2FF7180199CFD7,3A22CD6D16B002E5,C904E17DD226DD30,4907C9E1CEF1073D,AD25853313972F16,54D13BD46875F722,E566B12E6277171C,9056E8768541DA98,484C8C06344C9F40,41CCFDFFC847BB13,ADBF081E20ED7901,197DF3BDA2AC9E71,321C5ED00163D6A6,6647C1CCF01BCD07,A88287CBC46A5D60,217B45F3D9B7E160,D5EDEAA3CC47BD03,A71DCDAB23AE0162,CC7F9CC8FFE0E451,167A06484C9C2B89,16D35BF819764DFA,9514B8234FDFF9C2,FB449FB4FE319931,A1F2A60091788B71,99A9E0FD49993ED4,34D29BBC405A0A70,97CAEBF2CF05CE73,3B117D7DE3C19FB9,5CB532D05810F248,7E37D8229DA5EC46,A3BAA151BAE6B1A4,020D83A6A2501D21,E119B2FA6F5B746B,7390724FF263D199,866D7FA7A47B268B,11043199B30474F3,45D1C7BE8AC3C1B2,E149D1542344393A,CF57C95CCE2D1C90,6ACB271FEFB37B6E,0EB60F267AE75AF3,3CDDC3351E0BECB4,A2BBB3139B486A24,99C5DDC2351C410C,19C8C62631E66B19,09BE4D1D8928EB84,B627AD72C56C7AF8,DFD306842CCFA056,27A34EE3D153550A,178889B88AE5F2E7,8CF3B28BE0C58749,6AB8DAAF5F9F0FCD,07E358130EB57B22,C7D0CAD981686CBA,6F44ECB581750674,03950003F8392F85,EAA9E14F2A0D0AFA,CBACEA09E377E32E,DCD793D02B7EA5D6,D5D805F58CCB5862,3BE457573B2EDED8,3FD3E406BA4A69D8,55C15F118FDB13DA,A946F493A8BDDC07,4D26E5568B43DCE6,300EBDE123CB0846,6EB322F7FB6686AA,7565E76939DC605E,8090C75039601BB5,097B06C3180AC6ED,EFF2A47BB4A7A7E7,808395AC99894F29,1D711F9E27AD9114,3B153AB6A3224109,01F34AEBDCFF6CA1,F44FB818BA088745,AD9A4B348D84DF9D,CA0B34F1C83E2049,FABC020A82BBBA3F,1C897C07BFE57620,85997A7ADE266690,C6251BF3B46FEB0E,5BEE5D059F0A7418,91E634F06394D43A,92843C04860A96DD,84E92D72B429A73F,D26A7DCF61B946DF,2B92555B81777E28,B35B4BFE90197DCD,1CCE5C8B7E8CEFFD,C7C717FCB6972C32,B3E9B4DCF326C0F6,AE6F05625C0865BC,8C78847C9601692A,7C5D3B283A948E4F,07DCF4ED2999F4F7,80E14D2E5C2A84F6,3648001E70F18E46,AEC9636452E1799D,48F937344769389E,BBC206B22D01D8CA,94E00BE7613F99C0,BC9BF39F7A239174,325E6B497202D1C1,2CFECB447C937DF3,13231A267750B302,9CA46FF243BFF537,E31179C9B0EAD239,D30784EA1D2CCB5C,1397A08E9DA139E2,EF2825E2869F4A97,1B361099C8B3F037,DC38DAFF1402A5DD,FE2384462147BAEE,90CEC398F7B8C733,5B3AF0472E119F24,567309CD248DF368,AF078854025C7180,ACD2B970A60F65F7,773833F1DB385DBF,5DAB4D8162B5C603,B1D11F043B3F1BB6,FF566F60E8EEBB57,93670A91B1FDA92E,03B382FDEE4F9AB4,D853462A1533E959,D1D7FE66CD25F7EE,B2DE82F871B1576B,DC3CEE28E7A9C103,9B3374AA022A0449,B7D1F7A5E5C74A71,37D4E009E291747E,BFC83AB0C7D9256A,B424B46758B5FE61,04C71B9E361387E3,1B52F0317103753B,77B5DE4076A3EA12,AF4C905B405F3D9F,A7E4B62EC15AA5D0,9FDB8BAD161B3A6E,BFE4EE19372A87A6,94EFC30B86EB5DB4,26B2F91DA3D76105,5E4A2F6182922D4A,393D05B697A86058,F56187B2F70BFE43,51679DDBF3233639,696861CDF73E94CE,CF1B17BB6E536ED8,D67471CB48B70008,16C5B7A67F6ABC64,007F35F656B8ED0F,8BDD5B920204826F,F2ABEABF83B0D486,4C336D9E5575B90D,C9549AB52B1BF48F,3CBA73CBD3CA5B34,833D17ABC6663A22,BF597CDE386F28D4,B159A4CC77C82FE5,95F4DB3911D50150,404D6D1515F56B22,00F26C50A5FF558A,D8EA6207ADE57C94,2FD6A8D651F750A0,898A1CA085C26C93,34B635C6DC1E86EE,6FFDBA59223F4D8F,27EB5DE8D10A1236,CD50840F4D9B0FEB,E64247F5B92682BA,295F39D323A3C378,4CEC3921213A533B,EEA0FABD127B86E5,287DC6C734375560,9B935B2962854DB4,5C45FA215DB77673,8CF74B632D348920,0F25B42CD9A88EEA,3D3A7D08E89E4308,6A41E9BEB5B9EAF2,A8EC373E9807A38C,E14E78A837587330,40038F900C817486,2BBEBC43C80A9466,16CB75D9F1788D37,D68428EF6E62C3FE,4FADEFB741256177,2D739C03D4FE62B3,9CE725F40E725026,DE5DA71E8F709BDC,EEA354BD6CBAC907,74E6C9F1FE98BB8C,9702BECEF3C86D95,2E87CECAEBEDC5E4,C7B38BE7AE46078B,B8092496B85D0819,321B2EDDD3F02020,3831A123F901036E,ACD292441C8299F7,DEB98F1D336EABAE,F3786A99838CB68D,A93536C279400A9F,E5C567037539579F,1BBDC3174EC3307B,2D9B676F8CBCC585,1952FE58A874E25E,42238CA1C4F7B106,4FB50AFE57E2C712,D93660CA24520947,10CD12E4EE0D5CD4,F035C598B766BA57,4648C1CD77D64CA0,3EE0E7A0F8D1B4D0,8B75766DE99C2EF1,F649840EC0401744,31F9E89038E94FE9,BBA04E5C3432EAAE,3BA336C030FD14BC,52B7A6ADA8ACBBA8,8EE3D25731BCA041,7B8834F6C52F8A50,D6BDC8D5C8FE29EA,F947754D5746B8D6,696F934EA339870A,97A4D5EF2E82098C,C65FA3EE3A27F726,8D136B4F962B40B2,6E43529E5534B4F0,3454E6D7C830A81F,B370073EC6FA9742,AECD490839D20641,C5E534CC9CA23475,FD7C6B107B5D00B9,B8126DBEDE9994A4,E72250DE7919EE56,9AE2EBAD8E9802EA,2E073AB844873D1F,250CEFFD3495A22A,E134EDD07F19C75C,E64E07E3F9BA907C,7E99818173825795,174003B4DB15E523,4442EC4193121455,B9DF9F40C236EB51,072784BB37C248F6,01AD5969B5A36673,55D6A6C3794D4370,E85946CF5B349FFE,3C7A94291E9E7CFA,ECF9D28A0E6ABA96,FE0E76BD70A39E80,CA23D6B0F93654B1,4FFAF533D7C06FF2,80D12509AC9C1EA8,96C55086530A7820,5BC07F87D691CA6F,935731A2A04D1DFC,4F7B2F75EAB1432E,033FCA45004F57C3,24E37F97749EAA52,8D694A6B914D7E4B,9E7EF6F11D8553A5,6C21CDE078402266,66ABA28EF6413FE3,AFB7146CBE95EAEF,02C55B2362C99512,22A44E63FC64BFF2,A1448DA15647FDDA,F6A9F55EE36B3AF0,1A2E7083CBC251FC,A58D1A488C0D6013,F8246C7D686FABC7,E02A055AEC341E0A,14410D75D1C22B02,D161BC4EA3447BF0,2AF8604BEA3BF27D,A178E54582359313,CE7C51FB4F313AFD,C627B63F13677DAF,0C848C2B8A5B5621,34816E93255EDC45,9477E6D26FA3070C,BF1505AE9AAB7495,0D624DDDFA1CD3E5,5809B1F903011171,D4A12F99EC14A935,C4973ABA5856A258,0F3B22FE761A589C,09C3EF5ACA1C84A9,573568FE83A1B397,BFBBB7FBB550004A,22B784092F1C4B93,0E6655DAE1BB820A,9BA1EB14B996186B,EFC7386E7D1FF568,2759EA8946BB48F5,5B78F2A42C8955EC,F232711CBF098BBD,77B1F353C4F9A8BB,0CC28B0A1AC6793E,4B6CD889FD1431D9,C9E249F227B64355,6BD9ED4B8E041F3B,E789EA31C3810CEF,FFC9200E3CFB3FF7,DEE3AAF4C867A6DD,17E52E59A0552B2B,CB6AF6E9F459B446,D9738E7C763A8CD3,72A9DC6B0DB691BA,84AB47DFB1EF1A38,1DB96136AD5C0183,6DE27A1A19325EB6,F733D43487724014,17DB9C5E72C45A03,9D4C09D480D0E8CF,59BF607BD7E9489C,1B595D8CDDDABC96,DB1210A25AC4F35C" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="F93351FE272E941B" name="1. grupa" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="1D0A5190DDD0C33E" name="2. grupa" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="6651F933C8A99F82" name="Dečaci" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="83C729C1C7793FC7" name="Devojčice" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="6651F933C8A99F82" name="DeÄŤaci" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="83C729C1C7793FC7" name="DevojÄŤice" classid="ADE814829CDC9749" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="0CC791C083086ED1" name="Celo odeljenje" classid="7471A8717EA37CE5" studentids="0A576D53A0FC2D91,F5E29404C582AC51,42F130CE10308033,A015CC312A48A632,E4824E47603D0B06,481AD0AE652C541D,0B7971581583B37E,2C3AAB4C7067A684,3E0873E7D6D4877C,B51586FA6D728871,324C41EA408B0B75,16A94DFA03438D54,1E111EB7B42F4FD3,E64D1CE56BF6340B,C82AACA4571B9077,69834947A44049A3,0058F6FF911268F8,F83A42E32C9E262F,999DDF63C6A68716,28676B4D3F0224BD,E233FE1B4692A058,7BEA53916FDB5D88,458E97AE4678A066,5CE97FAEF65412E1" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="EB3B163A69571E79" name="1. grupa" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="35B0428642097805" name="2. grupa" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="70B42BE391072785" name="Dečaci" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="F8BDAB77529ED423" name="Devojčice" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="70B42BE391072785" name="DeÄŤaci" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F8BDAB77529ED423" name="DevojÄŤice" classid="7471A8717EA37CE5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="8257693AE37ADA3A" name="Celo odeljenje" classid="3B0C9054DF0A076A" studentids="4DBE0607B76A1726,7D349172C24F8652,DAEA21DD99323244,28035B79D7FBC1AF,0BD376BBB569CB61,9142FE1B001A8CE5,FC92E3C86AAB83CC,F9DD46D4F7505A0F,E182E5EF9AA54580,65919672B736C0B9,47C56B8F00798415,2D2E96FA1E8950E5,A7A7FC19FDA30BB9,835108C28F60EAEF,85C6DCA503D540D9,D61AF313F775CC79,772872099CCE52D1,BBC19E3CE1C0189B,A6A0783BE25D8F61,6529688BCB7184F2,F2DE8056EB146CD5,4054FCEA1231F877,72A5A0A8ACF73EA3,D685F09B5DDFA6C8" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="C60AE0DF158F50E9" name="1. grupa" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="146C7A03C0CB1431" name="2. grupa" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="5CBA778973D7DF4C" name="Dečaci" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="5FDC243521B129CF" name="Devojčice" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="5CBA778973D7DF4C" name="DeÄŤaci" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="5FDC243521B129CF" name="DevojÄŤice" classid="3B0C9054DF0A076A" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="12732EBFF7F88365" name="Celo odeljenje" classid="7EF3ADD32EA33344" studentids="53CC2A723387F963,75120B3C631EE255,E57810A6466873D4,1B48F3CD426A9783,6F68AAD367079AC3,EE06422F8B87947D,B9539540B49DF946,A46D155053DA5EEA,58B322E994418A2C,7AC392401DE2E8B7,947449264FF7719D,F0B6B70F4A9B0BBA,20645DA9307165B0,E373AF7C3F091924,55A3D0D27DCAA35F,11DF41DEC11BACE9,28DF915E8A48E4CA,375B83ADC1511A33,9228E01F5F072A55,8C90A6AD6B4F9212,CDF9C6CB9F606B6E,36996911D004A763,F1F7F80382BC2FDA" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="79DE824B31E8A595" name="1. grupa" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="7A19F053E7862AA8" name="2. grupa" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="4CBD1C28C9163916" name="Dečaci" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="4DC5BE386DA6EC29" name="Devojčice" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4CBD1C28C9163916" name="DeÄŤaci" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4DC5BE386DA6EC29" name="DevojÄŤice" classid="7EF3ADD32EA33344" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="6CE1B6FC53DA82D7" name="Celo odeljenje" classid="03C32002B2B2BFBD" studentids="5ADF5F2BC1437B35,AF0FF6056EA3CC36,5DBE56670187E04D,F84C72C50050FFB4,BD51B0812FAAB828,9B15BBBC3CCC14E6,5AFD1E2DB8C93BD0,DEE24484FC557470,464F5AD40299186F,4E4119B5CF8B7AB0,AB3E15A8BC805493,3E1A8F8D80414C4A,48B1638C954DEC5A,78630A267B444650,70D5EA7465027A84,19376CDD953527FB,7FE067E1D307A8C9,1B0922A0C9C87466,A856DE1D8B444709,87D8F07C0059F0A5,15F511820F24B57B,E1ED7EFAD9FEB044,D10337668B35004D" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="F7CD3B1C0EB43B0E" name="1. grupa" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="4DFB765B938A22FC" name="2. grupa" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="302383C4F8E13138" name="Dečaci" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="CAC156B3E1B4A40F" name="Devojčice" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="302383C4F8E13138" name="DeÄŤaci" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="CAC156B3E1B4A40F" name="DevojÄŤice" classid="03C32002B2B2BFBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="7C51D9B7CC1F535B" name="Celo odeljenje" classid="009A488504CC6BAB" studentids="ACA4392E17BABD29,FA5E0C6D922C9577,CC70A882C08506BD,9E2502A485E4D28E,C74591893CF80EDE,108192B0FFD1A28A,B7A2DFE208097A60,19D2B0D8FCAD3B75,D95CBD9AABB03FEE,5C226394BDC9CEA7,DA07120656192D37,4A6B8D9E262B7486,8CB4F9BEFFB72D7B,C73EBD4037CB8758,64C54914E844A472,9A415E859326A257,3ED502A5F76965A8,E7504F93E6B7E7B3,05E94D164CBD88AA,9D280F9C17EE2176,0081B23EA06D3D64,B20F953576E98D4B,7BB89429C02996A6" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="A95323F83AF32DA5" name="1. grupa" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="8019F41FA9B0E5CC" name="2. grupa" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="D7F4E871AFEE3DAF" name="Dečaci" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="589DF71C64902D93" name="Devojčice" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D7F4E871AFEE3DAF" name="DeÄŤaci" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="589DF71C64902D93" name="DevojÄŤice" classid="009A488504CC6BAB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="B3AD7B3F6624B75C" name="Celo odeljenje" classid="F88A229A6A8FCCE1" studentids="80D61787D48CEB5C,4157810D72DFD4E8,B281C5831DB07371,A277D0A389F26C93,2592A039A2548A01,D56FF68C17134FC1,CB2E3BAD05CE4491,8E2B1D956215C1BD,05A178D28DD9D615,079647D33CE3AF4F,EDE3C971BB6ACBC5,1F5B4BC34B81385B,36A5CFA43A03FC66,74906EC2F57FB03B,CB314FAD03FD0CF5,4C48483D5F687E52,280CFB5C71E9E81A,EEE4C85AAD03CC80,9871D2630C24B364,B3A81A746D86B3E2,9C7A95F9430341CA,81219A63598DB438,B154F67AB963E8AE,B92A2013CACA2366" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="857DFF75536AE3CB" name="1. grupa" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="9B595D21A70B364A" name="2. grupa" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="07C3E9F3CAB08E33" name="Dečaci" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="358909B9AB03859B" name="Devojčice" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="07C3E9F3CAB08E33" name="DeÄŤaci" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="358909B9AB03859B" name="DevojÄŤice" classid="F88A229A6A8FCCE1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="0E0FBD256A50DAB6" name="Celo odeljenje" classid="74370F362E8500AC" studentids="AC5E88F60784A9B8,380EED24BF665F81,3462779671BAC969,CD175ACFDB299272,F9CA4E7AFCF59D85,BD9643D0CE289FD4,3644E1CB59DB98D9,E92A8F8CDC64EB31,7D39906F43142F91,307FBC1CBB0C8175,56E16A3675C93909,22839FEDBEEB229C,084370E3C4195820,2401F939497D3FA7,563C4BB3AD94587A,9CEECB94FA25C4D6,D7164FD7E6E5B18C,AC7A1BD05BB39FF6,D3E729D999609267,E7EAE27216F97FEF,8A8AE1B47C788BDB,F2D260E800B1795E,02B0AD24440B1B73" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="80C6ED391A2A7DA4" name="1. grupa" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="C1089E2CC5F139F5" name="2. grupa" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="CAFFF8802F2EEFDE" name="Dečaci" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="97DEC7C57A75E035" name="Devojčice" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="CAFFF8802F2EEFDE" name="DeÄŤaci" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="97DEC7C57A75E035" name="DevojÄŤice" classid="74370F362E8500AC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="FB14D12438C61263" name="Celo odeljenje" classid="2BFDD115304D0590" studentids="B2B6E1C1A8F8181E,0622294BF987D094,0CBBD4FAAD195CFE,8E1F434786D134BC,0530565A1D8F35B1,5786821E87494878,270D10ABA9C5D29F,DC908F65934AA8C5,9BB59A1237BF34FB,CAB5DA86907F44C8,D96ED940551D04BC,4771927EAEE86A62,58EC27E8AC28D48C,88AAD733B67281B9,74FB07FA0773A458,1EFACDD7561238D1,9854C38BD2AACD2D,C3BB30D6FEDE6478,4AD2D7C69C9B5A88,764BC52E6D8FF871,289A5ED894DD3E8D,6D5C699FDF4DA061,320CACD17A1F633E" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="ADFE551009E250FB" name="1. grupa" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="CCAE8659E301CB21" name="2. grupa" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="5C97EB243A2960D1" name="Dečaci" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="050BD597CFBE39C5" name="Devojčice" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="5C97EB243A2960D1" name="DeÄŤaci" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="050BD597CFBE39C5" name="DevojÄŤice" classid="2BFDD115304D0590" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="43E166D5CB6096D8" name="Celo odeljenje" classid="26CAB334D488853C" studentids="D3C9420E36BDCF55,8442608527F42146,17BB5502CF2C7178,464397C59AD4E5BB,49092E75D3978FF1,6E641EAD6A6973E6,C3A7119EFAFD17FF,D31DE3F48203F9F0,74BC1E6A40EFFA68,D61A1899DF8A43B8,97280FE4A204EF99,8D447AC0B6DD09D6,86AA835E4093E4D8,655C197A308A7149,1C7744D7596A2C32,7FC8B1F74D1EDF14,32D76AFB2227FB53,9444B476CC867217,BB1F241F127BB853,7D0C007D7C32935E,70D8FE74633142EA,8F81F2AB68E2E29B,4FF4F881D99370B3" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="32B764770A3A66B8" name="1. grupa" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="6033CE3240B011EF" name="2. grupa" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="C24AA0C1D4B178B5" name="Dečaci" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="8527FEF6CD88F54D" name="Devojčice" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C24AA0C1D4B178B5" name="DeÄŤaci" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8527FEF6CD88F54D" name="DevojÄŤice" classid="26CAB334D488853C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="962F1FD0C77A6720" name="Celo odeljenje" classid="D1664B6C83B0F9A2" studentids="245788D76598E9CD,1AD0A9E6409BF208,0666F805F6C675E0,2466529E7C0BA7DC,EBDA51BAEB373224,43746A2E4D6D56BC,62A5FAAAFC36BAC8,3FCD7E7213190AD4,64CCFEDC00689A1D,9F69E9EE608F5814,7165A866FA197277,93F1C6699688FB19,87975F6F40398542,C0FC07C440715E8C,DD72D6DA9480EA6A,5E0BE773075D99FB,4A0BE2E0C0255F26,B2931F211D52812D,84D0040A2984D47D,329E65FC0A40B0F4,B1E2AFA549653663,7B81EE1921AAA7C8,8A388DE46CE00C3A" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="9BA90D788926EEB2" name="1. grupa" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="CBEF0624A7D33A2E" name="2. grupa" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="1F2EC1AA1B500F69" name="Dečaci" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="D866CA2FB8E17A7B" name="Devojčice" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="1F2EC1AA1B500F69" name="DeÄŤaci" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D866CA2FB8E17A7B" name="DevojÄŤice" classid="D1664B6C83B0F9A2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="B086DEA90CF2E737" name="Celo odeljenje" classid="50035352F7CBB095" studentids="C6CEC3FAF8348D5E,270D9B813C587390,96A92EBB4158BA46,711D95EEB8C92AA3,65BA078F3CCA2128,04F37060AD103618,80E89A2B6B8347DF,3F365BE80641E5E7,850F592931992DAA,D364A158914A8CFA,B656F26D5CFC86AE,C2F317CF41CDE651,5936272636E85971,026A4206EA482BFE,F49955BE90A86EF6,8740C338C713DC23,F91CBE41460985B8,7A794DA7DA605E7C,A82B0EC951E4F3AF,4630F56F99FBD5DE,4BF5D3FAB92E8BB7,0A2D05369D96AC74,30DD6FBD18A85009" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="E28422CD7D8DF8D1" name="1. grupa" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="567AC369A0617BD7" name="2. grupa" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="21F04758D4C5D3C8" name="Dečaci" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="E4FCFB02190E63F4" name="Devojčice" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="21F04758D4C5D3C8" name="DeÄŤaci" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E4FCFB02190E63F4" name="DevojÄŤice" classid="50035352F7CBB095" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
       <group id="FCF3ECC2162FA7FC" name="Celo odeljenje" classid="8FCAFB5DC0700FB4" studentids="ADA25A03EE0A2BB0,14EF112F8DBFDEEC,0D3374354A4CF2D1,B059915C6A89D1B3,D8435D23EDE4DF47,EB430DBF83DF1EAA,8B1586DF0E4B112C,CE06C6B7C3FE8289,E2D3F7D72D10E7A2,208B8790938FA967,B6CA96E7888A1C86,B8635CB3E1C9DAA9,8C559D3DCBCB5AA2,6D3FB892B7536035,AC8767992D495379,4339F5061E955C09,0CDEBD054C1432DC,0B19B27B0FCFAF84,0B93020B0FD62677,B8DC1164CA700A3B,4824C61B89FB4C57,9918008711C9C660,3404F7A91449C3BF" entireclass="1" divisiontag="0" studentcount=""/>
       <group id="DAA944D5E2D51AC5" name="1. grupa" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
       <group id="84BF9B93D62BE1B2" name="2. grupa" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
-      <group id="F9B5FC07447B0E01" name="Dečaci" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
-      <group id="E6270AEA28C68CC9" name="Devojčice" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F9B5FC07447B0E01" name="DeÄŤaci" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E6270AEA28C68CC9" name="DevojÄŤice" classid="8FCAFB5DC0700FB4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
    </groups>
    <students options="canadd,export:silent" columns="id,classid,name,email,mobile,partner_id">
       <student id="CED9BD1FD7CD53C3" name="20030033" classid="ADE814829CDC9749" email="" mobile="" partner_id=""/>

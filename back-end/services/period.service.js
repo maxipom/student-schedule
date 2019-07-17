@@ -6,25 +6,21 @@ class PeriodService {
         this.periodsSource = DataSource.getPeriodSource();
     }
 
-    getPeriodById(periodId) {
-        const periodFromXml = this.periodsSource.find((period) => {
-            return period['_attributes']['period'] === periodId;
-        });
+    _getPeriodModelFromXml(xmlPeriod) {
         return new PeriodModel(
-            periodFromXml['_attributes']['period'],
-            periodFromXml['_attributes']['name'],
-            periodFromXml['_attributes']['short'],
-            periodFromXml['_attributes']['startTime'],
-            periodFromXml['_attributes']['endTime'],
+            xmlPeriod['_attributes']['period'],
+            xmlPeriod['_attributes']['name'],
+            xmlPeriod['_attributes']['short'],
+            xmlPeriod['_attributes']['startTime'],
+            xmlPeriod['_attributes']['endTime'],
         );
     }
 
     getAllPeriods() {
-        const periods = [];
-        this.periodsSource.forEach((xmlPeriod) => {
-            periods.push(this.getPeriodById(xmlPeriod['_attributes']['period']))
+        return this.periodsSource.map((xmlPeriod) => {
+            return this._getPeriodModelFromXml(xmlPeriod);
         });
-        return periods;
     }
 }
+
 module.exports = PeriodService;

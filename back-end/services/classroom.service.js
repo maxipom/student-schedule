@@ -7,34 +7,30 @@ class ClassroomService {
     }
 
     getAllClassrooms() {
-        const classroom = [];
-        this.classroomsSource.forEach((xmlClassroom) => {
-            classroom.push(this.getClassroomById(xmlClassroom['_attributes']['id']))
+        return this.classroomsSource.map((xmlClassroom) => {
+            return ClassroomService.getClassroomModelFromXML(xmlClassroom);
         });
-        return classroom;
     }
 
     getClassroomsByIds(classroomsIds) {
-        let classroomsArray = [];
-        classroomsIds.forEach((id) => {
-            classroomsArray.push(this.getClassroomById(id));
+        return classroomsIds.map((id) => {
+            return this.getClassroomById(id);
         });
-        return classroomsArray;
     }
 
     getClassroomById(id) {
         const xmlClassroom = this.classroomsSource.find((classroom) => {
             return classroom['_attributes']['id'] === id;
         });
-        return this._getClassroomFromXML(xmlClassroom);
+        return ClassroomService.getClassroomModelFromXML(xmlClassroom);
     }
 
-    _getClassroomFromXML(classroom) {
+    static getClassroomModelFromXML(xmlClassroom) {
         return new ClassroomModel(
-            classroom['_attributes']['id'],
-            classroom['_attributes']['name'],
-            classroom['_attributes']['short'],
-            classroom['_attributes']['capacity'],
+            xmlClassroom['_attributes']['id'],
+            xmlClassroom['_attributes']['name'],
+            xmlClassroom['_attributes']['short'],
+            xmlClassroom['_attributes']['capacity'],
         );
     }
 }

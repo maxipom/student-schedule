@@ -14,7 +14,7 @@ class CardService {
             (card) => {
                 lessons.forEach((lesson) => {
                     if (card['_attributes']['lessonid'] === lesson.id) {
-                        const simpleCardFromXML = this._getSimpleCardFromXML(card, lesson);
+                        const simpleCardFromXML = CardService.getSimpleCardFromXML(card, lesson);
                         cardsArray.push(simpleCardFromXML);
                     }
                 });
@@ -24,54 +24,52 @@ class CardService {
     }
 
     getCardsByClassroomId(classroomId) {
-        const xmlCards = this.cardsSource.filter(
-            (cards) => {
-                const classrooms = cards['_attributes']['classroomids'].split(',');
-                return classrooms.indexOf(classroomId) >= 0;
-            }
-        );
-        const cardsArray = [];
-        xmlCards.forEach(
-            (xmlCard) => {
-                cardsArray.push(this._getCardFromXml(xmlCard));
-            }
-        );
-        return cardsArray;
+        return this.cardsSource
+            .filter(
+                (cards) => {
+                    const classrooms = cards['_attributes']['classroomids'].split(',');
+                    return classrooms.indexOf(classroomId) >= 0;
+                }
+            ).map(
+                (xmlCard) => {
+                    return CardService.getCardFromXml(xmlCard);
+                }
+            );
     }
 
-    _getSimpleCardFromXML(card, lesson) {
+    static getSimpleCardFromXML(card, lesson) {
         return new CardModel(
-            this._getClassrooms(card['_attributes']['classroomids']),
+            CardService.getClassrooms(card['_attributes']['classroomids']),
             card['_attributes']['days'],
-            lesson || this._getSimpleLesson(card['_attributes']['lessonid']),
+            lesson || CardService.getSimpleLesson(card['_attributes']['lessonid']),
             card['_attributes']['period'],
             card['_attributes']['terms'],
             card['_attributes']['weeks'],
         );
     }
 
-    _getCardFromXml(card, lesson) {
+    static getCardFromXml(card, lesson) {
         return new CardModel(
-            this._getClassrooms(card['_attributes']['classroomids']),
+            CardService.getClassrooms(card['_attributes']['classroomids']),
             card['_attributes']['days'],
-            lesson || this._getLesson(card['_attributes']['lessonid']),
+            lesson || CardService.getLesson(card['_attributes']['lessonid']),
             card['_attributes']['period'],
             card['_attributes']['terms'],
             card['_attributes']['weeks'],
         );
     }
 
-    _getClassrooms(classroomsIdString) {
+    static getClassrooms(classroomsIdString) {
         const classroomsIds = classroomsIdString.split(',');
         const classroomServices = new ClassroomService();
         return classroomServices.getClassroomsByIds(classroomsIds);
     }
 
-    _getSimpleLesson(id) {
+    static getSimpleLesson(id) {
         return LessonService.getSimpleLessonById(id);
     }
 
-    _getLesson(id) {
+    static getLesson(id) {
         const lessonService = new LessonService();
         return lessonService.getLessonById(id);
     }

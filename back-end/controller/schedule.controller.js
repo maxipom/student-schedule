@@ -5,6 +5,7 @@ const PeriodService = require('../services/period.service');
 const DayDefService = require('../services/day-def.service');
 const StudentService = require('../services/student.service');
 const ClassroomService = require('../services/classroom.service');
+const CLassService = require('../services/class.service');
 
 
 class ScheduleController {
@@ -16,6 +17,7 @@ class ScheduleController {
         this.dayDefService = new DayDefService();
         this.studentService = new StudentService();
         this.classroomService = new ClassroomService();
+        this.classService = new CLassService();
     }
 
     getCardsByTeacherId(id) {
@@ -31,7 +33,9 @@ class ScheduleController {
     getClassrooms() {
         return this.classroomService.getAllClassrooms();
     }
-
+    getGroups(){
+        return this.classService.getAllClasses();
+    }
     getPeriods() {
         return this.periodService.getAllPeriods();
     }
