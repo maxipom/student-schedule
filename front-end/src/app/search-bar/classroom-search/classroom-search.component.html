@@ -1,14 +1,14 @@
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
   <div class="margin-around">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-12">
         <h2>
           <i class="material-icons main-icon">local_library</i>
           Učeionice</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-12">
         <div class="form-group">
           <label for="classroom-id">Ime</label>
           <select formControlName="classroomId" id="classroom-id" class="form-control">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 ">
+      <div class="col-12 ">
         <button type="submit" class="btn btn-primary pull-right"
                 [disabled]="!classroomId">viev schedule
           <i class="material-icons last-page-icon">last_page</i></button>

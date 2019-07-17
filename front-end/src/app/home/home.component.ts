@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.scheduleTitle = 'Izaberite raspored';
   }
 
   getCardsByTeacherId(teacher) {

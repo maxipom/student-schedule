@@ -1,13 +1,13 @@
 <div class="row">
-  <div class="col-md-3 search-menu">
-    <app-search-bar  [scheduleType]="selectedScheduleType"
-                     (buttonTeacherSearch)="getCardsByTeacherId($event)"
-                     (buttonStudentSearch)="getCardsByStudentId($event)"
-                     (buttonClassroomSearch)="getCardsByClassroomId($event)"
-                     (buttonClassSearch)="getCardsByClassId($event)"
+  <div class="col-12 col-lg-3 search-menu">
+    <app-search-bar [scheduleType]="selectedScheduleType"
+                    (buttonTeacherSearch)="getCardsByTeacherId($event)"
+                    (buttonStudentSearch)="getCardsByStudentId($event)"
+                    (buttonClassroomSearch)="getCardsByClassroomId($event)"
+                    (buttonClassSearch)="getCardsByClassId($event)"
     ></app-search-bar>
   </div>
-  <div class="col-md-9 schedule">
+  <div class="col-12 col-lg-9 schedule" id="schedule">
     <div *ngIf="scheduleTitle" class="text-center schedule-title">{{scheduleTitle}}</div>
     <app-schedule [displayCards]="displayCards" [cardsType]="cardsType"></app-schedule>
   </div>
