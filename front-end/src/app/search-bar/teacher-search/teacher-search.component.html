@@ -1,0 +1,30 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <div class="margin-around">
+    <div class="row">
+      <div class="col-12">
+        <h2>
+          <i class="material-icons main-icon">school</i>
+          Predavači</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group"> <!-- Proffessor Name -->
+          <label for="teacher-id">Ime</label>
+          <select formControlName="teacherId" id="teacher-id" class="form-control">
+            <option *ngFor="let teacher of teachers" [value]="teacher.id">
+              {{teacher.name}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 ">
+        <button type="submit" class="btn btn-primary pull-right"
+                [disabled]="!teacherId">viev schedule
+          <i class="material-icons last-page-icon">last_page</i></button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+<div [ngClass]="{'active':scheduleType == scheduleTypes.STUDENT_SCHEDULE}" class="animated">
+  <app-student-search (buttonStudentSearch)="getCardsByStudentId($event)"></app-student-search>
+</div>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.GROUP_SCHEDULE}" class="animated">
+  <app-class-search (buttonClassSearch)="getCardsByClassId($event)"></app-class-search>
+</div>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.TEACHER_SCHEDULE}" class="animated">
+  <app-teacher-search (buttonTeacherSearch)="getCardsByTeacherId($event)"></app-teacher-search>
+</div>
+<div [ngClass]="{'active':scheduleType == scheduleTypes.CLASSROOM_SCHEDULE}" class="animated">
+  <app-classroom-search (buttonClassroomSearch)="getCardsByClassroomId($event)"></app-classroom-search>
+</div>
+

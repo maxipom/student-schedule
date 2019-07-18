@@ -7,30 +7,34 @@ class TeacherService {
     }
 
 
-    getSimpleTeacherById(id) {
-        return new TeacherModel(id, null, null, null);
-    }
-
-    getSimpleTeachersByIds(teachersIds) {
-        let teacherArray = [];
-        teachersIds.forEach((id) => {
-            teacherArray.push(this.getSimpleTeacherById(id));
-        });
-        return teacherArray;
-    }
-
     getTeacherById(id) {
         const teacherFromXML = this.teachersSource.find((teacher) => {
             return teacher['_attributes']['id'] === id;
         });
+        return TeacherService._getTeacherModelFromXml(teacherFromXML);
+    }
+
+    static _getTeacherModelFromXml(xmlTeacher) {
         return new TeacherModel(
-            teacherFromXML['_attributes']['id'],
-            teacherFromXML['_attributes']['gender'],
-            teacherFromXML['_attributes']['firstname'],
-            teacherFromXML['_attributes']['lastname'],
-            teacherFromXML['_attributes']['name'],
-            teacherFromXML['_attributes']['short'],
+            xmlTeacher['_attributes']['id'],
+            xmlTeacher['_attributes']['gender'],
+            xmlTeacher['_attributes']['firstname'],
+            xmlTeacher['_attributes']['lastname'],
+            xmlTeacher['_attributes']['name'],
+            xmlTeacher['_attributes']['short'],
         );
+    }
+
+    getTeachersByIds(teachersIds) {
+        return teachersIds.map((id) => {
+            return this.getTeacherById(id);
+        });
+    }
+
+    getAllTeachers() {
+        return this.teachersSource.map((xmlTeacher) => {
+            return TeacherService._getTeacherModelFromXml(xmlTeacher);
+        });
     }
 }
 

@@ -8,13 +8,13 @@ class CardService {
         this.cardsSource = DataSource.getCardsSource();
     }
 
-    getCardsByLessonsId(lessons) {
+    getCardsByLessons(lessons) {
         const cardsArray = [];
         this.cardsSource.forEach(
             (card) => {
                 lessons.forEach((lesson) => {
                     if (card['_attributes']['lessonid'] === lesson.id) {
-                        const simpleCardFromXML = this._getSimpleCardFromXML(card, lesson);
+                        const simpleCardFromXML = CardService.getSimpleCardFromXML(card, lesson);
                         cardsArray.push(simpleCardFromXML);
                     }
                 });
@@ -23,26 +23,55 @@ class CardService {
         return cardsArray;
     }
 
-    _getSimpleCardFromXML(card, lesson) {
+    getCardsByClassroomId(classroomId) {
+        return this.cardsSource
+            .filter(
+                (cards) => {
+                    const classrooms = cards['_attributes']['classroomids'].split(',');
+                    return classrooms.indexOf(classroomId) >= 0;
+                }
+            ).map(
+                (xmlCard) => {
+                    return CardService.getCardFromXml(xmlCard);
+                }
+            );
+    }
+
+    static getSimpleCardFromXML(card, lesson) {
         return new CardModel(
-            this._getClassrooms(card['_attributes']['classroomids']),
+            CardService.getClassrooms(card['_attributes']['classroomids']),
             card['_attributes']['days'],
-            lesson || this._getSimpleLesson(card['_attributes']['teacherids']),
+            lesson || CardService.getSimpleLesson(card['_attributes']['lessonid']),
             card['_attributes']['period'],
             card['_attributes']['terms'],
             card['_attributes']['weeks'],
         );
     }
 
-    _getClassrooms(classroomsIdString) {
+    static getCardFromXml(card, lesson) {
+        return new CardModel(
+            CardService.getClassrooms(card['_attributes']['classroomids']),
+            card['_attributes']['days'],
+            lesson || CardService.getLesson(card['_attributes']['lessonid']),
+            card['_attributes']['period'],
+            card['_attributes']['terms'],
+            card['_attributes']['weeks'],
+        );
+    }
+
+    static getClassrooms(classroomsIdString) {
         const classroomsIds = classroomsIdString.split(',');
         const classroomServices = new ClassroomService();
         return classroomServices.getClassroomsByIds(classroomsIds);
     }
 
-    _getSimpleLesson(id) {
-        const lessonService = new LessonService(null);
+    static getSimpleLesson(id) {
         return LessonService.getSimpleLessonById(id);
+    }
+
+    static getLesson(id) {
+        const lessonService = new LessonService();
+        return lessonService.getLessonById(id);
     }
 }
 

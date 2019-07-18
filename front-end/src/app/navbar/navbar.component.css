@@ -1,0 +1,13 @@
+.line-divider-bottom {
+  border-bottom: 0.16rem solid gray;
+}
+
+#tmf-logo {
+  width: 5rem;
+}
+#title{
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  color: #484646;
+}

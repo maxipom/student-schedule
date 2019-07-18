@@ -1,0 +1,20 @@
+.active{
+  background-color: #f5f5f5;
+}
+.animated{
+  transition: all linear 0.1s;
+}
+
+.margin-around {
+  margin: 3%;
+  padding: 0.5rem;
+}
+
+.main-icon {
+  font-size: 2.4rem;
+}
+
+.last-page-icon {
+  vertical-align: bottom;
+}
+
