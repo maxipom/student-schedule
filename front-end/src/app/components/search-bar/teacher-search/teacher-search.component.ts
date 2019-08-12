@@ -35,6 +35,10 @@ export class TeacherSearchComponent implements OnInit {
     });
   }
 
+  clearInputs() {
+    this.searchForm.get('teacherId').setValue(null);
+  }
+
   get teacherId() {
     return this.searchForm.get('teacherId').value;
   }

@@ -36,6 +36,10 @@ export class ClassroomSearchComponent implements OnInit {
     });
   }
 
+  clearInputs() {
+    this.searchForm.get('classroomId').setValue(null);
+  }
+
   get classroomId() {
     return this.searchForm.get('classroomId').value;
   }

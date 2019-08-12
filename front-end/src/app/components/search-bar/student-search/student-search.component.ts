@@ -25,6 +25,10 @@ export class StudentSearchComponent implements OnInit {
 
   }
 
+  clearInputs() {
+    this.searchForm.get('studentId').setValue(null);
+    this.searchForm.get('studentYear').setValue(null);
+  }
 
   get studentId(): string {
     return this.searchForm.get('studentId').value;

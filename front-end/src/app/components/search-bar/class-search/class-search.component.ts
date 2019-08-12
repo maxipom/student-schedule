@@ -36,6 +36,10 @@ export class ClassSearchComponent implements OnInit {
     });
   }
 
+  clearInputs() {
+    this.searchForm.get('groupId').setValue(null);
+  }
+
   get groupId() {
     return this.searchForm.get('groupId').value;
   }

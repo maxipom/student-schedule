@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a8045a5-11b6-4d7e-9f93-01ebe2439046" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/student.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/student.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/subject.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/subject.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule-api/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/schedule-api/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/classroom.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/classroom.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/Created_the_API_and_the_method_api_teacher,_that_gets_all_the_teachers_pt_2.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/classroom-content-card/classroom-content-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/classroom-content-card/classroom-content-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/classroom-content-card/classroom-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/classroom-content-card/classroom-content-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/classroom-content-card/classroom-content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/classroom-content-card/classroom-content-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/shared/content-card.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/shared/content-card.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/student-content-card/student-content-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/student-content-card/student-content-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/student-content-card/student-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/student-content-card/student-content-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/student-content-card/student-content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/student-content-card/student-content-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/teacher-content-card/teacher-content-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/teacher-content-card/teacher-content-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/card/content-cards/teacher-content-card/teacher-content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/content-cards/teacher-content-card/teacher-content-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/navbar/navbar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/class-search/class-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/classroom-search/classroom-search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/classroom-search/classroom-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/classroom-search/classroom-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/search-bar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/search-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/search-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/search-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/student-search/student-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/teacher-search/teacher-search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/teacher-search/teacher-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/search-bar/teacher-search/teacher-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/search-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/search-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -351,7 +311,7 @@
       <workItem from="1565002533938" duration="945000" />
       <workItem from="1565007695822" duration="391000" />
       <workItem from="1565256588251" duration="1308000" />
-      <workItem from="1565597314955" duration="1582000" />
+      <workItem from="1565597314955" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1563354761806</created>
@@ -364,10 +324,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74534000" />
+    <option name="totallyTimeSpent" value="75124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23809524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
