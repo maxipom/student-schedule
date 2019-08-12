@@ -18,6 +18,7 @@ import {ClassroomSearchComponent} from './components/search-bar/classroom-search
 import {ClassroomContentCardComponent} from './components/card/content-cards/classroom-content-card/classroom-content-card.component';
 import {ClassSearchComponent} from './components/search-bar/class-search/class-search.component';
 import {ProxyInterceptor} from './interceptors/proxy.interceptor';
+import {NgxPrintModule} from 'ngx-print';
 
 const routes: Routes = [
   {
@@ -43,6 +44,7 @@ const routes: Routes = [
     ClassSearchComponent
   ],
   imports: [
+    NgxPrintModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),

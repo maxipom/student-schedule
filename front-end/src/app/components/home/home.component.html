@@ -7,8 +7,11 @@
                     (buttonClassSearch)="getCardsByClassId($event)"
     ></app-search-bar>
   </div>
-  <div class="col-12 col-lg-9 schedule" id="schedule">
-    <div *ngIf="scheduleTitle" class="text-center schedule-title">{{scheduleTitle}}</div>
-    <app-schedule [displayCards]="displayCards" [cardsType]="cardsType"></app-schedule>
+  <div class="col-12 col-lg-9 schedule" id="schedule-print">
+    <div class="schedule">
+      <div *ngIf="scheduleTitle" class="text-center schedule-title">{{scheduleTitle}}
+      </div>
+      <app-schedule [displayCards]="displayCards" [cardsType]="cardsType"></app-schedule>
+    </div>
   </div>
 </div>
