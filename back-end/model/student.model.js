@@ -1,8 +1,9 @@
 class StudentModel {
-    constructor(id, name, classId) {
+    constructor(id, name, email,mobile) {
         this.id = id;
         this.name = name;
-        this.classId = classId;
+        this.email = email;
+        this.mobile = mobile;
     }
 }
 

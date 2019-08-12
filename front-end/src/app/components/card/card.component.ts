@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardsTypesEnum} from '../shared/cards-types.enum';
-import {DisplayCard} from '../shared/display-card.model';
+import {CardsTypesEnum} from '../../shared/cards-types.enum';
+import {DisplayCard} from '../../shared/display-card.model';
 
 @Component({
   selector: 'app-card',

@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {TeacherModel} from '../models/teacher.model';
-import {ScheduleTypeEnum} from '../shared/schedule-type.enum';
+import {TeacherModel} from '../../models/teacher.model';
+import {ScheduleTypeEnum} from '../../shared/schedule-type.enum';
 
 @Component({
   selector: 'app-search-bar',

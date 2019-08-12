@@ -28,6 +28,7 @@ class ClassroomService {
     static getClassroomModelFromXML(xmlClassroom) {
         return new ClassroomModel(
             xmlClassroom['_attributes']['id'],
+            xmlClassroom['_attributes']['id'],
             xmlClassroom['_attributes']['name'],
             xmlClassroom['_attributes']['short'],
             xmlClassroom['_attributes']['capacity'],

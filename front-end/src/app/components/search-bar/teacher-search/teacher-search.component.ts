@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {TeacherModel} from '../../models/teacher.model';
-import {TeacherService} from '../../services/teacher.service';
+import {TeacherModel} from '../../../models/teacher.model';
+import {TeacherService} from '../../../services/teacher.service';
 
 @Component({
   selector: 'app-teacher-search',

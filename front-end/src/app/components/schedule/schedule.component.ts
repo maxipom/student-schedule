@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardsTypesEnum} from '../shared/cards-types.enum';
-import {PeriodModel} from '../models/period.model';
-import {ScheduleService} from '../services/schedule.service';
-import {DisplayCard} from '../shared/display-card.model';
+import {CardsTypesEnum} from '../../shared/cards-types.enum';
+import {PeriodModel} from '../../models/period.model';
+import {ScheduleService} from '../../services/schedule.service';
+import {DisplayCard} from '../../shared/display-card.model';
 
 const ALL_DAY_ID = '11111';
 

@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {CardService} from '../services/card.service';
-import {CardModel} from '../models/card.model';
-import {CardsTypesEnum} from '../shared/cards-types.enum';
-import {DisplayCard} from '../shared/display-card.model';
-import {ScheduleTypeEnum} from '../shared/schedule-type.enum';
-import {ClassroomModel} from '../models/classroom.model';
-import {ClassModel} from '../models/class.model';
+import {CardService} from '../../services/card.service';
+import {CardModel} from '../../models/card.model';
+import {CardsTypesEnum} from '../../shared/cards-types.enum';
+import {DisplayCard} from '../../shared/display-card.model';
+import {ScheduleTypeEnum} from '../../shared/schedule-type.enum';
+import {ClassroomModel} from '../../models/classroom.model';
+import {ClassModel} from '../../models/class.model';
 
 @Component({
   selector: 'app-home',
