@@ -4,17 +4,12 @@
     <list default="true" id="2a8045a5-11b6-4d7e-9f93-01ebe2439046" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/card/card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/schedule/schedule.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/navbar/navbar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/class-search/class-search.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/classroom-search/classroom-search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/student-search/student-search.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/search-bar/teacher-search/teacher-search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/shared/cards-types.enum.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -324,7 +319,7 @@
       <workItem from="1565626095996" duration="1222000" />
       <workItem from="1565683540649" duration="240000" />
       <workItem from="1565683790115" duration="599000" />
-      <workItem from="1565694124629" duration="633000" />
+      <workItem from="1565694124629" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1563354761806</created>
@@ -337,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80727000" />
+    <option name="totallyTimeSpent" value="81326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

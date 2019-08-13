@@ -18,12 +18,10 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 ">
-        <button type="submit" class="btn btn-primary pull-right"
-                [disabled]="!teacherId">viev schedule
-          <i class="material-icons last-page-icon">last_page</i></button>
-      </div>
+    <div class="row justify-content-center">
+      <button type="submit" class="btn" [ngClass]="{'btn-primary':teacherId,'btn-outline-primary':!teacherId}"
+              [disabled]="!teacherId">viev schedule
+        <i class="material-icons last-page-icon">last_page</i></button>
     </div>
   </div>
 </form>
