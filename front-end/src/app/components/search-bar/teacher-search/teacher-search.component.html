@@ -10,7 +10,6 @@
     <div class="row">
       <div class="col-12">
         <div class="form-group"> <!-- Proffessor Name -->
-          <label for="teacher-id">Ime</label>
           <select formControlName="teacherId" id="teacher-id" class="form-control">
             <option *ngFor="let teacher of teachers" [value]="teacher.id">
               {{teacher.name}}

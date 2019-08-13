@@ -11,11 +11,10 @@
         <div *ngFor="let displayCard of displayCards">
           <app-card *ngIf="displayCard.startPeriod === period.period && displayCard.card.day === dayDef.day"
                     [displayCard]="displayCard"
-                    [cardsType]="cardsType"></app-card>
+                    [scheduleType]="scheduleType"></app-card>
         </div>
       </div>
 
     </div>
   </div>
 </div>
-

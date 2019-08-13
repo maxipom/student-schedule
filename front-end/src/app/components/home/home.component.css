@@ -1,22 +1,46 @@
 .search-menu {
-  margin-top: 2rem;
+  padding-top: 2rem;
   min-height: 100%;
+  height: 100%;
+  width: 100%;
   padding-right: 0;
 }
 
-.schedule {
-  background-color: #e3e3f2;
-  padding-right: 0;
-}
-
-.schedule-title {
+.schedule-title-container {
   background-color: white;
   font-size: xx-large;
   color: #484848;
   font-weight: 400;
   margin-left: -1rem;
-  max-height: 3rem;
+  transition: all 550ms ease-in-out;
 }
-#print-button{
-  margin-right: 1.5rem;
+
+.no-cards-displayed {
+  flex: 1 1 auto;
+  height: 50rem;
+  padding: 10rem;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 40px,
+    #e6e6e6 40px,
+    #e6e6e6 80px
+  );
+  box-shadow: inset 2px 4px 5px 0 #A3A3A3;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  text-shadow: 2px 3px 3px #B7AFA3;
+}
+
+.cards-displayed {
+  height: 3rem;
+}
+
+
+.schedule-container {
+  background-color: #e3e3f2;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }

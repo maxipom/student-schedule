@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardsTypesEnum} from '../../shared/cards-types.enum';
 import {DisplayCard} from '../../shared/display-card.model';
+import {ScheduleTypeEnum} from '../../shared/schedule-type.enum';
 
 @Component({
   selector: 'app-card',
@@ -11,8 +11,8 @@ export class CardComponent implements OnInit {
   @Input()
   public displayCard: DisplayCard;
   @Input()
-  cardsType: CardsTypesEnum;
-  cardsTypes = CardsTypesEnum;
+  scheduleType: ScheduleTypeEnum;
+  scheduleTypes = ScheduleTypeEnum;
 
   constructor() {
   }

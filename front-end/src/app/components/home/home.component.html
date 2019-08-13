@@ -1,17 +1,22 @@
 <div class="row">
   <div class="col-12 col-lg-3 search-menu">
     <app-search-bar [scheduleType]="selectedScheduleType"
-                    (buttonTeacherSearch)="getCardsByTeacherId($event)"
-                    (buttonStudentSearch)="getCardsByStudentId($event)"
-                    (buttonClassroomSearch)="getCardsByClassroomId($event)"
-                    (buttonClassSearch)="getCardsByClassId($event)"
+                    (buttonTeacherSearch)="getCards(scheduleTypes.TEACHER_SCHEDULE,$event)"
+                    (buttonStudentSearch)="getCards(scheduleTypes.STUDENT_SCHEDULE,$event)"
+                    (buttonClassroomSearch)="getCards(scheduleTypes.CLASSROOM_SCHEDULE,$event)"
+                    (buttonClassSearch)="getCards(scheduleTypes.GROUP_SCHEDULE,$event)"
     ></app-search-bar>
   </div>
-  <div class="col-12 col-lg-9 schedule" id="schedule-print">
-    <div class="schedule">
-      <div *ngIf="scheduleTitle" class="text-center schedule-title">{{scheduleTitle}}
+  <div class="col-12 col-lg-9 schedule-container" id="schedule-print">
+    <div>
+      <div *ngIf="scheduleTitle" class="text-center schedule-title-container"
+           [ngClass]="{
+        'no-cards-displayed': displayCards.length == 0,
+        'cards-displayed':displayCards.length != 0}">
+        {{scheduleTitle}}
       </div>
-      <app-schedule [displayCards]="displayCards" [cardsType]="cardsType"></app-schedule>
+      <app-schedule *ngIf=" displayCards.length !=0" [displayCards]="displayCards"
+                    [scheduleType]="selectedScheduleType"></app-schedule>
     </div>
   </div>
 </div>

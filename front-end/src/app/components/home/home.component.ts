@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CardService} from '../../services/card.service';
 import {CardModel} from '../../models/card.model';
-import {CardsTypesEnum} from '../../shared/cards-types.enum';
 import {DisplayCard} from '../../shared/display-card.model';
 import {ScheduleTypeEnum} from '../../shared/schedule-type.enum';
 import {ClassroomModel} from '../../models/classroom.model';
@@ -13,11 +12,10 @@ import {ClassModel} from '../../models/class.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  cards: CardModel[] = [];
   scheduleTitle: string;
-  cardsType: CardsTypesEnum;
-  displayCards: DisplayCard[];
+  displayCards: DisplayCard[] = [];
   selectedScheduleType: ScheduleTypeEnum;
+  scheduleTypes = ScheduleTypeEnum;
 
   constructor(private cardService: CardService) {
   }
@@ -26,72 +24,118 @@ export class HomeComponent implements OnInit {
     this.scheduleTitle = 'Izaberite raspored';
   }
 
-  getCardsByTeacherId(teacher) {
-    this.selectedScheduleType = ScheduleTypeEnum.TEACHER_SCHEDULE;
+  getCards(scheduleType: ScheduleTypeEnum, event) {
+    this._clearScreen();
+
+    this.selectedScheduleType = scheduleType;
+    setTimeout(
+      () => {
+        this._showCards(scheduleType, event);
+      }, 500
+    );
+
+  }
+
+  private _showCards(scheduleType: ScheduleTypeEnum, event) {
+    switch (scheduleType) {
+      case ScheduleTypeEnum.GROUP_SCHEDULE: {
+        this._getCardsByClass(event);
+        break;
+      }
+      case ScheduleTypeEnum.STUDENT_SCHEDULE: {
+        this._getCardsByStudentId(event);
+        break;
+      }
+      case ScheduleTypeEnum.TEACHER_SCHEDULE: {
+        this._getCardsByTeacher(event);
+        break;
+      }
+      case ScheduleTypeEnum.CLASSROOM_SCHEDULE: {
+        this._getCardsByClassroom(event);
+        break;
+      }
+      default: {
+        this._clearScreen();
+        break;
+      }
+    }
+  }
+
+  private _clearScreen() {
+    this.displayCards = [];
+    this.scheduleTitle = '...';
+  }
+
+  private _showNotFoundMessage(errorMessage?: string, error?) {
+    if (errorMessage) {
+      console.warn(errorMessage, error);
+    }
+    this.scheduleTitle = 'Nije pronađen nijedan raspored';
+  }
+
+  private _getCardsByTeacher(teacher) {
     this.cardService.getCardsByTeacherId(teacher.id).subscribe(
       (cards: CardModel[]) => {
-        if (cards) {
-          this.cards = cards;
+        if (cards.length !== 0) {
           this.scheduleTitle = 'Predavač ' + teacher.name;
-          this.cardsType = CardsTypesEnum.TEACHER_CARD;
-          this.getDisplayCards();
+          this._getDisplayCards(cards);
+        } else {
+          this._showNotFoundMessage();
         }
       }, error => {
-        console.warn('There was an error trying to get the cards of the teacher ' + teacher.id, error);
+        this._showNotFoundMessage('There was an error trying to get the cards of the teacher ' + teacher.id, error);
+        console.warn();
       });
   }
 
-  getCardsByStudentId(studentId) {
-    this.selectedScheduleType = ScheduleTypeEnum.STUDENT_SCHEDULE;
+  private _getCardsByStudentId(studentId) {
     this.cardService.getCardsByStudentId(studentId).subscribe(
       (cards: CardModel[]) => {
-        if (cards) {
-          this.cards = cards;
+        if (cards.length !== 0) {
           this.scheduleTitle = 'Učenik ' + studentId;
-          this.cardsType = CardsTypesEnum.STUDENT_CARD;
-          this.getDisplayCards();
+          this._getDisplayCards(cards);
+        } else {
+          this._showNotFoundMessage();
         }
       }, error => {
-        console.warn('There was an error trying to get the cards of the student ' + studentId, error);
+        this._showNotFoundMessage('There was an error trying to get the cards of the student ' + studentId, error);
       });
   }
 
-  getCardsByClassroomId(classroom: ClassroomModel) {
-    this.selectedScheduleType = ScheduleTypeEnum.CLASSROOM_SCHEDULE;
+  private _getCardsByClassroom(classroom: ClassroomModel) {
     this.cardService.getCardsByClassroomId(classroom.id).subscribe(
       (cards: CardModel[]) => {
-        if (cards) {
-          this.cards = cards;
+        if (cards.length !== 0) {
           this.scheduleTitle = 'Učeionica ' + classroom.short;
-          this.cardsType = CardsTypesEnum.CLASSROOM_CARD;
-          this.getDisplayCards();
+          this._getDisplayCards(cards);
+        } else {
+          this._showNotFoundMessage();
         }
       }, error => {
-        console.warn('There was an error trying to get the cards of the classroom ' + classroom.id, error);
+        this._showNotFoundMessage('There was an error trying to get the cards of the classroom ' + classroom.id, error);
       });
   }
 
-  getCardsByClassId(classModel: ClassModel) {
-    this.selectedScheduleType = ScheduleTypeEnum.GROUP_SCHEDULE;
+  private _getCardsByClass(classModel: ClassModel) {
     this.cardService.getCardsByClassId(classModel.id).subscribe(
       (cards: CardModel[]) => {
-        if (cards) {
-          this.cards = cards;
+        if (cards.length !== 0) {
           this.scheduleTitle = 'Odeljenja ' + classModel.short;
-          this.cardsType = CardsTypesEnum.STUDENT_CARD;
-          this.getDisplayCards();
+          this._getDisplayCards(cards);
+        } else {
+          this._showNotFoundMessage();
         }
       }, error => {
-        console.warn('There was an error trying to get the cards of the classes ' + classModel.id, error);
+        this._showNotFoundMessage('There was an error trying to get the cards of the classes ' + classModel.id, error);
       });
   }
 
-  getDisplayCards() {
-    if (this.cards) {
-      const newCards = [];
+  private _getDisplayCards(cards: CardModel[]) {
+    if (cards) {
+      const displayCards = [];
       let lastCard = CardService.getEmptyCard();
       let newCard: DisplayCard;
-      this.cards.forEach(
+      cards.forEach(
         (card) => {
           if (lastCard.lesson.id === card.lesson.id &&
             lastCard.day === card.day) {
@@ -100,7 +144,7 @@ export class HomeComponent implements OnInit {
             }
           } else {
             if (newCard) {
-              newCards.push(newCard);
+              displayCards.push(newCard);
             }
             newCard = new DisplayCard(card, card.period, card.period);
           }
@@ -108,9 +152,9 @@ export class HomeComponent implements OnInit {
         }
       );
       if (newCard) {
-        newCards.push(newCard);
+        displayCards.push(newCard);
       }
-      this.displayCards = newCards;
+      this.displayCards = displayCards;
     }
   }
 }

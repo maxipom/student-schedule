@@ -1,11 +1,12 @@
-<div [ngSwitch]="cardsType">
-  <div *ngSwitchCase="cardsTypes.TEACHER_CARD" class="schedule-card {{getPeriodClass()}}">
+<div [ngSwitch]="scheduleType">
+  <div *ngSwitchCase="scheduleTypes.TEACHER_SCHEDULE" class="schedule-card {{getPeriodClass()}}">
     <app-teacher-content-card [card]="displayCard.card"></app-teacher-content-card>
   </div>
-  <div *ngSwitchCase="cardsTypes.STUDENT_CARD" class="schedule-card {{getPeriodClass()}}">
+  <div *ngSwitchCase="scheduleTypes.STUDENT_SCHEDULE" class="schedule-card {{getPeriodClass()}}">
     <app-student-content-card [card]="displayCard.card"></app-student-content-card>
   </div>
-  <div *ngSwitchCase="cardsTypes.CLASSROOM_CARD" class="schedule-card {{getPeriodClass()}}">
+  <div *ngSwitchCase="scheduleTypes.CLASSROOM_SCHEDULE ||scheduleTypes.GROUP_SCHEDULE  "
+       class="schedule-card {{getPeriodClass()}}">
     <app-classroom-content-card [card]="displayCard.card"></app-classroom-content-card>
   </div>
 </div>

@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardsTypesEnum} from '../../shared/cards-types.enum';
 import {PeriodModel} from '../../models/period.model';
 import {ScheduleService} from '../../services/schedule.service';
 import {DisplayCard} from '../../shared/display-card.model';
+import {ScheduleTypeEnum} from '../../shared/schedule-type.enum';
 
 const ALL_DAY_ID = '11111';
 
@@ -13,7 +13,7 @@ const ALL_DAY_ID = '11111';
 })
 export class ScheduleComponent implements OnInit {
   @Input()
-  cardsType: CardsTypesEnum;
+  scheduleType: ScheduleTypeEnum;
   periods: PeriodModel[];
   dayDefs: DayDefModel[];
   @Input()
@@ -26,7 +26,6 @@ export class ScheduleComponent implements OnInit {
 
   ngOnInit() {
   }
-
 
 
   getPeriods() {
