@@ -4,6 +4,30 @@ body {
   width: 100%;
 }
 
+.line-height-1 {
+  line-height: 1rem;
+}
+
+.line-height-2 {
+  line-height: 2rem;
+}
+
+.line-height-3 {
+  line-height: 3rem;
+}
+
+.line-height-4 {
+  line-height: 4rem;
+}
+
+.line-height-5 {
+  line-height: 5rem;
+}
+
+.line-height-6 {
+  line-height: 6rem;
+}
+
 .animated {
   transition: all 550ms ease-in-out;
 }

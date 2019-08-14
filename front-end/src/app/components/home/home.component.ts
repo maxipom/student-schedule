@@ -17,12 +17,14 @@ export class HomeComponent implements OnInit {
   selectedScheduleType: ScheduleTypeEnum;
   scheduleTypes = ScheduleTypeEnum;
   searchMenuExpanded = true;
+  todayDate: Date;
 
   constructor(private cardService: CardService) {
   }
 
   ngOnInit() {
     this.scheduleTitle = 'Izaberite raspored';
+    this.todayDate = new Date();
   }
 
   switchSearchMenu() {

@@ -1,5 +1,5 @@
 <div class="row justify-content-center">
-  <div class="col-12 col-lg-3 search-menu-container animated"  [ngClass]="{'search-menu-expanded':searchMenuExpanded,
+  <div class="col-12 col-lg-3 search-menu-container animated" [ngClass]="{'search-menu-expanded':searchMenuExpanded,
        'search-menu-contracted':!searchMenuExpanded}">
     <app-search-bar
       [scheduleType]="selectedScheduleType"
@@ -26,5 +26,8 @@
       <app-schedule *ngIf=" displayCards.length !=0" [displayCards]="displayCards"
                     [scheduleType]="selectedScheduleType"></app-schedule>
     </div>
+    <footer class="d-none d-print-block">
+      <div class="text-right">University of belgrade - Faculty of Technology and Metallurgy (TMF)</div></footer>
+      <div class="text-right text-secondary">Printed on {{todayDate | date:'dd/MM/yyyy'}}</div>
   </div>
 </div>
