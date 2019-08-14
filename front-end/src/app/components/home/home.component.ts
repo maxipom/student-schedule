@@ -16,12 +16,17 @@ export class HomeComponent implements OnInit {
   displayCards: DisplayCard[] = [];
   selectedScheduleType: ScheduleTypeEnum;
   scheduleTypes = ScheduleTypeEnum;
+  searchMenuExpanded = true;
 
   constructor(private cardService: CardService) {
   }
 
   ngOnInit() {
     this.scheduleTitle = 'Izaberite raspored';
+  }
+
+  switchSearchMenu() {
+    this.searchMenuExpanded = !this.searchMenuExpanded;
   }
 
   getCards(scheduleType: ScheduleTypeEnum, event) {

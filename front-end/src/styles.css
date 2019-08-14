@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
   height: 100%;
   width: 100%;
 }
+
+.animated {
+  transition: all 550ms ease-in-out;
+}
+
 .btn-primary {
   color: #ffffff;
   background-color: #F39300;
@@ -30,7 +35,7 @@ body{
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
-.show>.btn-primary.dropdown-toggle {
+.show > .btn-primary.dropdown-toggle {
   color: #ffffff;
   background-color: #f39f04;
   border-color: #f38706
@@ -38,7 +43,7 @@ body{
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
 }
 
@@ -68,7 +73,7 @@ body{
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
-.show>.btn-outline-primary.dropdown-toggle {
+.show > .btn-outline-primary.dropdown-toggle {
   color: #ffffff;
   background-color: #f39f04;
   border-color: #f38706
@@ -76,6 +81,6 @@ body{
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-outline-primary.dropdown-toggle:focus {
+.show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 .2rem rgba(194, 160, 0, 0.5)
 }
