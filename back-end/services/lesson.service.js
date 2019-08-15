@@ -5,6 +5,7 @@ const DayDefService = require('../services/day-def.service');
 const SubjectService = require('../services/subject.service');
 const TeacherService = require('../services/teacher.service');
 const DataSource = require('../services/data-source.service');
+const constants = require('./shared/xml-constants-definition');
 
 class LessonService {
     constructor() {
@@ -23,7 +24,7 @@ class LessonService {
 
     getLessonById(id) {
         const xmlLesson = this.lessonsSource.find((xmlLesson) => {
-            return (xmlLesson['_attributes']['id'] === id)
+            return (xmlLesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_ID] === id)
         });
         return LessonService.getSimpleLessonFromXML(xmlLesson);
     }
@@ -56,15 +57,15 @@ class LessonService {
 
     static getSimpleLessonFromXML(lesson, teachers) {
         return new LessonModel(
-            lesson['_attributes']['id'],
-            LessonService.getClasses(lesson['_attributes']['classids']),
-            LessonService.getSimpleDayDef(lesson['_attributes']['daydef']),
-            LessonService.getSimpleClassrooms(lesson['_attributes']['classroomids']),
-            lesson['_attributes']['periodspercard'],
-            lesson['_attributes']['periodsperweek'],
-            lesson['_attributes']['seminargroup'],
-            LessonService.getSimpleSubject(lesson['_attributes']['subjectid']),
-            teachers || LessonService.getTeachers(lesson['_attributes']['teacherids']),
+            lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_ID],
+            LessonService.getClasses(lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_CLASS_IDS]),
+            LessonService.getSimpleDayDef(lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_DAY_DEF]),
+            LessonService.getSimpleClassrooms(lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_CLASSROOM_IDS]),
+            lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_PERIODS_PER_CARD],
+            lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_PERIODS_PER_WEEK],
+            lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_SEMINAR_GROUP],
+            LessonService.getSimpleSubject(lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_SUBJECT_ID]),
+            teachers || LessonService.getTeachers(lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_TEACHER_IDS]),
             null,
         );
     }
@@ -98,23 +99,23 @@ class LessonService {
     }
 
     static isTeacherIdInLesson(lesson, teacherId) {
-        const teachersId = lesson['_attributes']['teacherids'].split(',');
+        const teachersId = lesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_TEACHER_IDS].split(',');
         return teachersId.indexOf(teacherId) >= 0;
     }
 
     _isStudentIdInLesson(xmlLesson, studentId) {
         const lesson = DataSource.getStudentSubject().find(
             (studentSubject) => {
-                return studentSubject['_attributes']['studentid'] === studentId &&
-                    studentSubject['_attributes']['subjectid'] === xmlLesson['_attributes']['subjectid'] &&
-                    studentSubject['_attributes']['seminargroup'] === xmlLesson['_attributes']['seminargroup'];
+                return studentSubject[constants.TREE_DEF_ATTRIBUTES][constants.STUDENTSUBJECT_STUDENT_ID] === studentId &&
+                    studentSubject[constants.TREE_DEF_ATTRIBUTES][constants.STUDENTSUBJECT_SUBJECT_ID] === xmlLesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_SUBJECT_ID] &&
+                    studentSubject[constants.TREE_DEF_ATTRIBUTES][constants.STUDENTSUBJECT_SEMINAR_GROUP] === xmlLesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_SEMINAR_GROUP];
             }
         );
         return lesson !== null && lesson !== undefined;
     }
 
     static isClassIdInLesson(xmlLesson, classId, maxAmountOfClasses) {
-        const classIds = xmlLesson['_attributes']['classids'].split(',');
+        const classIds = xmlLesson[constants.TREE_DEF_ATTRIBUTES][constants.LESSON_CLASS_IDS].split(',');
         return classIds.indexOf(classId) >= 0 && classIds.length <= maxAmountOfClasses;
     }
 

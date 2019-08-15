@@ -1,5 +1,6 @@
 const SubjectModel = require('../model/subject.model');
 const DataSource = require('../services/data-source.service');
+const constants = require('./shared/xml-constants-definition');
 
 class SubjectService {
     constructor() {
@@ -8,12 +9,12 @@ class SubjectService {
 
     getSimpleSubjectById(id) {
         const subject = this.subjectsSource.find((xmlSubject) => {
-            return xmlSubject['_attributes']['id'] === id
+            return xmlSubject[constants.TREE_DEF_ATTRIBUTES][constants.SUBJECT_ID] === id
         });
         return new SubjectModel(
-            subject['_attributes']['id'],
-            subject['_attributes']['name'],
-            subject['_attributes']['short'],
+            subject[constants.TREE_DEF_ATTRIBUTES][constants.SUBJECT_ID],
+            subject[constants.TREE_DEF_ATTRIBUTES][constants.SUBJECT_NAME],
+            subject[constants.TREE_DEF_ATTRIBUTES][constants.SUBJECT_SHORT],
             null
         );
     }

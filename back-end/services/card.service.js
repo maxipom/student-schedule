@@ -2,6 +2,7 @@ const LessonService = require('../services/lesson.service');
 const ClassroomService = require('../services/classroom.service');
 const CardModel = require('../model/card.model');
 const DataSource = require('../services/data-source.service');
+const constants = require('./shared/xml-constants-definition');
 
 class CardService {
     constructor() {
@@ -13,7 +14,7 @@ class CardService {
         this.cardsSource.forEach(
             (card) => {
                 lessons.forEach((lesson) => {
-                    if (card['_attributes']['lessonid'] === lesson.id) {
+                    if (card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_LESSON_ID] === lesson.id) {
                         const simpleCardFromXML = CardService.getSimpleCardFromXML(card, lesson);
                         cardsArray.push(simpleCardFromXML);
                     }
@@ -27,7 +28,7 @@ class CardService {
         return this.cardsSource
             .filter(
                 (cards) => {
-                    const classrooms = cards['_attributes']['classroomids'].split(',');
+                    const classrooms = cards[constants.TREE_DEF_ATTRIBUTES][constants.CARD_CLASSROOM_IDS].split(',');
                     return classrooms.indexOf(classroomId) >= 0;
                 }
             ).map(
@@ -39,23 +40,23 @@ class CardService {
 
     static getSimpleCardFromXML(card, lesson) {
         return new CardModel(
-            CardService.getClassrooms(card['_attributes']['classroomids']),
-            card['_attributes']['days'],
-            lesson || CardService.getSimpleLesson(card['_attributes']['lessonid']),
-            card['_attributes']['period'],
-            card['_attributes']['terms'],
-            card['_attributes']['weeks'],
+            CardService.getClassrooms(card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_CLASSROOM_IDS]),
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_DAYS],
+            lesson || CardService.getSimpleLesson(card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_LESSON_ID]),
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_PERIOD],
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_TERMS],
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_WEEKS],
         );
     }
 
     static getCardFromXml(card, lesson) {
         return new CardModel(
-            CardService.getClassrooms(card['_attributes']['classroomids']),
-            card['_attributes']['days'],
-            lesson || CardService.getLesson(card['_attributes']['lessonid']),
-            card['_attributes']['period'],
-            card['_attributes']['terms'],
-            card['_attributes']['weeks'],
+            CardService.getClassrooms(card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_CLASSROOM_IDS]),
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_DAYS],
+            lesson || CardService.getLesson(card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_LESSON_ID]),
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_PERIOD],
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_TERMS],
+            card[constants.TREE_DEF_ATTRIBUTES][constants.CARD_WEEKS],
         );
     }
 

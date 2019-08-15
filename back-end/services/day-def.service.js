@@ -1,5 +1,6 @@
-const DayDefModel = require('../model/day-def.model');
 const DataSource = require('../services/data-source.service');
+const DayDefModel = require('../model/day-def.model');
+const constants = require('./shared/xml-constants-definition');
 
 class DayDefService {
     constructor() {
@@ -12,10 +13,10 @@ class DayDefService {
 
     static getDayDefModelFromXMl(xmlDayDef) {
         return new DayDefModel(
-            xmlDayDef['_attributes']['id'],
-            xmlDayDef['_attributes']['name'],
-            xmlDayDef['_attributes']['short'],
-            xmlDayDef['_attributes']['days'],
+            xmlDayDef[constants.TREE_DEF_ATTRIBUTES][constants.DAYDEF_ID],
+            xmlDayDef[constants.TREE_DEF_ATTRIBUTES][constants.DAYDEF_NAME],
+            xmlDayDef[constants.TREE_DEF_ATTRIBUTES][constants.DAYDEF_SHORT],
+            xmlDayDef[constants.TREE_DEF_ATTRIBUTES][constants.DAYDEF_DAYS],
         );
     }
 
