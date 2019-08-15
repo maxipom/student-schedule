@@ -7,7 +7,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {SearchBarComponent} from './components/search-bar/search-bar.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import {NavbarComponent} from './components/navbar/navbar.component';
+import {NavbarComponent} from './components/core/navbar/navbar.component';
 import {ScheduleComponent} from './components/schedule/schedule.component';
 import {CardComponent} from './components/card/card.component';
 import {TeacherContentCardComponent} from './components/card/content-cards/teacher-content-card/teacher-content-card.component';
@@ -19,6 +19,7 @@ import {ClassroomContentCardComponent} from './components/card/content-cards/cla
 import {ClassSearchComponent} from './components/search-bar/class-search/class-search.component';
 import {ProxyInterceptor} from './interceptors/proxy.interceptor';
 import {NgxPrintModule} from 'ngx-print';
+import { FooterComponent } from './components/core/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -41,7 +42,8 @@ const routes: Routes = [
     StudentContentCardComponent,
     ClassroomSearchComponent,
     ClassroomContentCardComponent,
-    ClassSearchComponent
+    ClassSearchComponent,
+    FooterComponent
   ],
   imports: [
     NgxPrintModule,
