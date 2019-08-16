@@ -3,24 +3,26 @@
 /**
  * Module dependencies.
  */
-
-var app = require('../app');
-var debug = require('debug')('schedule-api:server');
-var http = require('http');
+console.log('- - - - - - - - - - - -');
+console.log('Initializing...');
+const app = require('../app');
+const debug = require('debug')('schedule-api:server');
+const http = require('http');
 const fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '3000');
+const PORT = '3000';
+console.log('Setting port on '+ PORT +'...');
+const port = normalizePort(process.env.PORT || PORT);
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
-
-var server = http.createServer(app);
+console.log('Creating server...');
+const server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -29,7 +31,8 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-console.log('Express server started on port %s', server.address().port);
+console.log('Schedule express server is on! listening on port %s', server.address().port);
+console.log('- - - - - - - - - - - -');
 
 /**
  * Normalize a port into a number, string, or false.
