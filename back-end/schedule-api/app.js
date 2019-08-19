@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
 
-console.log('Schedule server is on!');
 app.use('/api/teachers', teachers);
 app.use('/api/schedule', schedule);
 app.use('/api/students', students);

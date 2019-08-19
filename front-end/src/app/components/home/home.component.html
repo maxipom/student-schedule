@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+  <div class="col-12 col-lg-3 search-menu-container animated" [ngClass]="{'search-menu-expanded':searchMenuExpanded,
+       'search-menu-contracted':!searchMenuExpanded}">
+    <app-search-bar
+      [scheduleType]="selectedScheduleType"
+      (buttonTeacherSearch)="getCards(scheduleTypes.TEACHER_SCHEDULE,$event)"
+      (buttonStudentSearch)="getCards(scheduleTypes.STUDENT_SCHEDULE,$event)"
+      (buttonClassroomSearch)="getCards(scheduleTypes.CLASSROOM_SCHEDULE,$event)"
+      (buttonClassSearch)="getCards(scheduleTypes.GROUP_SCHEDULE,$event)"
+    ></app-search-bar>
+  </div>
+  <div class="col-12 text-center d-lg-none " id="expand-menu">
+    <button (click)="switchSearchMenu()" class="btn animated"
+            [ngClass]="{'expanded-menu': searchMenuExpanded}">
+      <i class="material-icons main-icon">expand_more</i>
+    </button>
+  </div>
+  <div class="col-12 col-lg-9 schedule-container" id="schedule-print">
+    <div>
+      <div *ngIf="scheduleTitle" class="text-center animated schedule-title-container"
+           [ngClass]="{
+        'no-cards-displayed': displayCards.length == 0,
+        'cards-displayed':displayCards.length != 0}">
+        {{scheduleTitle}}
+      </div>
+      <app-schedule *ngIf=" displayCards.length !=0" [displayCards]="displayCards"
+                    [scheduleType]="selectedScheduleType"></app-schedule>
+    </div>
+    <footer class="d-none d-print-block">
+      <div class="text-right">University of belgrade - Faculty of Technology and Metallurgy (TMF)</div>
+      <div class="text-right text-secondary">Printed on {{todayDate | date:'dd/MM/yyyy'}}</div>
+    </footer>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 class CardModel {
+
     constructor(classrooms, day, lesson, period, term, weeks) {
         this.classrooms = classrooms;
         this.day = day;
@@ -8,4 +9,6 @@ class CardModel {
         this.weeks = weeks;
     }
 }
+
+
 module.exports = CardModel;

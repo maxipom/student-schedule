@@ -1,0 +1,71 @@
+.search-menu-container {
+  padding: 0 1rem 2rem 1rem;
+  min-height: 100%;
+  width: 100%;
+  transition: all 550ms ease-in-out;
+}
+
+.search-menu-expanded {
+  height: 100%;
+}
+
+.search-menu-contracted {
+  height: 0;
+}
+
+.schedule-title-container {
+  background-color: white;
+  font-size: xx-large;
+  color: #484848;
+  font-weight: 700;
+  margin-left: -1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.schedule-title-container:hover {
+  overflow: visible;
+}
+
+
+.no-cards-displayed {
+  flex: 1 1 auto;
+  height: 50rem;
+  padding: 10rem;
+  background-color: #3498db;
+  box-shadow: inset 2px 4px 5px 0 #636363;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 3px 2px #2d2d2d;
+}
+
+.cards-displayed {
+  height: 3rem;
+}
+
+
+.schedule-container {
+  background-color: #EEF6FB;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#expand-menu {
+  background-color: #f1f1f1;
+  padding: 0.2rem;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  z-index: 1;
+  box-shadow: 0 2px 3px 0 #b7b5b5;
+
+}
+#expand-menu button{
+  background: #eaeaea;
+  border-radius: 7px;
+}
+ .expanded-menu{
+  box-shadow: inset 0 2px 3px 0 #b7b5b5;
+  transform: translateY(1px);
+}

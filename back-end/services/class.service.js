@@ -1,6 +1,6 @@
 const ClassModel = require('../model/class.model');
 const DataSource = require('../services/data-source.service');
-
+const constants = require('./shared/xml-constants-definition');
 const GENERIC_CLASS_NAME = 'I';
 
 class ClassService {
@@ -10,16 +10,16 @@ class ClassService {
 
     getClassModelById(id) {
         const xmlClass = this.classSource.find((xmlClass) => {
-            return xmlClass['_attributes']['id'] === id;
+            return xmlClass[constants.TREE_DEF_ATTRIBUTES][constants.CLASS_ID] === id;
         });
         return ClassService.getClassModelFormXml(xmlClass);
     }
 
     static getClassModelFormXml(xmlClass) {
         return new ClassModel(
-            xmlClass['_attributes']['id'],
-            xmlClass['_attributes']['name'],
-            xmlClass['_attributes']['short']);
+            xmlClass[constants.TREE_DEF_ATTRIBUTES][constants.CLASS_ID],
+            xmlClass[constants.TREE_DEF_ATTRIBUTES][constants.CLASS_NAME],
+            xmlClass[constants.TREE_DEF_ATTRIBUTES][constants.CLASS_SHORT]);
     }
 
     getClassesByIds(classesIds) {

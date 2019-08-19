@@ -1,0 +1,26 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <div class="margin-around">
+    <div class="row">
+      <div class="col-12">
+        <h2>
+          <i class="material-icons main-icon">local_library</i>
+          Učeionice</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <select formControlName="classroomId" id="classroom-id" class="form-control">
+            <option *ngFor="let classroom of classrooms" [value]="classroom.id">
+              {{classroom.name}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button type="submit" class="btn" [ngClass]="{'btn-primary':classroomId,'btn-outline-primary':!classroomId}"
+              [disabled]="!classroomId">viev schedule</button>
+    </div>
+  </div>
+</form>

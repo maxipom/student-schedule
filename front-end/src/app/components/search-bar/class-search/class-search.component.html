@@ -1,0 +1,26 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <div class="margin-around">
+    <div class="row">
+      <div class="col-12">
+        <h2>
+          <i class="material-icons main-icon">group</i>
+          Odeljenja</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <select formControlName="groupId" id="group-id" class="form-control">
+            <option *ngFor="let group of groups" [value]="group.id">
+              {{group.short}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button type="submit" class="btn" [ngClass]="{'btn-primary':groupId,'btn-outline-primary':!groupId}"
+              [disabled]="!groupId">viev schedule</button>
+    </div>
+  </div>
+</form>

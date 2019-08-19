@@ -1,0 +1,19 @@
+<nav class="navbar navbar-right navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="http://www.tmf.bg.ac.rs/sr">
+    <img src="../../../../assets/images/tmf-logo.png" id="tmf-logo" alt="Tmf Logo"/>
+  </a>
+  <a class="navbar-brand d-none d-md-block" id="title">
+    | Schedules
+  </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <button class="btn btn-outline-primary float-right" id="print-button"
+              [printTitle]="'Schedule'"
+              [printStyle]="{'.print-schedule' :  {'border': 'solid 3px black','background-color':'#e3e3f2'}}"
+              [useExistingCss]="true" printSectionId="schedule-print" ngxPrint>
+        <i class="material-icons main-icon">print</i>
+      </button>
+    </li>
+  </ul>
+
+</nav>
