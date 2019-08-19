@@ -1,0 +1,14 @@
+.footer{
+  text-align: end;
+  background: #5d5d5d;
+  color: #afafaf;
+  margin-top: 1.65rem;
+  margin-bottom: 0;
+  padding: 2rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+#contact-icon{
+  color: #afafaf;
+  font-size: 0.8rem;
+}
