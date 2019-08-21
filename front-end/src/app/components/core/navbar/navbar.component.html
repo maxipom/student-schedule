@@ -9,7 +9,14 @@
     <li class="nav-item">
       <button class="btn btn-outline-primary float-right" id="print-button"
               [printTitle]="'Schedule'"
-              [printStyle]="{'.print-schedule' :  {'border': 'solid 3px black','background-color':'#e3e3f2'}}"
+              [printStyle]="{
+              '.print-schedule':
+                {
+                  'border': 'solid 3px black',
+                  'background-color': '#e3e3f2',
+                  'transform': 'rotate(90deg) scale(0.8)'
+                }
+              }"
               [useExistingCss]="true" printSectionId="schedule-print" ngxPrint>
         <i class="material-icons main-icon">print</i>
       </button>
