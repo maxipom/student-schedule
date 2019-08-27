@@ -1,21 +1,23 @@
-<div class="row inner-shadow print-schedule">
-  <div class="col-2" *ngFor="let dayDef of dayDefs ; let firstDay = first;">
-    <div class="row period-row" *ngFor="let period of periods; let firstPeriod = first;">
-      <div *ngIf="firstPeriod" class="days">
-        <h5 *ngIf="!firstDay" class="text-center line-height-5 d-none d-md-block">{{dayDef.name}}</h5>
-        <h5 *ngIf="!firstDay" class="text-center line-height-5 d-block d-md-none">{{dayDef.short}}</h5>
-      </div>
-      <div *ngIf="firstDay" class="period">
-        <span class="line-height-5">{{period.short}}</span>
-      </div>
-      <div *ngIf="!firstDay" class="fix-width">
-        <div *ngFor="let displayCard of displayCards">
-          <app-card *ngIf="displayCard.startPeriod === period.period && displayCard.card.day === dayDef.day"
-                    [displayCard]="displayCard"
-                    [scheduleType]="scheduleType"></app-card>
+<div class="container-fluid no-padding">
+  <div class="row inner-shadow schedule-frame">
+    <div class="col-2" *ngFor="let dayDef of dayDefs ; let firstDay = first;">
+      <div class="row period-row" *ngFor="let period of periods; let firstPeriod = first;">
+        <div *ngIf="firstPeriod" class="days days-printed">
+          <h5 *ngIf="!firstDay" class="text-center line-height-5 d-none d-md-block">{{dayDef.name}}</h5>
+          <h5 *ngIf="!firstDay" class="text-center line-height-5 d-block d-md-none">{{dayDef.short}}</h5>
         </div>
-      </div>
+        <div *ngIf="firstDay" class="period">
+          <span class="line-height-5">{{period.short}}</span>
+        </div>
+        <div *ngIf="!firstDay" class="fix-width">
+          <div *ngFor="let displayCard of displayCards">
+            <app-card *ngIf="displayCard.startPeriod === period.period && displayCard.card.day === dayDef.day"
+                      [displayCard]="displayCard"
+                      [scheduleType]="scheduleType"></app-card>
+          </div>
+        </div>
 
+      </div>
     </div>
   </div>
 </div>

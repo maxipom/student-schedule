@@ -113,7 +113,7 @@ export class HomeComponent implements OnInit {
     this.cardService.getCardsByClassroomId(classroom.id).subscribe(
       (cards: CardModel[]) => {
         if (cards.length !== 0) {
-          this.scheduleTitle = 'Učeionica ' + classroom.short;
+          this.scheduleTitle = 'Učionica ' + classroom.short;
           this._getDisplayCards(cards);
         } else {
           this._showNotFoundMessage();

@@ -12,9 +12,20 @@
               [printStyle]="{
               '.print-schedule':
                 {
+                  'transform': 'scale(0.70) rotate(90deg) '
+                },
+              '.schedule-frame':
+                {
                   'border': 'solid 3px black',
-                  'background-color': '#e3e3f2',
-                  'transform': 'rotate(90deg) scale(0.8)'
+                  'background-color': '#e3e3f2'
+                } ,
+               '.days':
+                {
+                  'border-right': '4px dotted #cdcdcd !important'
+                },
+               '.period-row':
+                {
+                  'border-bottom': '2px dotted #cdcdcd !important'
                 }
               }"
               [useExistingCss]="true" printSectionId="schedule-print" ngxPrint>
