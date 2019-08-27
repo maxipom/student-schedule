@@ -1,0 +1,24 @@
+
+OLDENCODING="$( head -n 1 ./server/base.xml | grep -o -P '(?<=encoding=").*(?=")' )"
+NEWENCODING="utf-8"
+#check if the "base.xml" has a different protocol
+
+
+if [ "$OLDENCODING" != "$NEWENCODING" ]
+then
+	echo "Changing the base.xml file"
+	echo "Old encoding protocol: $OLDENCODING"
+	echo "New encoding protocol: $NEWENCODING"
+	iconv -f cp1250 -t utf8 "./server/base.xml" >"$file.new" && mv -f "$file.new" "./server/base.xml"
+	echo "PROTOCOL CHANGED"
+fi
+
+PID="$(netstat -tulp | grep '3000' | awk '{print $NF}' | cut -d '/' -f1)"
+echo $PID
+if [ ! -z "$PID" ]
+then
+	echo "Old server shutted down"
+	kill -9 $PID
+fi
+screen -d -m -S serverSession ./launch-node
+echo "Schedule server started in port 3000"

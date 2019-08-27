@@ -1,0 +1,2 @@
+echo "Server started"
+node /var/www/schedule/server/schedule-api/bin/www
