@@ -13,7 +13,7 @@ const fs = require('fs');
 /**
  * Get port from environment and store in Express.
  */
-const PORT = '3000';
+const PORT = '4000';
 console.log('Setting port on '+ PORT +'...');
 const port = normalizePort(process.env.PORT || PORT);
 app.set('port', port);
