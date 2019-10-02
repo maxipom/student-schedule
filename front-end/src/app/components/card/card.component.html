@@ -9,6 +9,6 @@
     <app-classroom-content-card [card]="displayCard.card"></app-classroom-content-card>
   </div>
   <div *ngSwitchCase="scheduleTypes.GROUP_SCHEDULE" class="schedule-card {{getPeriodClass()}}">
-    <app-classroom-content-card [card]="displayCard.card"></app-classroom-content-card>
+    <app-student-content-card [card]="displayCard.card"></app-student-content-card>
   </div>
 </div>
